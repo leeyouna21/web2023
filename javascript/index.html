@@ -7,9 +7,9 @@
     <title>JavaScript</title>
 
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="../assets/img/javascript.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/javascript-180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/javascript-180.png">
+    <link rel="shortcut icon" href="assets/ico/javascript.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/javascript192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/javascript192x192.png">
 
     <!-- 웹폰트 -->
     <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
@@ -19,7 +19,7 @@
             padding: 0;
         }
         main {
-            width: 100%; 
+            width: 100%;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -54,41 +54,26 @@
         }
         nav ul li a {
             text-decoration: none;
-            color:#0243f1;
-            border-width: 1px;
+            color: #0243f1;
+            /* border-width: 1px;
             border-style: dashed;
-            border-color: #0243f1;
-            /*padding-top: 10px;
-            /*padding-right: 20px;
-            /*padding-bottom: 10px;
-            /*padding-left: 20px;*/
-            /* padding: 10px 20px 10px 20px; 위쪽 오른쪽 왼쪽 아래쪽 순서임 */
-            /*padding: 10px 20px 15px; 위쪽은 10 , 왼,오는 20 아래는 15px*/
-            padding: 10px 20px; 
-            /*padding: 10px; 위오왼아 다 10*/
-            /*padding: 10px 20px;*/
-            /*margin-top: 6px;
-            margin-right: 3px;
-            margin-bottom: 6px;
-            margin-left: 3px;*/
+            border-color: #0243f1; */
+            border: 1px dashed #0243f1;
+            padding: 10px 20px;
             margin: 6px 3px;
+            border-radius: 50px;
             display: inline-block;
-            transition: all 0.3s;
-            border-top-left-radius: 50px;
-            border-top-right-radius: 50px;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-
+            transition: all 0.3s;           
         }
         nav ul li a:hover {
             background-color: #0243f1;
-            color:#fff;
+            color: #fff;
         }
         @media (max-width: 600px){
-            h1{
+            h1 {
                 font-size: 40px;
-            } 
-            nav{ 
+            }
+            nav {
                 margin: 16px;
             }
         }
@@ -429,12 +414,10 @@
             }
         }
     </style>
-    
 </head>
-
 <body>
     <main>
-        <!--dog-->
+        <!-- dog -->
         <div class="dog">
             <div class="wrap">
                 <div class="body">
@@ -489,7 +472,9 @@
                 </defs>
             </svg>
         </div>
-        <h1>JavaScript</h1>
+        <!-- //dog -->
+
+        <h1>Javascript</h1>
         <nav>
             <ul>
                 <li><a href="javascript01.html">데이터 저장하기</a></li>
@@ -505,11 +490,18 @@
                 <li><a href="javascript09.html">브라우저 객체</a></li>
                 <li><a href="javascript10.html">요소 객체</a></li>
                 <li><a href="javascript11.html">이벤트 객체</a></li>
-
+            </ul>
+            <ul class="last">
+                <li><a href="javascript12.html">데이터 효과</a></li>
+                <li><a href="javascript13.html">검색 효과</a></li>
+                <li><a href="javascript14.html">퀴즈 효과</a></li>
+                <li><a href="javascript15.html">마우스 효과</a></li>
+                <li><a href="javascript16.html">슬라이드 효과</a></li>
+                <li><a href="javascript17.html">패럴랙스 효과</a></li>
+                <li><a href="javascript18.html">게임 효과</a></li>
             </ul>
         </nav>
     </main>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script>
@@ -638,12 +630,3 @@
                 });
         });
     </script>
-
-
-
-
-
-
-
-</body>
-</html>

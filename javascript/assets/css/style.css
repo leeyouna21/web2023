@@ -32,8 +32,8 @@
             border-bottom: 1px dashed #DCDCDC;
             }
         #header h1 a {
-            font-size: 100px;
-            font-weight: 1000;
+            font-size: 80px;
+            font-weight: 800;
             color: #0243F1;
         }
         #header nav ul li {
@@ -55,6 +55,23 @@
             background-color: #0243F1;
             color: #fff;
         }
+        @media (max-width: 600px){
+            body{
+                padding: 20px;
+            }
+            #header h1{
+                margin-bottom: 10px;
+            }
+            #header h1 a{
+                font-size: 40px;
+            }
+            #header nav ul li a{
+                padding: 5px 10px;
+                margin: 3px 1px;
+                font-size: 14px;
+            }
+        }
+        
         /* */
         /* 메인영역 */
         #main {
@@ -69,7 +86,7 @@
             padding: 20px;
         }
         .main__sample .sample {
-            margin-top: 10px;
+            margin-top: 100px;
         }
         .main__sample .sample: :first-child {
             margin-top: 0;
@@ -85,6 +102,20 @@
             margin-top: 10px;
             background-color: #f3f3f3;
             padding: 1em;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .main__sample .notice {
+            border-left: 3px solid #0243F1;
+            padding: 13px 10px 10px 15px;
+            background-color: #f6f6f6;
+        }
+
+        .main__sample .notice h4 {
+            margin-bottom: 5px;
+        }
+        .main__sample .notice p {
+            margin-bottom: 0;
         }
         /* 푸터영역 */
         #footer {
