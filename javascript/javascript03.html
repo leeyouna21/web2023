@@ -68,7 +68,7 @@
                     <li><a href="#">01. 함수 유형 : 함수와 변수를 이용한 형태</a></li>
                     <li><a href="#">01. 함수 유형 : 함수와 배열, 객체를 이용한 형태</a></li>
                     <li><a href="#">01. 함수 유형 : 객체 안에 변수와 함수를 이용한 형태</a></li>
-                    <li><a href="#">01. 함수 유형 : 객체 생성자 함수</a></li>
+                    <li><a href="#">01.  함수 유형 : 객체 생성자 함수</a></li>
                     <li><a href="#">01. 함수 유형 : 프로토타입 함수</a></li>
                     <li><a href="#">01. 함수 유형 : 객체리터럴 함수</a></li> //전부 다 바삭바삭하게 이해해야하는 기본개념
 
@@ -91,10 +91,10 @@
                     선언적 함수(declarative function)는 자바스크립트에서 함수를 정의하는 방법 중 하나입니다.</br>
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-function func () {
-document.write("실행되었습니다.<br>");
+    function func () {
+    document.write("실행되었습니다.<br>");
 }
-func();
+    func();
 }
 </code></pre>
                 </div>
@@ -119,10 +119,10 @@ func();
                     변수는 데이터를 저장하는 "저장소" 이며 이 저장소에는 숫자, 문자, 함수, 객체 등을 저장할수 있습니다.</br>
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-const func = function() {
-document.write("실행되었습니다.<br>");
+    const func = function() {
+    document.write("실행되었습니다.<br>");
 }
-func();
+    func();
 }
 </code></pre>
                 </div>
@@ -145,10 +145,10 @@ func();
                     매개변수 함수(parameter function)는 자바스크립트에서 함수의 인자로 전달되는 함수를 말합니다
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-function func(str) {
-document.write(str);
+    function func(str) {
+    document.write(str);
 }
-func("실행되었습니다.");
+    func("실행되었습니다.");
 }
 </code></pre>
                 </div>
@@ -171,11 +171,11 @@ func("실행되었습니다.");
                     리턴값 함수(return function)는 자바스크립트에서 함수가 실행된 결과를 반환하는 함수를 말합니다.</br>
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-function func() {
-const str = "실행되었습니다.";
-return str;
+    function func() {
+    const str = "실행되었습니다.";
+    return str;
 }
-document.write(func());
+    document.write(func());
 }
 </code></pre>
                 </div>
@@ -197,10 +197,10 @@ document.write(func());
                     화살표 선언적 함수(arrow function declaration)는 자바스크립트에서 함수를 정의하는 방법 중 하나입니다.</br>
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-func = () => {
-document.write("실행되었습니다.<br>");
+    func = () => {
+    document.write("실행되었습니다.<br>");
 }
-func ();
+    func ();
 }
 </code></pre>
                 </div>
@@ -225,10 +225,10 @@ func ();
                     화살표 익명 함수(arrow anonymous function)는 자바스크립트에서 익명 함수를 작성할 때, 화살표 함수를 이용하는 것을 말합니다</br>
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-const func = () => {
-document.write("실행되었습니다.<br>")
+    const func = () => {
+    document.write("실행되었습니다.<br>")
 }
-func();
+    func();
 }
 </code></pre>
                 </div>
@@ -254,10 +254,10 @@ func();
                     화살표 매개변수(arrow function parameters)는 자바스크립트에서 화살표 함수를 작성할 때, 함수 인자를 지정하는 방법을 말합니다.</br>
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-func = (str) => {
-document.write(str);
+    func = (str) => {
+    document.write(str);
 }
-func("실행되었습니다.<br>");
+    func("실행되었습니다.<br>");
 }
 </code></pre>
                 </div>
@@ -279,11 +279,11 @@ func("실행되었습니다.<br>");
                     화살표 리턴값 함수(arrow function with return value)는 자바스크립트에서 화살표 함수를 작성할 때, 함수의 반환 값을 지정하는 방법을 말합니다.</br>
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-func = () => {
-const str = "실행되었습니다.<br>";
-return str;
+    func = () => {
+    const str = "실행되었습니다.<br>";
+    return str;
 }
-document.write(func());
+    document.write(func());
 }
 </code></pre>
                 </div>
@@ -306,25 +306,25 @@ document.write(func());
                     화살표 함수 익명 함수와 매개변수 리턴함수를 사용한 예제입니다</br>
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-a = () => {
-document.write("실행1");
+    a = () => {
+    document.write("실행1");
 }
-a();
+    a();
 
-const b = () => {
-document.write("실행2");
+    const b = () => {
+    document.write("실행2");
 }
-b();
+    b();
 
-const c = (str1, str2, str3,) => {
-document.write(str1, str2, str3,); //선언적 함수를 화살표 함수로 바꾸는 것은 함수처럼 안보이기도하며 가독성이 떨어지기에 익명함수로 바꿔서 많이 사용함
+    const c = (str1, str2, str3,) => {
+    document.write(str1, str2, str3,); //선언적 함수를 화살표 함수로 바꾸는 것은 함수처럼 안보이기도하며 가독성이 떨어지기에 익명함수로 바꿔서 많이 사용함
 }
-c("실행3","실행4","실행5");
+    c("실행3","실행4","실행5");
 
-d = (x, y, z) => {
-return x+y+z;
+    d = (x, y, z) => {
+    return x+y+z;
 }
-document.write(d(1,2,3));
+    document.write(d(1,2,3));
 }
 </code></pre>
                 </div>
@@ -352,11 +352,11 @@ document.write(d(1,2,3));
                     화살표 함수 익명 함수와 매개변수 리턴함수로 사용한 예제이며 괄호는 생략하여 표현하는 방법 입니다</br>
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-func = () => {
-const str = "실행되었습니다.<br>";
-return str;
+    func = () => {
+    const str = "실행되었습니다.<br>";
+    return str;
 }
-document.write(func());
+    document.write(func());
 }
 </code></pre>
                 </div>
@@ -378,9 +378,9 @@ document.write(func());
                     화살수표 함수 익명 함수와 매개변수 리턴함로 사용한 예제이며 괄호와 리턴을 생략하여 표현하는 방법 입니다</br>
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-const func = str => str;    //리턴생략, 중괄호 생략 동시에 생략가능
+    const func = str => str;    //리턴생략, 중괄호 생략 동시에 생략가능
 
-document.write(func("실행되었습니다."));
+    document.write(func("실행되었습니다."));
 }
 </code></pre>
                 </div>
@@ -403,9 +403,9 @@ document.write(func("실행되었습니다."));
                     화살수표 함수 익명 함수와 매개변수 리턴함로 사용한 예제이며 괄호와 리턴을 생략하여 표현하는 방법 입니다</br>
                 <div class="script">
 <pre class="line-numbers"><code class="language-js">{
-func = str => str;
+    func = str => str;
 
-document.write(func("실행되었습니다."));
+    document.write(func("실행되었습니다."));
 }
 </code></pre>
                 </div>

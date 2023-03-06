@@ -88,8 +88,8 @@
                         <p>for문을 이용해서 0~50까지 출력하는 예제입니다.</p>
     <pre class="line-numbers"><code class="language-js">for(let i=0; i&lt=50; i++){ //반복문 for문
         console.log(i)
-    }
-    </code></pre>
+}
+</code></pre>
                         <div class="result">
                             <details>
                                 <summary>결과 확인하기</summary>
@@ -107,11 +107,10 @@
                         <p>for문을 이용해서 1~100까지 짝수만 출력하는 예제입니다.</p>
     <pre class="line-numbers"><code class="language-js">for(let i=0; i&lt=100; i+=2){
         console.log(i)
-    }
-    
-    // 증감 연산자를 이용
-    // i += 2는 i = i + 2와 같은 식(2씩 증가)
-    </code></pre>
+}   
+// 증감 연산자를 이용
+// i += 2는 i = i + 2와 같은 식(2씩 증가)
+</code></pre>
                         <div class="result">
                             <details>
                                 <summary>결과 확인하기</summary>
@@ -127,17 +126,16 @@
                         <h3>04.데이터 이펙트 : 1부터 100까지 5의 배수 출력하기</h3>
                         <p>for문과 if문을 이용해서 1~100까지 5의 배수 출력하는 예제입니다.</p>
     <pre class="line-numbers"><code class="language-js">// 증감 연산자를 이용한 방법
-    for(let i=0; i&lt;=100; i+=5){
+for(let i=0; i&lt;=100; i+=5){
+    console.log(i)
+}
+// if문을 이용한 방법
+for(let i=1; i&lt;=100; i++){
+    if(i % 5 == 0){     // % 연산자를 이용해서 나머지가 0이면 그 수의 배수를 의미한다.
         console.log(i)
-    }
-    
-    // if문을 이용한 방법
-    for(let i=1; i&lt;=100; i++){
-        if(i % 5 == 0){     // % 연산자를 이용해서 나머지가 0이면 그 수의 배수를 의미한다.
-            console.log(i)
         }
-    }
-    </code></pre>
+}
+</code></pre>
                         <div class="result">
                             <details>
                                 <summary>결과 확인하기</summary>
@@ -153,14 +151,14 @@
                         <h3>05. 데이터 이펙트 : 1부터 100까지 짝수(파란색) 홀수(빨간색) 출력하기</h3>
                         <p>for문과 if문을 이용해서 1부터 100까지 짝수(파란색) 홀수(빨간색) 출력하는 예제입니다.</p>
     <pre data-line="3, 6" class="line-numbers"><code class="language-js">for(let i=1; i&lt;=100; i++){
-        if(i % 2 == 0){     // % 연산자를 이용해서 나머지가 0이므로 2의 배수(짝수)를 의미한다.
-            document.write("&lt;span style='color:blue'&gt;" + i + "&lt;/span&gt;")     // 짝수(파란색)을 만들기 위한 if문 예시
-        }
-        if(i % 2 == 1){     // % 연산자를 이용해서 나머지가 1이므로 홀수를 의미한다.
-            document.write("&lt;span style='color:red'&gt;" + i + "&lt;/span&gt;")      // 홀수(빨간색)을 만들기 위한 if문 예시
-        }
+    if(i % 2 == 0){     // % 연산자를 이용해서 나머지가 0이므로 2의 배수(짝수)를 의미한다.
+        document.write("&lt;span style='color:blue'&gt;" + i + "&lt;/span&gt;")     // 짝수(파란색)을 만들기 위한 if문 예시
     }
-    </code></pre>
+    if(i % 2 == 1){     // % 연산자를 이용해서 나머지가 1이므로 홀수를 의미한다.
+        document.write("&lt;span style='color:red'&gt;" + i + "&lt;/span&gt;")      // 홀수(빨간색)을 만들기 위한 if문 예시
+    }
+}
+</code></pre>
                         <div class="result">
                             <details>
                                 <summary>결과 확인하기</summary>
@@ -198,22 +196,17 @@
                     <div id="sample06" class="sample">
                         <h3>06. 데이터 이펙트 : for문을 이용해서 테이블 만들기</h3>
                         <p>중첩 for문을 이용해서 10행 & 10열 칸짜리 테이블 만들기 예제입니다.</p>
-    <pre data-line="6-8"class="line-numbers"><code class="language-js">let table = "&lt;table border=1&gt;";
-                
-        for(let i=1; i&lt;=10; i++){
-            table += "&lt;tr&gt;";
-            
+    <pre data-line="6-8"class="line-numbers"><code class="language-js">let table = "&lt;table border=1&gt;";     
+    for(let i=1; i&lt;=10; i++){
+        table += "&lt;tr&gt;";
             for(let j=1; j&lt;=10; j++){
                 table+= "&lt;td&gt;" + j + "&lt;/td&gt;";
             }
-    
             table += "&lt;/tr&gt;";
-        }
-            
+    }
         table += "&lt;/table&gt;";
-    
     document.write(table);
-    </code></pre>
+</code></pre>
                         <div class="result">
                             <details>
                                 <summary>결과 확인하기</summary>
@@ -248,15 +241,14 @@
                         <h3>07. 데이터 이펙트 : 중첩 for문을 이용해서 구구단 만들기</h3>
                         <p>for문을 이용해서 구구단 만들기 예제입니다.</p>
     <pre class="line-numbers"><code class="language-js">for(let i=2; i&lt;=9; i++){
-        document.write(i + "단","&lt;br&gt;");
-    
+    document.write(i + "단","&lt;br&gt;");
         for(let j=1; j&lt;=9; j++){
             document.write(i + "*" + j + "=" + i*j);
             document.write("&lt;br&gt;");
         }
         document.write("&lt;br&gt;&lt;br&gt;");
     }
-    </code></pre>
+</code></pre>
                         <div class="result">
                             <details>
                                 <summary>결과 확인하기</summary>
@@ -281,7 +273,6 @@
                         <p>중첩 for문, if문을 이용해서 테이블 25칸(짝수:빨간색, 홀수:파란색) 만들기 예제입니다.</p>
     <pre class="line-numbers"><code class="language-js">let table = "&lt;table border='1'&gt;";
     let num = 0;
-        
     for(let i=0; i&lt;5; i++){
         table += "&lt;tr&gt;";
         for(let j=0; j&lt;5; j++){
@@ -294,11 +285,9 @@
         };
         table += "&lt;/tr&gt;";
     }
-    
     table += "&lt;/table&gt;";
-    
     document.write(table);  
-    </code></pre>
+</code></pre>
                         <div class="result">
                             <details>
                                 <summary>결과 확인하기</summary>
@@ -334,8 +323,7 @@
                         <h3>09. 데이터 이펙트 : 테이블 25칸(3의 배수 출력(5의 배수는 빨간색))</h3>
                         <p>f중첩 for문, if문을 이용해서 테이블 25칸(3의 배수 출력(5의 배수는 빨간색)) 만들기 예제입니다.</p>
     <pre class="line-numbers"><code class="language-js">let table = "&lt;table border='1'&gt;";
-    let num = 0;
-      
+    let num = 0;   
     for(let i=0; i&lt;5; i++){
         table += "&lt;tr&gt;";
         for(let j=0; j&lt;5; j++){
@@ -350,11 +338,9 @@
         };
         table += "&lt;/tr&gt;";
     };
-    
     table += "&lt;/table&gt;";
-    
     document.write(table);
-    </code></pre>
+</code></pre>
                         <div class="result">
                             <details>
                                 <summary>결과 확인하기</summary>
