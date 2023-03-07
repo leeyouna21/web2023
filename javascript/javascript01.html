@@ -52,19 +52,23 @@
                     <li><a href="#">01. 변수 : 데이터 저장</a></li>
                     <li><a href="#">02. 변수 : 데이터 저장 + 데이터 변경</a></li>
                     <li><a href="#">03. 변수 : 데이터 저장 + 데이터 변경 + 데이터 추가</a></li>
-                    <li><a href="#">04. 상수 : 데이터 저장 + 데이터 변경(X)</a></li>
-                    <li><a href="#">05. 배열 : 데이터 저장(여러개): 표현방법1</a></li>
+                    <li><a href="#">04. 변수 : 지역변수 + 전역 변수(스코프)</a></li>
+                    <li><a href="#">05. 상수 : 데이터 저장 + 데이터 변경(X)</a></li>
                     <li><a href="#">06. 배열 : 데이터 저장(여러개): 표현방법1</a></li>
                     <li><a href="#">07. 배열 : 데이터 저장(여러개): 표현방법1</a></li>
                     <li><a href="#">08. 배열 : 데이터 저장(여러개): 표현방법1</a></li>
-                    <li><a href="#">09. 객체 : 데이터 저장(키와 값):표현방법1</a></li>
-                    <li><a href="#">10. 객체 : 데이터 저장(키와 값):표현방법2</a></li>
-                    <li><a href="#">11. 객체 : 데이터 저장(키와 값):표현방법3</a></li>
-                    <li><a href="#">12. 객체 : 데이터 저장(키와 값):표현방법4</a></li>
-                    <li><a href="#">13. 객체 : 데이터 저장(키와 값):표현방법5</a></li>
-                    <li><a href="#">14. 객체 : 데이터 저장(키와 값):표현방법6</a></li>
-                    <li><a href="#">15. 객체 : 데이터 저장(키와 값):표현방법7</a></li>
-                    <li><a href="#">16. 객체 : 데이터 저장(키와 값):표현방법8</a></li>
+                    <li><a href="#">09. 배열 : 데이터 저장(여러개): 표현방법1</a></li>
+                    <li><a href="#">10. 객체 : 데이터 저장(키와 값):표현방법1</a></li>
+                    <li><a href="#">11. 객체 : 데이터 저장(키와 값):표현방법2</a></li>
+                    <li><a href="#">12. 객체 : 데이터 저장(키와 값):표현방법3</a></li>
+                    <li><a href="#">13. 객체 : 데이터 저장(키와 값):표현방법4</a></li>
+                    <li><a href="#">14. 객체 : 데이터 저장(키와 값):표현방법5</a></li>
+                    <li><a href="#">15. 객체 : 데이터 저장(키와 값):표현방법6</a></li>
+                    <li><a href="#">16. 객체 : 데이터 저장(키와 값):표현방법7</a></li>
+                    <li><a href="#">17. 객체 : 데이터 저장(키와 값):표현방법8</a></li>
+                    <li><a href="#">++ 식별자 , 예약자</a></li>
+                    <li><a href="#">++ 연산자(전치, 후치)</a></li>
+                    <li><a href="#">++ 형 변환, type of</a></li>
                 </ul>
             </div>
                 <div class="main__sample">
@@ -171,6 +175,53 @@
                             <h4>연산자 : 변수로 연산이 가능하다.</h4>
                             <P>변수를 이용해서 연산이 가능하고, 연산에는 산술 연산자, 대입 연산자, 비교 연산자, 논리 연산자,
                                 비트 연산자(잘 안 씀), 상향 연산자가 있다. </P>
+                        </div>
+                    </div>
+                    <!-- //sample03 -->
+
+                    <div id="sample03" class="sample">
+                        <h3>04. 변수 : 지역변수 + 전역 변수(스코프)</h3>
+                        <p>지역 변수(Local variable)와 
+                           전역 변수(Global variable)는 변수의 범위(Scope)를 나타내는 용어입니다</p>
+                        <div class="script">
+<pre><code class="language-js">let x = 100;  //전역 변수
+    let y = 200;  //전역 변수
+
+    
+    function func(){
+        let x = 300;    //지역 변수 : 함수 안에 들어가 있어서  x, y가 중복 돼도 사용 가능
+        let y = 400;    //지역변수인데 앞에 let이 없으면 전역 변수로 바껴서 결과값도 200이 아닌 400으로 나옴
+        z = "javascript" //위에 선언해 주지 않았지만 전역변수로 인식함
+
+        console.log("함수 안"+x);
+        console.log("함수 안"+y);
+        console.log("함수 안"+z);
+    }
+    func();
+
+    console.log("함수 밖"+x);
+    console.log("함수 밖"+y);
+    console.log("함수 밖"+z);
+</code></pre>
+                        </div>
+                        <div class="result">
+                            <details>
+                                <summary>결과 확인하기</summary>
+                                <div>
+                                    함수 안300 <br>
+                                    함수 안400 <br>
+                                    함수 안javascript <br>
+                                    함수 밖100 <br>
+                                    함수 밖200 <br>
+                                    함수 밖javascript <br>
+                                </div>
+                            </details>
+                        </div>
+                        <div class="notice">
+                            <P>지역 변수는 함수 내부에서 선언된 변수로, 함수 내부에서만 사용할 수 있습니다. 
+                                함수 외부에서는 해당 변수를 사용할 수 없습니다.
+                                전역 변수는 함수 외부에서 선언된 변수로, 
+                                프로그램 전체에서 사용할 수 있습니다.</P>
                         </div>
                     </div>
                     <!-- //sample03 -->
@@ -635,146 +686,68 @@
     <script src="assets/js/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
     <script>
-        //객체 : 데이터 저장(키와 값) : 표현방법 1
-        //객체는 배열 방식을 그대로 사용할 수 있다. 객체를 표현하는 가장 기본적인 방법
-        // {
-        //     const obj = new Object();
+        // var score = 10;
+        // ++score; //11
+        // score++; //12
+        // var result = ++score; //11
 
-        //      obj[0] = 100;
-        //      obj[1] = 200;
-        //      obj[2] = "javascript";
+        // console.log(result, score);  
 
-        //     console.log(obj[0]);
-        //     console.log(obj[1]);
-        //     console.log(obj[2]);
+        // let hap, j, k, l;
+        // j = k = l = 1
+        // hap = ++j + k++ + ++l;
+        // console.log(hap);
+        // console.log(j);
+        // console.log(k);
+        // console.log(l);
+
+        // let sum = 0;
+
+        // for(let i=0; i<10; i++){
+        //     sum += 1
+        // }                                //둘의 결과는 같음
+        // for(let i=10; i>0; i--){
+        //     sum += 1
         // }
+            //ㅈㄴ헷갈림 기억해!!!!!!!!!!!!!!!!!!!!!
+            // let x = 7, y = 7, result;
 
-        //객체 : 데이터 저장(키와 값) : 표현방법 2
-        // 숫자 대신 문자를 넣어준다.
-        // {
-        //     const obj = new Object();
+            // result = x > y ? ++x : y--;
 
-        //     obj.a = 100;
-        //     obj.b = 200;
-        //     obj.c = "javascript";
+            // console.log(result);
+            // console.log(x);
+            // console.log(y);  
 
-        //     console.log(obj.a);
-        //     console.log(obj.b);
-        //     console.log(obj.c);
-        // }
+            // let a , b, c, result;
+            // a = 20, b = 30, c = 30;
 
-        //객체 : 데이터 저장(키와 값) : 표현방법 3
-        // 키 값을 넣고 속성 값을 넣어준다.
-        // {
-        //      const obj = {}
+            // result = a < b ? b++ : --c;
 
-        //      obj.a = 100;
-        //      obj.b = 200;
-        //      obj.c = "javascript";
+            // console.log(result); 
+            // console.log(a);  
+            // console.log(b+c);  
+            // console.log(c); 
 
-        //     console.log(obj.a);
-        //     console.log(obj.b);
-        //     console.log(obj.c);
-        // }
+            // 04. 변수 : 지역변수 + 전역 변수(스코프)
+            let x = 100;  //전역 변수
+            let y = 200;  //전역 변수
 
-        //객체 : 데이터 저장(키와 값) : 표현방법 4
-        // 이 방법을 가장 많이 쓴다
-        // {
-        //     const obj = {a:100, b:200, c:"javascript"}
-
-        //     console.log(obj.a);
-        //     console.log(obj.b);
-        //     console.log(obj.c);
-        // }
-
-        //객체 : 데이터 저장(키와 값) : 표현방법 5 : 배열 안에 객체
-        // 배열 안에 객체가 있는 구조는 아래 방법으로 불러옴
-        // {
-        //     const obj = [
-        //         {a:100, b:200}, 
-        //         {c:"javascript"}
-        //     ];
-
-        //     console.log(obj[0].a);
-        //     console.log(obj[0].b);
-        //     console.log(obj[1].c);
-
-        //100
-        //200
-        //javascript
             
-        // }
+            function func(){
+                let x = 300;    //지역 변수 : 함수 안에 들어가 있어서  x, y가 중복 돼도 사용 가능
+                let y = 400;    //지역변수인데 앞에 let이 없으면 전역 변수로 바껴서 결과값도 200이 아닌 400으로 나옴
+                z = "javascript" //위에 선언해 주지 않았지만 전역변수로 인식함
 
-        //객체 : 데이터 저장(키와 값) : 표현방법 6 : 객체 안에 배열이 들어감
-        // 객체 안에 배열
-        // {
-        //     const obj ={
-        //         a: 100,
-        //         b: [200,300],
-        //         c: {x: 400, y:500},
-        //         d: "javascript"
-        // }
+                console.log("함수 안"+x);
+                console.log("함수 안"+y);
+                console.log("함수 안"+z);
+            }
+            func();
 
-        //     console.log(obj.a);
-        //     console.log(obj.b[0]); //안에 200,300을 뽑아내야하기 때문에 [0]
-        //     console.log(obj.b[1]); 
-        //     console.log(obj.c.x); //안에 400,500을 뽑아내야하기 때문에 .x
-        //     console.log(obj.c.y);
-        //     console.log(obj.d)
-        //     100
-        //     200
-        //     300
-        //     400
-        //     500
-        //     javascript
-        // }
-
-        //객체 : 데이터 저장(키와 값) : 표현방법 7
-        // 키의 값만 배열해 출력이 가능
-        // {
-        //      const a = 100;
-        //      const b = 200;
-        //      const c = "javascript";
-
-        //      const obj = {a, b, c};
-
-        //     console.log(a);
-        //     console.log(b);
-        //     console.log(c);
-        // }
-
-        // 객체 : 데이터 저장(키와 값) : 표현방법 8
-        // 객체 안에는 실행문이 들어갈 수 있는데, 실행문을 실행시켜줄 때 쓰는 방법
-        // {
-        //     const j = "javascript";
-             
-        //     const obj = {
-        //         a : 100,
-        //         b : [200, 300],
-        //         c : "javascript",
-        //         d : function(){
-        //             console.log("javascript가 실행되었습니다.");
-        //         },
-        //         e : function(){
-        //             console.log(obj.c + "가 실행되었습니다."); //변수를 부르는 키 값을 적고 + 를 쓰면 값이 출력된다.
-        //         },
-        //         f : function(){
-        //             console.log(this.c + "가 실행되었습니다."); //자기 자신을 표현하는 this
-        //         }
-        //     }
-        //     console.log(obj.a);
-        //     console.log(obj.b[0]);
-        //     console.log(obj.b[1]);
-            // console.log(obj.b[2]);          //undefined
-        //    console.log(obj.c);
-            // console.log(obj.d);             //(X)
-        //     obj.d();
-        //     obj.e();
-        //     obj.f();
-        // }
-
-
-
+            console.log("함수 밖"+x);
+            console.log("함수 밖"+y);
+            console.log("함수 밖"+z);
+            
     </script>
 </body>
 </html>
