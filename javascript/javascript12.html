@@ -68,7 +68,7 @@
                     <h3>01. 데이터 이펙트 : 1부터 100까지 출력하기</h3>
                     <p>for문을 이용해서 1~100까지 출력하는 예제입니다.</p>
 <pre class="line-numbers"><code class="language-js">for(let i=1; i&lt=100; i++){ //반복문 for문
-    console.log(i)
+        console.log(i)
 }
 </code></pre>
                     <div class="result">
@@ -86,7 +86,7 @@
                     <div id="sample01" class="sample">
                         <h3>02. 데이터 이펙트 : 0부터 50까지 출력하기</h3>
                         <p>for문을 이용해서 0~50까지 출력하는 예제입니다.</p>
-    <pre class="line-numbers"><code class="language-js">for(let i=0; i&lt=50; i++){ //반복문 for문
+<pre class="line-numbers"><code class="language-js">for(let i=0; i&lt=50; i++){ //반복문 for문
         console.log(i)
 }
 </code></pre>
@@ -125,7 +125,7 @@
                     <div id="sample04" class="sample">
                         <h3>04.데이터 이펙트 : 1부터 100까지 5의 배수 출력하기</h3>
                         <p>for문과 if문을 이용해서 1~100까지 5의 배수 출력하는 예제입니다.</p>
-    <pre class="line-numbers"><code class="language-js">// 증감 연산자를 이용한 방법
+<pre class="line-numbers"><code class="language-js">// 증감 연산자를 이용한 방법
 for(let i=0; i&lt;=100; i+=5){
     console.log(i)
 }
@@ -150,7 +150,7 @@ for(let i=1; i&lt;=100; i++){
                     <div id="sample05" class="sample">
                         <h3>05. 데이터 이펙트 : 1부터 100까지 짝수(파란색) 홀수(빨간색) 출력하기</h3>
                         <p>for문과 if문을 이용해서 1부터 100까지 짝수(파란색) 홀수(빨간색) 출력하는 예제입니다.</p>
-    <pre data-line="3, 6" class="line-numbers"><code class="language-js">for(let i=1; i&lt;=100; i++){
+<pre data-line="3, 6" class="line-numbers"><code class="language-js">for(let i=1; i&lt;=100; i++){
     if(i % 2 == 0){     // % 연산자를 이용해서 나머지가 0이므로 2의 배수(짝수)를 의미한다.
         document.write("&lt;span style='color:blue'&gt;" + i + "&lt;/span&gt;")     // 짝수(파란색)을 만들기 위한 if문 예시
     }
@@ -196,7 +196,7 @@ for(let i=1; i&lt;=100; i++){
                     <div id="sample06" class="sample">
                         <h3>06. 데이터 이펙트 : for문을 이용해서 테이블 만들기</h3>
                         <p>중첩 for문을 이용해서 10행 & 10열 칸짜리 테이블 만들기 예제입니다.</p>
-    <pre data-line="6-8"class="line-numbers"><code class="language-js">let table = "&lt;table border=1&gt;";     
+<pre data-line="6-8"class="line-numbers"><code class="language-js">let table = "&lt;table border=1&gt;";     
     for(let i=1; i&lt;=10; i++){
         table += "&lt;tr&gt;";
             for(let j=1; j&lt;=10; j++){
@@ -240,7 +240,7 @@ for(let i=1; i&lt;=100; i++){
                     <div id="sample07" class="sample">
                         <h3>07. 데이터 이펙트 : 중첩 for문을 이용해서 구구단 만들기</h3>
                         <p>for문을 이용해서 구구단 만들기 예제입니다.</p>
-    <pre class="line-numbers"><code class="language-js">for(let i=2; i&lt;=9; i++){
+<pre class="line-numbers"><code class="language-js">for(let i=2; i&lt;=9; i++){
     document.write(i + "단","&lt;br&gt;");
         for(let j=1; j&lt;=9; j++){
             document.write(i + "*" + j + "=" + i*j);
@@ -271,7 +271,7 @@ for(let i=1; i&lt;=100; i++){
                     <div id="sample08" class="sample">
                         <h3>08. 데이터 이펙트 : 테이블 25칸(짝수:빨간색, 홀수:파란색)</h3>
                         <p>중첩 for문, if문을 이용해서 테이블 25칸(짝수:빨간색, 홀수:파란색) 만들기 예제입니다.</p>
-    <pre class="line-numbers"><code class="language-js">let table = "&lt;table border='1'&gt;";
+<pre class="line-numbers"><code class="language-js">let table = "&lt;table border='1'&gt;";
     let num = 0;
     for(let i=0; i&lt;5; i++){
         table += "&lt;tr&gt;";
@@ -322,7 +322,7 @@ for(let i=1; i&lt;=100; i++){
                     <div id="sample09" class="sample">
                         <h3>09. 데이터 이펙트 : 테이블 25칸(3의 배수 출력(5의 배수는 빨간색))</h3>
                         <p>f중첩 for문, if문을 이용해서 테이블 25칸(3의 배수 출력(5의 배수는 빨간색)) 만들기 예제입니다.</p>
-    <pre class="line-numbers"><code class="language-js">let table = "&lt;table border='1'&gt;";
+<pre class="line-numbers"><code class="language-js">let table = "&lt;table border='1'&gt;";
     let num = 0;   
     for(let i=0; i&lt;5; i++){
         table += "&lt;tr&gt;";
@@ -373,6 +373,45 @@ for(let i=1; i&lt;=100; i++){
                         </div>
                     </div>
                     <!-- //smaple09 -->
+
+                    <div id="sample10" class="sample">
+                        <h3>10. 데이터 이펙트 : 배열 데이터에서 10보다 큰 수 찾기</h3>
+                        <p>for문, if문을 이용해서 큰 수 찾기 예제입니다.</p>
+<pre class="line-numbers"><code class="language-js">const arr = [1,3,5,7,9,11,13,15,17,19]
+
+for(let i=1; &lt;=arr.length; i++){
+    if(arr [i] &gt; 10){
+    document.write(arr[i] + " , ");
+    }
+}
+</code></pre>
+                        <div class="result">
+                            <details>
+                                <summary>결과 확인하기</summary>
+                                    11,13,15,17,19
+                            </details>
+                        </div>
+                    </div>
+                    <!-- //smaple10 -->
+
+                    <div id="sample11" class="sample">
+                        <h3>11. 데이터 이펙트 : 1부터 100까지 합 구하기</h3>
+                        <p>for문, if문을 이용해서 합을 구하는 예제입니다.</p>
+<pre class="line-numbers"><code class="language-js">let num = 0;
+
+for(let i=1; &lt;=100; i++){
+    num += i;
+}
+document.write(num);
+</code></pre>
+                        <div class="result">
+                            <details>
+                                <summary>결과 확인하기</summary>
+                                    5050
+                            </details>
+                        </div>
+                    </div>
+                    <!-- //smaple11 -->
                 </div>        
             </div>
         </main>
