@@ -184,10 +184,9 @@
                         <p>지역 변수(Local variable)와 <br>  
                            전역 변수(Global variable)는 변수의 범위(Scope)를 나타내는 용어입니다</p>
                         <div class="script">
-<pre><code class="language-js">let x = 100;  //전역 변수
+<pre><code class="language-js">    let x = 100;  //전역 변수
     let y = 200;  //전역 변수
 
-    
     function func(){
         let x = 300;    //지역 변수 : 함수 안에 들어가 있어서  x, y가 중복 돼도 사용 가능
         let y = 400;    //지역변수인데 앞에 let이 없으면 전역 변수로 바껴서 결과값도 200이 아닌 400으로 나옴
@@ -570,7 +569,6 @@
     console.log(obj.c,x);
     console.log(obj.c,y);
     console.log(obj.d);
-
 }
 </code></pre>
                     </div>
@@ -882,57 +880,57 @@ console.log(y);
             // console.log(b+c);  
             // console.log(c); 
 
-            // 04. 변수 : 지역변수 + 전역 변수(스코프)
-            let x = 100;  //전역 변수
-            let y = 200;  //전역 변수
+        //     // 04. 변수 : 지역변수 + 전역 변수(스코프)
+        //     let x = 100;  //전역 변수
+        //     let y = 200;  //전역 변수
 
             
-            function func(){
-                let x = 300;    //지역 변수 : 함수 안에 들어가 있어서  x, y가 중복 돼도 사용 가능
-                let y = 400;    //지역변수인데 앞에 let이 없으면 전역 변수로 바껴서 결과값도 200이 아닌 400으로 나옴
-                z = "javascript" //위에 선언해 주지 않았지만 전역변수로 인식함
+        //     function func(){
+        //         let x = 300;    //지역 변수 : 함수 안에 들어가 있어서  x, y가 중복 돼도 사용 가능
+        //         let y = 400;    //지역변수인데 앞에 let이 없으면 전역 변수로 바껴서 결과값도 200이 아닌 400으로 나옴
+        //         z = "javascript" //위에 선언해 주지 않았지만 전역변수로 인식함
 
-                console.log("함수 안"+x);
-                console.log("함수 안"+y);
-                console.log("함수 안"+z);
-            }
-            func();
+        //         console.log("함수 안"+x);
+        //         console.log("함수 안"+y);
+        //         console.log("함수 안"+z);
+        //     }
+        //     func();
 
-            console.log("함수 밖"+x);
-            console.log("함수 밖"+y);
-            console.log("함수 밖"+z);
+        //     console.log("함수 밖"+x);
+        //     console.log("함수 밖"+y);
+        //     console.log("함수 밖"+z);
             
-          //함수가 실행되었습니다. = 10 
-        {
-            let num = 0;
+        //   //함수가 실행되었습니다. = 10 
+        // {
+        //     let num = 0;
 
-            for(let i=1; i<=1000; i++){
-                num += i;
-            }
-            document.write(num);
-        }
+        //     for(let i=1; i<=1000; i++){
+        //         num += i;
+        //     }
+        //     document.write(num);
+        // }
         
-        {
-           let num1 = 16, num2 = 40;
-           let a = num1++;
-           let b = --num2;
+        // {
+        //    let num1 = 16, num2 = 40;
+        //    let a = num1++;
+        //    let b = --num2;
 
-           console.log(a+b)
-        }
-        {
-            let a = 9;
-            let b = 11;
-            let c = a ^ b;  //비트연산자, 숫자를 2진수로 바꿔서 계산해줌
+        //    console.log(a+b)
+        // }
+        // {
+        //     let a = 9;
+        //     let b = 11;
+        //     let c = a ^ b;  //비트연산자, 숫자를 2진수로 바꿔서 계산해줌
 
-            console.log(c);
-        }
+        //     console.log(c);
+        // }
 
-        {
-            let num1 = 16, num2 = 80;
-            let result;
+        // {
+        //     let num1 = 16, num2 = 80;
+        //     let result;
 
-            result = num1 > num2 ? num1 & num2 : num1 ^ num2;
-        }
+        //     result = num1 > num2 ? num1 & num2 : num1 ^ num2;
+        // }
     </script>
 </body>
 </html>
