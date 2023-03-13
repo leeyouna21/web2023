@@ -5,7 +5,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #ffd9d9;
+    background-color: #cacaca;
     color: #fff;
     padding: 10px;
     width: 100%;
@@ -15,7 +15,7 @@
 }
 #header::before {
     content: '';
-    border: 4px ridge pink;
+    border: 4px ridge #cacaca;
     position: absolute;
     left: 5px;
     top: 5px;
@@ -63,12 +63,12 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #ffd9d9;
+    background-color: #cacaca;
     text-align: center;
 
 }
 #footer a{
-    color: #fff;
+    color: #cacaca;
     padding: 20px;
     display: block;
     font-family: 'DungGeunMo';
@@ -77,7 +77,7 @@
 }
 #footer ::before{
     content: '';
-    border: 4px ridge pink;
+    border: 4px ridge #cacaca;
     position: absolute;
     left: 5px;
     top: 5px;
@@ -92,17 +92,19 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 .quiz__wrap .quiz{
     width: 500px;
-    background-color: #f3ffda;
-    border: 8px ridge #ff9494;
+    background-color: #cacaca;
+    border: 8px ridge #cacaca;
+    margin: 10px;
 
 }
 .quiz__header{}
 .quiz__title{
-    background-color: #ff6d6d;
-    border: 3px ridge #ff4646;
+    background-color: #cacaca;
+    border: 3px ridge #cacaca;
     border-bottom-width: 6px;
     padding: 5px;
     font-family: 'DungGeunMo';
@@ -117,10 +119,10 @@
     font-family: 'DalseoHealing';
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 6px ridge #71ffa5;
+    border-bottom: 6px ridge #cacaca;
 }
 .quiz__question em {
-    color : #ffd876
+    color : #111
 }
 .quiz__answer {
     font-family: 'DalseoHealing';
@@ -130,23 +132,23 @@
     /* border-bottom: 6px ridge #05e658; */
 }
 .quiz__answer .confirm {
-    background-color: #98f1b3;
-    border: 3px ridge #dcffa4;
+    background-color: #cacaca;
+    border: 3px ridge #cacaca;
     width: 100%;
     font-family: 'DalseoHealing';
     padding: 10px 20px;
     font-size: 22px;
     cursor: pointer;
     transition: all 0.3s;
-    text-shadow: 1px 1px 0px #007d2a;
+    text-shadow: 1px 1px 0px #cacaca;
     font-weight: bold;
 }
 .quiz__answer .confirm:hover {
-    background-color: #7fff7a;
+    background-color: #cacaca;
 }
 .quiz__answer .result {
-    background-color: #78ffa0;
-    border: 3px ridge #dcffa4;
+    background-color: #cacaca;
+    border: 3px ridge #cacaca;
     width: 100%;
     font-family: 'DalseoHealing';
     padding: 10px 20px;
@@ -171,17 +173,17 @@
   margin-bottom: 10px;
 }
 .quiz__view {
-    border-bottom: 6px ridge #fd8383;
+    border-bottom: 6px ridge #cacaca;
     overflow: hidden;
 }
-.quiz__footer{
+.quiz__desc{
   border-top: 6px ridge #cacaca;
   padding: 20px;
   font-family: 'DalseoHealing';
   background-color: #f5f5f5;
 }
-.quiz__footer::before {
-  content: "📍 Tip";
+.quiz__desc::before {
+  content: "😎 Tip";
   color:rgb(255, 157, 157);
   font-weight: bold;
 }
@@ -200,6 +202,55 @@
 .dog .ears::after, 
 .dog__wrap {
     transition: 0.2s ease-in;
+}
+.dog__wrap {
+  position: relative;
+}
+.dog__wrap .true{
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  background-color: green;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 70%;
+  top: 100px;
+  font-family: 'DalseoHealing';
+  opacity: 0;
+}
+.dog__wrap .false{
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  background-color: rgb(128, 0, 0);
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 70%;
+  top: 100px;
+  font-family: 'DalseoHealing';
+  opacity: 0;
+}
+.dog__wrap.like .true{
+  opacity: 1;
+  animation: wobble 0.6s;
+}
+.dog__wrap.dislike .false{
+  opacity: 1;
+  animation: wobble 0.6s;
+}
+@keyframes wobble {
+  0% {transform: translateX(0) rotate(0deg);}
+  15% {transform: translateX(-25%) rotate(-5deg);}
+  30% {transform: translateX(20%) rotate(3deg);}
+  45% {transform: translateX(-15%) rotate(-3deg);}
+  60% {transform: translateX(10%) rotate(2deg);}
+  75% {transform: translateX(-5%) rotate(-1deg);}
+  100% {transform: translateX(0) rotate(0deg);}
+  
 }
 .card-container {
     position: relative;
