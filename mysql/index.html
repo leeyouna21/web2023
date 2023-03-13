@@ -150,7 +150,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
                 <!-- //intro3 -->
                 <div class="bs-docs-section">
                     <h3 id="intro4" class="page-header">데이터베이스</h3>
-                    <h4 id="intro4-2" class="page-header">데이터베이스 보기</h4>
+                    <h4 id="intro4-1" class="page-header">데이터베이스 보기</h4>
                     <div class="bs-callout bs-callout-info">show databases;</div>
 <pre><code class="language-js">
 +--------------------+
@@ -163,9 +163,21 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 +--------------------+
 4 rows in set (0.01 sec)
 </pre></code>
-                    <h4 id="intro4-1" class="page-header">데이터베이스 만들기</h4>
+                    <h4 id="intro4-2" class="page-header">데이터베이스 만들기</h4>
                     <div class="bs-callout bs-callout-info">create detabase 데이터베이스 이름;</div>
-<pre><code class="language-js">
+<pre><code class="language-js">mysql> create database sample01;
+Query OK, 1 row affected (0.00 sec)
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sample01           |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
 </pre></code>
                     <h4 id="intro4-3" class="page-header">데이터베이스 사용</h4>
                     <div class="bs-callout bs-callout-info"></div>
@@ -214,8 +226,3 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
     <script src="../assets/js/prism.js"></script>
 </body>
 </html>
-
-
-
-
-
