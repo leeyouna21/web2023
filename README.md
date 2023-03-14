@@ -12,9 +12,9 @@
 
 
 퀴즈 게임01 : https://leeyouna21.github.io/web2023/javascript/quiz/quizEffect01.html
-퀴즈 게임02 : https://leeyouna21.github.io/web2023/javascript/quiz/quizEffect02.html
-퀴즈 게임03 : https://leeyouna21.github.io/web2023/javascript/quiz/quizEffect03.html
-퀴즈 게임04 : https://leeyouna21.github.io/web2023/javascript/quiz/quizEffect04.html
+퀴즈 게임02 :https://leeyouna21.github.io/web2023/javascript/quiz/quizEffect02.html
+퀴즈 게임03 :https://leeyouna21.github.io/web2023/javascript/quiz/quizEffect03.html
+퀴즈 게임04 :https://leeyouna21.github.io/web2023/javascript/quiz/quizEffect04.html
 
 
 # 사이트
