@@ -1,5 +1,4 @@
 
-
 /* header */
 #header {
     position: fixed;
@@ -186,6 +185,46 @@
   content: "😎 Tip";
   color:rgb(255, 157, 157);
   font-weight: bold;
+}
+.quiz__choice {
+  padding: 20px;
+  border-bottom: 6px ridge #CC9AEE;
+  font-family: 'EliceDigitalBaeum';
+}
+.quiz__choice label {
+  display: flex;
+}
+.quiz__choice label input {
+  position:absolute;
+  clip:rect(0 0 0 0);
+  width:1px;
+  height:1px;
+  margin:-1px;
+  overflow:hidden;
+}
+.quiz__choice label span {
+  font-size: 20px;
+  line-height: 1.4;
+  padding: 6px;
+  display: flex;
+  cursor: pointer;
+  margin: 2px 0;
+}
+.quiz__choice label span::before{
+  content: '';
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background: #fff;
+  box-shadow: inset 0 0 0 4px #9922E9;
+  transition: all 0.2s;
+}
+.quiz__choice label input:checked + span {
+  background-color: #F2E0FF;
+}
+.quiz__choice label input:checked + span::before {
+  box-shadow: inset 0 0 8px #9922E9;
 }
 /* dog__wrap */
 .dog .tail, 
