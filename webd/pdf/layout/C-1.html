@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 1000px;
+            display: flex;
+        }
+        #aside {
+            width: 20%;
+            height: 650px;
+            background-color: #fbc6c6;
+        }
+        #contents {
+            width: 80%;
+            height: 650px;
+            background-color: #ff7373;
+        }
+        #contents .slider{
+            width: 100%;
+            height: 350px;
+            background-color: #fd1919;
+        }
+        #contents .article {
+            
+            height: 200px;
+            display: flex;
+        }
+        #contents .article .cont1 {
+            height: 200px;
+            width: 33.3333%;
+            background-color: #f1dfbc;
+        }
+        #contents .article .cont2 {
+            height: 200px;
+            width: 33.3333%;
+            background-color: #dae959;
+        }
+        #contents .article .cont3 {
+            height: 200px;
+            width: 33.3333%;
+            background-color: #31ffe7;
+        }
+        #contents .footer {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        #contents .footer .foot1 {
+            width: 20%;
+            height: 100px;
+            background-color: #3f0091;
+        }
+        #contents .footer .foot2 {
+            width: 80%;
+            height: 50px;
+            background-color: #f000d0;
+        }
+        #contents .footer .foot3 {
+            width: 80%;
+            height: 50px;
+            background-color: #1f0000;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <aside id="aside">로고</aside>
+        <contents id="contents">
+            <div class="slider">이미지 슬라이드</div>
+            <div class="article">
+                <div class="cont1">공지사항<br> 갤러리</div>
+                <div class="cont2">배너</div>
+                <div class="cont3">바로가기</div>
+            </div>
+            <footer class="footer">
+                <div class="foot1">로고</div>
+                <div class="foot2">하단 메뉴</div>
+                <div class="foot3">Copyright</div>
+            </footer>
+        </contents>
+    </div>
+
+</body>
+</html>
