@@ -1,38 +1,117 @@
 body {
     width: 100%;
+    overflow: hidden;
     height: 100vh;
-    background-color: pink;
-    background-image: url(../img/mouseEffect01-min.jpg);
     background-position: center center;
     background-size: cover;
 }
-body .img01{
-    background-image: url(../img/mouseEffect01-min.jpg);
+body.img01{
+    background-image: url(../img/mouseEffect01-1.jpg);
 }
-body .img02{
-    background-image: url(../img/mouseEffect02-min.jpg);
+body.img02{
+    background-image: url(../img/mouseEffect02-1.jpg);
 }
-body .img03{
+body.img03{
     background-image: url(../img/mouseEffect03-min.jpg);
 }
-body .img04{
+body.img04{
     background-image: url(../img/mouseEffect04-min.jpg);
 }
-body .img05{
+body.img05{
     background-image: url(../img/mouseEffect05-min.jpg);
 }
-body .img06{
+body.img06{
     background-image: url(../img/mouseEffect06-min.jpg);
 }
-body .img07{
+body.img07{
     background-image: url(../img/mouseEffect07-min.jpg);
 }
-body .img08{
-    backgr8ound-image: url(../img/mouseEffect08-min.jpg);
+body.img08{
+    background-image: url(../img/mouseEffect08-min.jpg);
 }
-body .img09{
+body.img09{
     background-image: url(../img/mouseEffect09-min.jpg);
 }
 body .img10{
     background-image: url(../img/mouseEffect10-min.jpg);
+}
+body::after {
+    content: '';
+    position: absolute;
+    left: 0; top:0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+body.bg01::after {
+    background: rgba(245, 219, 188, 0.401);
+}
+body.bg02::after {
+    background: rgba(186, 235, 195, 0.353);
+}
+body.bg03::after {
+    background: rgba(158, 99, 99, 0.87);
+}
+body.bg04::after {
+    background: rgba(224, 174, 174, 0.87);
+}
+body.bg05::after {
+    background: rgba(250, 226, 226, 0.87);
+}
+body.bg06::after {
+    background: rgba(83, 88, 20, 0.87);
+}
+body.bg07::after {
+    background: rgba(177, 175, 72, 0.87);
+}
+body.bg08::after {
+    background: rgba(181, 186, 96, 0.87);
+}
+body.bg09::after {
+    background: rgba(231, 240, 150, 0.87);
+}
+body.bg10::after {
+    background: rgba(237, 255, 217, 0.87);
+}
+
+/* header */
+#header {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+#header h1 {
+    margin-bottom: 10px;
+}
+#header p {
+    margin-bottom: 10px;
+}
+#header a {
+    color: #fff;
+}
+#header li {
+    display: inline-block;
+}
+#header li a {
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    color: #fff;
+}
+#header li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+/* footer */
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+#footer a {
+    color: #fff;
 }
