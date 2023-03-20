@@ -8,58 +8,117 @@
 </head>
 <body>
 <script>
+//선언
 {
-    for(let i=1; i<=10; i++){
-        document.write(i);
+    function func(){
+        document.write("tlfl");
     }
+    func();
 }
-document.write("<br>")
+//익명
 {
-    for(let i=2; i<=10; i++){
-        if(i % 2 == 0){
-            document.write(i);
+    const func = function (){
+        document.write("tlfdm");
+    }
+    func();
+}
+//매개
+{
+    function func(str){
+        document.write(str);
+    }
+    func("111");
+}
+//리턴
+{
+    function func(){
+        const str = "222";
+        return str;
+    }
+    document.write("sdf");
+}
+//
+//익매리
+{
+    const func = (str) => {
+        return str;
+    }
+    document.write(func("ddd"));
+}
+//익매리괄
+{
+    const func = str => {
+        return str;
+    }
+    document.write(func("333"));
+}
+//익매리괄리
+{
+    const func = str => str;
+    document.write(func("dfdf"));
+}
+//선매리괄리
+{
+    func = str => str;
+    document.write(func("333"));
+}
+document.write("<br>");
+
+
+document.write("<br>");
+// 2. 100칸 테이블
+{
+    let table = "<table border = '1'>"
+        for(let i=1; i<=10; i++){
+            table += "<tr>"
+                for(let j=1; j<=10; j++){
+                    table += "<td>"+i+"</td>"
+                }
+                table += "</tr>"
         }
+        table += "</table>"
+        document.write(table);
+}
+
+document.write("<br>");
+// 3. 구구단(20단)
+{
+    let i = 20;
+    document.write(i + "단");
+    for(let j=1; j<=9; j++){
+        document.write(i + "*" + j + "=" + i * j);
     }
 }
-document.write("<br>")
+
+document.write("<br>");
+// 4. 1-100까지 짝수의 합
 {
+    let sum = 0;
     for(let i=1; i<=10; i++){
-        if(i % 2 == 0){
+        sum += i;
+    }
+    document.write(sum);
+}
+document.write("<br>");
+// 5. 1-100까지 출력(짝수는 파란색 홀수는 빨간색)
+{
+    for(let i = 1; i<=100; i++){
+        if (i % 2 == 1) {
             document.write("<span style = 'color:red'>"+i+"</span>");
         } else {
             document.write("<span style = 'color:blue'>"+i+"</span>");
         }
     }
 }
-document.write("<br>")
-{
-    const num = [100,200,300,400,500,600,700,800,900];
-
-    for(let i=0; i<num.length; i++){
-        document.write(num[i] + ",");
-    }
-}
-document.write("<br>")
-{
-    const num = [100,200,300,400,500,600,700,800,900];
-    num.forEach(el => {
+document.write("<br>");
+// 6. 배열안에 1-10까지 데이터가 있음 (forEach문을 통해 출력하시오)
+{   
+    const arr = [1,2,3,4,5,6,7,8,9,10];
+    arr.forEach(el => {
         document.write(el);
     });
 }
-document.write("<br>")
-{
-    const num = [100,200,300,400,500,600,700,800,900];
-    for(let key in num){
-        document.write(num[key]);
-    }
-}
-document.write("<br>")
-{
-    const num = [100,200,300,400,500,600,700,800,900];
-    for(let i of num){
-        document.write(i);
-    }
-}
+
 </script>
 </body>
 </html>
