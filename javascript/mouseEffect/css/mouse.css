@@ -12,7 +12,7 @@ body.img02{
     background-image: url(../img/mouseEffect02-1.jpg);
 }
 body.img03{
-    background-image: url(../img/mouseEffect03-min.jpg);
+    background-image: url(../img/mouseEffect03-1.jpg);
 }
 body.img04{
     background-image: url(../img/mouseEffect04-min.jpg);
@@ -50,7 +50,7 @@ body.bg02::after {
     background: rgba(186, 235, 195, 0.353);
 }
 body.bg03::after {
-    background: rgba(158, 99, 99, 0.87);
+    background: rgba(255, 255, 255, 0.436);
 }
 body.bg04::after {
     background: rgba(224, 174, 174, 0.87);
