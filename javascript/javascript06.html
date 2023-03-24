@@ -47,145 +47,181 @@
 
     <main id="main">
         <div class="container">
-            <div class="main__menu">
+            <div class="main__menu"> 
                 <ul>
-                    <li><a href="#">01.<strong>array.prototype.at() </strong>               메서드는 지정한 숫자(index)를 받아, 배열에서 해당 되는 인덱스의 요소를 반환합니다.</li>
-                    <li><a href="#">02.<strong>array.prototype.concat() </strong>           메서드는 둘 이상의 배열을 결합하여, 새로운 배열을 반환합니다.</li>
-                    <li><a href="#">03.<strong>array.prototype.copyWithin() </strong>       메서드는 배열의 일부를 얕게 복사한 뒤, 동일한 배열의 다른 위치에 덮어쓰고 그 배열을 반환합니다</li>
-                    <li><a href="#">04.<strong>array.prototype.entries() </strong>          메서드는 배열의 각 인덱스에 대한 속성 값을 반환합니다</li>
-                    <li><a href="#">05.<strong>array.prototype.keys() </strong>             메서드는 배열의 각 인덱스에 대한 키 값을 반환합니다.</li>
-                    <li><a href="#">06.<strong>array.prototype.fill() </strong>             메서드는 배열의 시작 인덱스부터 끝 인덱스까지 하나의 값으로 반환합니다.</li>
-                    <li><a href="#">📌07.<strong>array.prototype.find() </strong>             메서드는 주어진 판별 함수를 만족하는 첫 번째 요소의 값을 반환합니다</li>
-                    <li><a href="#">08.<strong>array.prototype.findIndex() </strong>        메서드는 주어진 판별 함수를 만족하는 첫 번째 요소의 값을 인덱스로 반환합니다</li>
-                    <li><a href="#">09.<strong>array.prototype.findLast() </strong>         메서드는 주어진 판별 함수를 만족하는 첫 번째 요소의 값을 역순으로 반환합니다</li>
-                    <li><a href="#">10.<strong>array.prototype.findLastIndex() </strong>    메서드는 주어진 판별 함수를 만족하는 첫 번째 요소의 값을 역순 인덱스로 반환합니다</li>
-                    <li><a href="#">11.<strong>array.prototype.flat() </strong>             메서드는 중첩된 배열을 하나의 배열로 반환합니다.</li>
-                    <li><a href="#">12.<strong>array.prototype.flatMap() </strong>          메서드는 먼저 매핑함수를 사용해 각 엘리먼트에 대해 map 수행 후, 결과를 새로운 배열로 평탄화합니다.</li>
-                    <li><a href="#">📌13.<strong>array.prototype.forEach() </strong>          메서드는 주어진 함수 조건을 배열 요소 각각에 대해 실행하고, 그 결과를 반환합니다.</li>
-                    <li><a href="#">14.<strong>array.prototype.filter() </strong>           메서드는 주어진 함수 조건에 맞는 모든 요소를 새로운 배열로 반환합니다.</li>
-                    <li><a href="#">15.<strong>array.prototype.every() </strong>            메서드는 주어진 함수를 모두 통과하는지 확인하고, 불린(true, false)로 반환합니다.</li>
-                    <li><a href="#">📌📌📌16.<strong>array.prototype.map() </strong>              메서드는 주어진 함수를 호출하고, 그 결과를 모아서 만든 새로운 배열을 반환합니다.</li>
-                    <li><a href="#">17.<strong>array.prototype.some() </strong>             메서드는 주어진 판별 함수를 통과하는지 테스트하여, 그 그결과를 불린(true, false)로 반환합니다.</li>
-                    <li><a href="#">18.<strong>array.prototype.includes() </strong>         메서드는 배열 포함 여부를 검색하여, 불린(true, false)을 반환합니다.</li>
-                    <li><a href="#">📌19.<strong>array.prototype.indexOf() </strong>          메서드는 배열을 검색하고, 위치값(숫자)을 반환합니다.</li>
-                    <li><a href="#">20.<strong>array.prototype.lastIndexOf() </strong>      메서드는 역순으로 배열을 검색하고, 위치값(숫자)을 반환합니다.</li>
-                    <li><a href="#">📌21.<strong>array.prototype.join() </strong>             메서드는 배열의 요소를 추가하여, 하나의 문자열로 반환합니다.</li>
-                    <li><a href="#">22.<strong>array.prototype.pop() </strong>              메서드는 배열 마지막 요소를 제거하고, 제거한 요소를 반환합니다.</li>
-                    <li><a href="#">📌23.<strong>array.prototype.push() </strong>             메서드는 배열 끝에 요소를 추가하고, 배열의 새로운 길이값을 반환합니다.</li>
-                    <li><a href="#">24.<strong>array.prototype.reduce() </strong>           메서드는 배열의 각 요소를 실행하고, 하나의 결과값을 반환합니다.</li>
-                    <li><a href="#">25.<strong>array.prototype.reduceRight() </strong>      메서드는 배열의 각 요소를 마지막부터 실행하고, 하나의 결과값을 반환합니다.</li>
-                    <li><a href="#">26.<strong>array.prototype.reverse() </strong>          메서드는 배열 요소의 순서를 반대로 하고, 반대로 된 배열을 반환합니다.</li>
-                    <li><a href="#">📌27.<strong>array.prototype.shift() </strong>            메서드는 배열 처음 요소를 제거하고, 제거한 요소를 반환합니다.</li>
-                    <li><a href="#">📌28.<strong>array.prototype.unshift() </strong>          메서드는 배열 앞에 요소를 추가하고, 배열의 새로운 길이 값을 반환합니다.</li>
-                    <li><a href="#">📌29.<strong>array.prototype.slice() </strong>            메서드는 배열 시작 위치에서 종료 위치 값을 추출하여, 새로운 배열을 반환합니다.</li>
-                    <li><a href="#">📌30.<strong>array.prototype.sort() </strong>             메서드는 배열의 요소를 적절한 위치에 정렬한 후, 그 배열을 반환합니다    </li>
-                    <li><a href="#">31.<strong>array.prototype.toLocaleString() </strong>   메서드는 배열의 요소를 문자열로 반환합니다.</li>
-                    <li><a href="#">32.<strong>array.prototype.toString() </strong>         메서드는 데이터를 배열로 변환하고, 새로운 배열을 반환합니다.</li>
-                    <li><a href="#">33.<strong>array.prototype.values() </strong>           메서드는 배열 각 인덱스에 대한 값을 객체로 반환합니다.</li>
+                    <li><a href="#sample01">01. <strong>string.prototype.at()</strong> : 메서드는 지정한 숫자(index)를 받아, 문자열에서 해당 되는 인덱스의 요소를 반환합니다.</a></li>
+                    <li><a href="#sample02">02. <strong>string.prototype.charAt()</strong> : 메서드는 지정한 숫자(index)를 받아, 문자열에서 해당 되는 인덱스의 단일문자를 반환합니다.</a></li>
+                    <li><a href="#sample03">03. <strong>string.prototype.charCodeAt()</strong>        메서드는 지정한 숫자(index)를 받아, 문자열에서 해당 되는 인덱스의 유니코드 정수 값을 반환합니다.</a></li>
+                    <li><a href="#sample04">04. <strong>string.prototype.charPointAt()</strong>       메서드는 지정한 숫자(index)를 받아, 문자열에서 해당 되는 인덱스의 유니코드 포인트 정수 값을 반환합니다.</a></li>
+                    <li><a href="#sample05">05. <strong>string.prototype.concat()</strong>            메서드는 매개변수로 전달된 문자열을 받어, 결합된 새로운 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample06">📌06. <strong>string.prototype.includes()</strong>:글씨를_쓰는_손:          메서드는 문자열 포함 여부를 검색하여, 불린(true, false)을 반환합니다.</a></li>
+                    <li><a href="#sample07">📌07. <strong>string.prototype.indexOf()</strong>:글씨를_쓰는_손:           메서드는 문자열을 검색하여, 주어진 값과 일치하는 첫 번째 위치값(index)을 반환합니다.</a></li>
+                    <li><a href="#sample08">📌08. <strong>string.prototype.lastIndexOf()</strong>       메서드는 문자열을 역순으로 검색하여, 주어진 값과 일치하는 첫 번째 위치값(index)을 반환합니다.</a></li>
+                    <li><a href="#sample09">09. <strong>string.prototype.localeCompare()</strong>     메서드는 문자열과 문자열을 비교하여, 수치(음수, 양수, 0)을 반환합니다.</a></li>
+                    <li><a href="#sample10">📌10. <strong>string.prototype.match()</strong>:글씨를_쓰는_손:             메서드는 문자열(정규식)을 검색하고, 문자열(배열)을 반환합니다. </a></li>
+                    <li><a href="#sample11">11. <strong>string.prototype.matchAll()</strong>          메서드는 문자열(정규식)을 검색하고, 일치하는 모든 문자열(배열)을 반환합니다. </a></li>
+                    <li><a href="#sample12">12. <strong>string.prototype.normalize()</strong>         메서드는 주어진 문자열을 정규화된 형태로 반환합니다.</a></li>
+                    <li><a href="#sample13">13. <strong>string.prototype.padEnd()</strong>            메서드는 주어진 길이에 맞게 뒤 문자열을 채우고, 새로운 문자열을 반환합니다. </a></li>
+                    <li><a href="#sample14">14. <strong>string.prototype.padStart()</strong>          메서드는 주어진 길이에 맞게 앞 문자열을 채우고, 새로운 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample15">15. <strong>string.prototype.repeat()</strong>            메서드는 주어진 횟수만큼 반복 복사하여, 새로운 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample16">16. <strong>string.prototype.replace()</strong>           메서드는 문자열에서 특정 문자열을 교체하여, 새로은 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample17">17. <strong>string.prototype.replaceAll()</strong>        메서드는 문자열에서 특정 문자열을 모두 교체하여, 새로은 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample18">📌18. <strong>string.prototype.search()</strong>:글씨를_쓰는_손:            메서드는 문자열(정규식)을 검색하고, 위치값(숫자)을 반환합니다.</a></li>
+                    <li><a href="#sample19">19. <strong>string.prototype.slice()</strong>:글씨를_쓰는_손::글씨를_쓰는_손:             메서드는 문자열에서 시작 위치에서 종료 위치 값을 추출하여, 새로운 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample20">20. <strong>string.prototype.substring()</strong>:글씨를_쓰는_손:         메서드는 문자열에서 시작 위치에서 종료 위치 값을 추출하여, 새로운 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample21">21. <strong>string.prototype.substr()</strong>            메서드는 문자열에서 시작 위치에서 길이 값을 추출하여, 새로운 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample22">22. <strong>string.prototype.split()</strong>:글씨를_쓰는_손::글씨를_쓰는_손::글씨를_쓰는_손:             메서드는 문자열을 구분자로 구분하고, 여러 개의 문자열(배열)을 반환합니다.</a></li>
+                    <li><a href="#sample23">23. <strong>string.prototype.startsWith()</strong>        메서드는 시작하는 문자열에서 특정 문자열로 시작하는 확인하여, 그 결과를 불린(true, false)로 반환합니다.</a></li>
+                    <li><a href="#sample24">24. <strong>string.prototype.endsWith()</strong>          메서드는 끝나는 문자열에서 특정 문자열로 끝나는지 확인하여, 그 결과를 불린(true, false)로 반환합니다.</a></li>
+                    <li><a href="#sample25">25. <strong>string.prototype.toLocaleLowerCase()</strong> 메서드는 문자열을 소문자로 설정하고, 로케일 소문자 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample26">26. <strong>string.prototype.toLocaleUpperCase()</strong> 메서드는 문자열을 대문자로 설정하고, 로케일 대문자 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample27">27. <strong>string.prototype.toLowerCase()</strong>       메서드는 문자열을 소문자로 설정하고, 소문자 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample28">28. <strong>string.prototype.toUpperCase()</strong>       메서드는 문자열을 대문자로 설정하고, 대문자 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample29">29. <strong>string.prototype.toString()</strong>          메서드는 데이터를 문자열로 변환하고, 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample30">30. <strong>string.prototype.trim()</strong>:글씨를_쓰는_손:              메서드는 문자열의 앞/뒤 공백을 제거하고, 새로운 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample31">31. <strong>string.prototype.trimEnd()</strong>           메서드는 문자열의 앞 공백을 제거하고, 새로운 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample32">32. <strong>string.prototype.trimStart()</strong>         메서드는 문자열의 뒤 공백을 제거하고, 새로운 문자열을 반환합니다.</a></li>
+                    <li><a href="#sample33">33. <strong>string.prototype.valueOf()</strong>           메서드는 객체의 원시값을 반환합니다.</a></li>
                 </ul>
             </div>
-
             <div class="main__sample">
-                <div id="sample01" class="sample">
-                    <h3>배열 메서드 : join()</h3>
-                    <p>join() : 배열 요소 문자열 결합, 반환은 문자열입니다.</p>
+                <!-- sample06 -->
+                <div id="sample06" class="sample">
+                    <h3>06. includes()</h3>
+                    <div class="notice">"문자열".indexOf(검색값, [위치값])</div>
+                    <ul>
+                        <li>문자열 포함 여부를 검색하여, 불린(true, false)을 반환합니다.</li>
+                        <li>대소문자를 구별합니다.</li>
+                    </ul>
                     <div class="script">
-<pre><code class="language-js">{
-    const arrNum = [100,200,300,400,500];
-    const arrpush = arrNum.push(600);
-
-    console.log(arrNum); //100200300400500600
-
-    const arrNum2 = [100,200,300,400,500];
-    const arrpush2 = arrNum.pop(600);
-
-    console.log(arrNum2); //100200300400500
+<pre><code class="Language-js">{
+    "javascript reference".includes("javascript");  //true
+    "javascript reference".includes("j");  //true
+    "javascript reference".includes("J");  //false
+    "javascript reference".includes("a");  //true
+    "javascript reference".includes("reference");  //true
+    "javascript reference".includes("reference", 11);  //true
+    "javascript reference".includes("reference", 12);  //false
 }
-</pre></code>
+</code></pre>
                     </div>
                 </div>
+                <!-- sample06 -->
+                <!-- sample07 -->
+                <div id="sample07" class="sample">
+                    <h3>07. indexOf()</h3>
+                    <div class="notice">"문자열".indexOf(검색값, [위치값])</div>
+                    <ul>
+                        <li>문자열을 검색하여, 주어진 값과 일치하는 첫 번째 위치값(index)을 반환합니다.</li>
+                        <li>문자열을 검색하여, 주어진 값과 일치하는 것이 없으면 -1을 반환합니다.</li>
+                        <li>대소문자를 구별합니다.</li>
+                    </ul>
+                    <div class="script">
+<pre><code class="Language-js">{
+    "javascript reference".indexOf("javascript");   //0
+    "javascript reference".indexOf("javascripts");   //-1
+    "javascript reference".indexOf("j");   // 0
+    "javascript reference".indexOf("J");   // -1
+    "javascript reference".indexOf("a");   // 1
+    "javascript reference".indexOf("ja");   // 0
+    "javascript reference".indexOf("jv");   // -1
+    "javascript reference".indexOf("reference");   // 11
+    "javascript reference".indexOf("r");   // 6
+    "javascript reference".indexOf("re");   // 11
+    "javascript reference".indexOf("javascript", 0);   // 0
+    "javascript reference".indexOf("javascript", 1);   // -1
+    "javascript reference".indexOf("reference", 0);   // 11
+    "javascript reference".indexOf("reference", 11);   // 11
+    "javascript reference".indexOf("reference", 12);   // -1
+    "javascript reference".indexOf("r", 7);   // 11
+    "javascript reference".indexOf("r", 12);   // 15
+}
+</code></pre>
+                    </div>
+                </div>
+                <!-- sample07 -->
+                <!-- sample08 -->
+                <div id="sample08" class="sample">
+                    <h3>08. lastIndexOf()</h3>
+                    <div class="notice">"문자열".lastIndexOf(검색값, [위치값])</div>
+                    <ul>
+                        <li>문자열을 역순으로 검색하여, 주어진 값과 일치하는 첫 번째 위치값(index)을 반환합니다.</li>
+                        <li>문자열을 역순으로 검색하여, 주어진 값과 일치하는 것이 없으면 -1을 반환합니다.</li>
+                        <li>대소문자를 구별합니다.</li>
+                    </ul>
+                    <div class="script">
+<pre><code class="Language-js">{
+    "javascript reference".lastIndexOf("javascript");   //0
+    "javascript reference".lastIndexOf("javascripts");   //-1
+    "javascript reference".lastIndexOf("j");   //0
+    "javascript reference".lastIndexOf("a");   //3
+    "javascript reference".lastIndexOf("jv");   //-1
+    "javascript reference".lastIndexOf("reference");   //11
+    "javascript reference".lastIndexOf("r");   //15
+}
+</code></pre>
+                    </div>
+                </div>
+                <!-- sample08 -->
+                <!-- sample10 -->
+                <div id="sample10" class="sample">
+                    <h3>10. match()</h3>
+                    <div class="notice">"문자열".search(검색값)<br>"문자열".search(정규식표현)</div>
+                    <ul>
+                        <li>문자열(정규식)을 검색하고, 문자열(배열)을 반환합니다.</li>
+                        <li>문자열을 검색하여, 주어진 값과 일치하는 것이 없으면 null을 반환합니다.</li>
+                        <li>대소문자를 구별합니다.</li>
+                        <li>match() 메서드는 문자값(배열)을 반환하고, search() 메서드는 위치값(숫자)를 반환하는 것이 다릅니다.</li>
+                    </ul>
+                    <div class="script">
+<pre><code class="Language-js">{
+    "javascript reference".match("javascript");     //"javascript"
+    "javascript reference".match("reference");     //"reference"
+    "javascript reference".match("r");     //"r"
+    "javascript reference".match("R");     //null
+    "javascript reference".match(/reference/); //reference
+    "javascript reference".match(/Reference/); //null
+    "javascript reference".match(/Reference/i); //reference
+    "javascript reference".match(/Reference/g); //reference
+    "javascript reference".match(/r/); //r
+    "javascript reference".match(/r/g); //r r r
+    "javascript reference".match(/w/g); //null
+    "javascript reference".match(/R/ig); //r r r
+}
+</code></pre>
+                    </div>
+                </div>
+                <!-- sample10 -->
+                <!-- sample18 -->
+                <div id="sample18" class="sample">
+                    <h3>18. search()</h3>
+                    <div class="notice">"문자열".search(검색값)<br>"문자열".search(정규식표현)</div>
+                    <ul>
+                        <li>문자열(정규식)을 검색하고, 위치값(숫자)을 반환합니다.</li>
+                        <li>문자열을 검색하여, 주어진 값과 일치하는 것이 없으면 -1을 반환합니다.</li>
+                        <li>대소문자를 구별합니다.</li>
+                    </ul>
+                    <div class="script">
+<pre><code class="Language-js">{
+    "javascript reference".search("javascript");//0
+    "javascript reference".search("reference");//11
+    "javascript reference".search("r");//6
+    "javascript reference".search("a");//1
+    "javascript reference".search("jv");//-1
+    "javascript reference".search("J");//-1
+    "javascript reference".search(/reference/);//11(정규식 표현)
+    "javascript reference".search(/Reference/);//-1
+    "javascript reference".search(/Reference/i);//11(i는 소문자로 인식해줍니다.)
+    "javascript reference".search(/[a-z]/g);//0
+}
+</code></pre>
+                    </div>
+                </div>
+                <!-- sample18 -->
             </div>
         </div>
     </main>
     <!-- //main -->
-
-
-            <div class="main__sample">
-                <div id="sample01" class="sample">
-                    <h3>배열 메서드 : push() / pop() : push는 반환값이 숫자임</h3>
-                    <p>push() 메서드는 배열 마지막 요소에 요소를 추가하고,
-                        pop() 메서드는 배열 마지막 요소를 삭제합니다.
-                    </p>
-                    <div class="script">
-<pre><code class="language-js">{
-    const arrNum = [100,200,300,400,500];
-    const arrpush = arrNum.push(600);
-
-    console.log(arrNum); //100200300400500600
-
-    const arrNum2 = [100,200,300,400,500];
-    const arrpush2 = arrNum.pop(600);
-
-    console.log(arrNum2); //100200300400500
-}
-</pre></code>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- //main -->
-
-    <div class="main__sample">
-        <div id="sample02" class="sample">
-            <h3>배열 메서드 : unshift/ shift()</h3>
-            <p>unshift() 메서드는 배열 처음 요소에 요소를 추가하고,
-                shift() 메서드는 배열 처음 요소를 삭제합니다.
-            </p>
-            <div class="script">
-<pre><code class="language-js">{
-const arrNum1 = [100,200,300,400,500];
-const arrpush1 = arrNum1.unshift(600);
-
-console.log(arrNum1); //100200300400500600
-
-const arrNum2 = [100,200,300,400,500];
-const arrpush2 = arrNum2.shift();
-
-console.log(arrNum2); //100200300400500
-}
-</pre></code>
-            </div>
-        </div>
-    </div>
-
-        <div class="main__sample">
-        <div id="sample02" class="sample">
-            <h3>배열 메서드 : unshift/ shift()</h3>
-            <p>unshift() 메서드는 배열 처음 요소에 요소를 추가하고,
-                shift() 메서드는 배열 처음 요소를 삭제합니다.
-            </p>
-            <div class="script">
-<pre><code class="language-js">{
-const arrNum1 = [100,200,300,400,500];
-const arrpush1 = arrNum1.unshift(600);
-
-console.log(arrNum1); //100200300400500600
-
-const arrNum2 = [100,200,300,400,500];
-const arrpush2 = arrNum2.shift();
-
-console.log(arrNum2); //100200300400500
-}
-</pre></code>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-</main>
-<!-- //main -->
 
     <footer id="footer">
         <a href="mailto:yuna243441@naver.com">yuna243441@naver.com</a>
