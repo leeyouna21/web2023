@@ -34,25 +34,25 @@ body {
 #header h1 a {
     font-size: 80px;
     font-weight: 800;
-    color: #0243f1;
+    color: #ff8fcc;
 }
 #header nav ul li {
     display: inline;
 }
 #header nav ul li a {
-    border: 1px dashed #0243f1;
-    color: #0243f1;
+    border: 1px dashed #ff8fcc;
+    color: #ff8fcc;
     padding: 10px 20px;
     margin: 6px 3px;
     display: inline-block;
     transition: background-color 0.3s, color 0.3s
 }
 #header nav ul li a:hover {
-    background-color: #0243f1;
+    background-color: #ff8fcc;
     color: #fff;
 }
 #header nav ul li.active a {
-    background-color: #0243f1;
+    background-color: #ff8fcc;
     color: #fff;
 }
 @media (max-width: 600px){
@@ -106,7 +106,7 @@ body {
 }
 .main__desc p {
     margin-bottom: 15px;
-    border-left: 5px solid #0243f1;
+    border-left: 5px solid #ff8fcc;
     padding-left: 10px;
     background-color: #f5f5f5;
     padding: 12px 10px 10px 20px;
@@ -128,7 +128,7 @@ body {
     transform: all 0.2s;
 }
 .main__desc a:hover {
-    border-color: #0243f1;
+    border-color: #ff8fcc;
     background-color: #d1ddff;
 }
 .main__sample {
@@ -181,7 +181,7 @@ body {
     content: '';
     width: 5px;
     height: 5px;
-    background-color: #0243f1;
+    background-color: #ff8fcc;
     position: absolute;
     left: 0;
     top: 9px;
