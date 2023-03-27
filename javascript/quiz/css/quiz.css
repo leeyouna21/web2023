@@ -136,8 +136,22 @@
     transition: all 0.3s;
     font-weight: bold;
 }
+.quiz__answer .next {
+    background-color: #c9ff83;
+    border: 6px ridge #cacaca;
+    width: 100%;
+    font-family: 'PyeongChang';
+    padding: 10px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
 .quiz__answer .confirm:hover {
     background-color: #d9ffa7;
+}
+.quiz__answer .next:hover {
+    background-color: #b4ff51;
 }
 .quiz__answer .result {
     background-color: #fff;
