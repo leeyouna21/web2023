@@ -31,13 +31,11 @@
                     <div class="quiz__question"></div>
                     <div class="quiz__view">
                         <div class="dog__wrap">
+                            <em></em>
+                            <span></span>
+                            <p></p>
                             <div class="true">정답입니다!</div>
                             <div class="false">틀렸습니다!</div>
-                            <div class="search__info">
-                                <div>
-                                    문제: <span>0</span>개
-                                </div>
-                            </div>
                             <div class="card-container">
                                 <div class="dog">
                                     <div class="head">
@@ -82,6 +80,7 @@
                         <button class="next">Next Quiz</button>
                     </div>
                     <div class="quiz__desc"></div>
+                    <div class=quiz__info>🙈  점</div>
                 </div>
             </div>
         </div>
@@ -151,10 +150,15 @@
         const quizQuestion = quizWrap.querySelector(".quiz__question");
         const quizChoice = quizWrap.querySelector(".quiz__choice");
         const dogWrap = quizWrap.querySelector(".dog__wrap");
+        const dogWrapem = quizWrap.querySelector(".dog__wrap em");
+        const dogWrapp = quizWrap.querySelector(".dog__wrap p");
+        const dogWrapspan = quizWrap.querySelector(".dog__wrap span");
         const quizAnswer = quizWrap.querySelector(".quiz__answer");
         const quizNext = quizWrap.querySelector(".quiz__answer .next");
         const quizDesc = quizWrap.querySelector(".quiz__desc");
+        const quizInfos = quizWrap.querySelector(".quiz__info");
 
+        
 
         let quizCount = 0;
         let quizScore = 0;
@@ -166,7 +170,7 @@
                 <em>${quizInfo[index].infoTime}</em>
             `;
             let quesetionTag = `
-            <em>1</em>.
+            <em>${index+1}</em>.
             <span>${quizInfo[index].infoQuestion}</span>
             `;
 
@@ -192,6 +196,11 @@
             정답은 ${quizInfo[index].infoAnswer}입니다.
             ${quizInfo[index].infoDesc}
             `;
+            
+            dogWrapem.textContent = "총 갯수는   "+quizInfo.length +"개 입니다.";
+            dogWrapspan.textContent = `현재까지 푼 문제는 ${quizCount+1} 개 입니다.`;
+            dogWrapp.textContent = `맞힌 갯수는 ${quizScore} 개 입니다.`; 
+
 
 
             quizTitle.innerHTML = typeTag;
@@ -229,11 +238,15 @@
 
             if(userAnswer == currentAnswer){
                 dogWrap.classList.add("like");
+                quizScore++
             } else {
                 dogWrap.classList.add("dislike");
             }
             quizAnswer.style.display = "block";
             quizDesc.style.display = "block";
+
+            dogWrapp.textContent = `맞힌 갯수는 ${quizScore} 개 입니다.`; 
+
         }
         console.log(quizScore);
 
@@ -241,11 +254,17 @@
         //정답 확인
         quizNext.addEventListener("click", () => {
             quizCount++;
-            updateQuiz(quizCount);
-
+            
+            if(quizCount==quizInfo.length) {
+                quizInfos.textContent = Math.ceil((quizScore / quizInfo.length) * 100) + "점";
+            } else {
+                updateQuiz(quizCount);
+            }
             dogWrap.classList.remove("like","dislike")
-        })
 
+            dogWrapspan.textContent = `현재까지 푼 문제는 ${quizCount+1} 개 입니다.`;
+        });
+        
 
     </script>
 </body>
