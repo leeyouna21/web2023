@@ -75,7 +75,7 @@ body {background:#f1f4fb url(../img/body_bg.gif)}
 #header img {width: 190px; display: block; margin: 0 auto; padding-right: 50px;}
 
 #header h1{
-	color: #000000;
+	color: #ffc811;
 	margin-bottom: 0px;
 	margin-top: 20px;
 	font-weight: 500;
@@ -134,24 +134,24 @@ pre.pre-show{
 
 .header_icon {text-align: center;}
 .header_icon li {display: inline; margin: 0 2px;}
-.header_icon li a {position: relative; background-color: #ffa7e2; width: 60px; height: 60px; border-radius: 50%; display: inline-block; font-size: 28px; color: #fff; line-height: 60px; transition: box-shadow 0.3s ease;}
+.header_icon li a {position: relative; background-color: #ffc811; width: 60px; height: 60px; border-radius: 50%; display: inline-block; font-size: 28px; color: #fff; line-height: 60px; transition: box-shadow 0.3s ease;}
 .header_icon li a span {
     position: absolute; left: 50%; top: -40px; transform: translateX(-50%);
-    font-size: 12px; line-height: 1.6; background: #ffa7e2; padding: 3px 9px;
+    font-size: 12px; line-height: 1.6; background: #ffc811; padding: 3px 9px;
     border-radius: 6px 0; opacity: 0; transition: opacity 0.3s ease, top 0.3s ease;
 }
 .header_icon li a span:before {
     content: '';
     position: absolute; left: 50%; bottom: -5px;
     transform: translateX(-50%);
-    border-top: 5px solid #ffa7e2;
+    border-top: 5px solid #ffc811;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
 }
 .header_icon li a:hover span {opacity: 1; top: -33px;}
 .header_icon li a:hover {
     box-shadow: 
-        0 0 0 3px rgba(97,148,189,0.9) inset,
+        0 0 0 3px #ffc811 inset,
         0 0 0 100px rgba(0,0,0,0.1) inset;
 }
 
@@ -165,7 +165,7 @@ padding: 8px 12px;
     vertical-align: middle; text-align: center;
 }
 .table .info {
-    background-color: #d9edf7 !important;
+    background-color: #ffc811 !important;
 }
 .table.ve td {vertical-align: middle; text-align: center;}
 .table.ce td {text-align: center;}
@@ -224,7 +224,7 @@ padding: 8px 12px;
 	background: #ffd800;
 }
 .dodgerBlue {
-	background: #388bd1;
+	background: #ffc811;
 }
 .skyBlue {
 	background: #a1def8;
@@ -283,7 +283,7 @@ padding: 8px 12px;
 	float: left;
 }
 .demo-slide .bg{
-	background: #aebab6;
+	background: #ffc811;
 	margin-right: 1px;
 	height: 100%;
 }
@@ -353,7 +353,7 @@ background: url('../img/AjaxLoader.gif') no-repeat center center #aebab6;
 #changelog .log{
 	margin-bottom: 30px;
 	padding-bottom: 30px;
-	border-bottom: 1px solid #e1e6dd;
+	border-bottom: 1px solid #ffc811;
 }
 /* Faq */
 #faq dt {
@@ -431,11 +431,11 @@ background: url('../img/AjaxLoader.gif') no-repeat center center #aebab6;
 	}
 	#header {
 		background-image: none;
-		background-color: #9fd8f8;
+		background-color: #ffc811;
 		padding: 20px 0 30px;
 	}
 	#header h1{
-	color: #3692b8;
+	color: #ffc811;
 	
 
 }
@@ -457,7 +457,7 @@ background: url('../img/AjaxLoader.gif') no-repeat center center #aebab6;
 	}
 	#header {
 		background-image: none;
-		background-color: #9fd8f8;
+		background-color: #ffc811;
 		padding: 20px 0 30px;
 	}
 	#header h1{
@@ -488,7 +488,6 @@ background: url('../img/AjaxLoader.gif') no-repeat center center #aebab6;
 
 	td:nth-of-type(2):before { content: "" ;font-weight: bold;}
     
-   
 }
 
 
