@@ -3,8 +3,8 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #262626;
-    color: #fff;
+    background-color: #fffbac;
+    color: #000000;
     padding: 10px;
     width: 100%;
     z-index: 1000;
@@ -13,7 +13,7 @@
 }
 #header::before {
     content: '';
-    border: 4px ridge #a3a3a3;
+    border: 4px ridge rgb(255, 205, 124);
     position: absolute;
     left: 5px;
     top: 5px;
@@ -28,7 +28,7 @@
     position: relative;
 }
 #header h1 a {
-    color: #fff;
+    color: #000000;
 }
 #header h1 em {
     font-size: 0.5em;
@@ -42,15 +42,15 @@
     position: relative;
 }
 #header li a {
-    color: #fff;
+    color: #000000;
     font-family: 'DungGeunMo';
-    border: 1px dashed #fff;
+    border: 1px dashed #ffdab4;
     display: inline-block;
     padding: 5px;
 }
 #header li.active a,
 #header li a:hover {
-    background-color: #fff;
+    background-color: #ffdab4;
     color: #000;
 }
 
@@ -94,12 +94,12 @@
 .quiz__wrap .quiz {
     width: 500px;
     background-color: #fff;
-    border: 8px ridge #cacaca;
+    border: 8px ridge #ffc4c4;
     margin: 10px;
 }
 .quiz__title {
-    background-color: #e3edff;
-    border: 3px ridge #cacaca;
+    background-color: #ffc4c4;
+    border: 3px ridge #ffc4c4;
     border-bottom-width: 6px;
     padding: 5px;
     font-family: 'DungGeunMo';
@@ -138,7 +138,7 @@
 }
 .quiz__answer .next {
     background-color: #c9ff83;
-    border: 6px ridge #cacaca;
+    border: 6px ridge #ffc4c4;
     width: 100%;
     font-family: 'PyeongChang';
     padding: 10px 20px;
@@ -155,7 +155,7 @@
 }
 .quiz__answer .result {
     background-color: #fff;
-    border: 6px ridge #cacaca;
+    border: 6px ridge #ffc4c4;
     width: 100%;
     font-family: 'PyeongChang';
     padding: 10px 20px;
@@ -163,7 +163,7 @@
 }
 .quiz__answer .input {
     background-color: #fff;
-    border: 6px groove #cacaca;
+    border: 6px groove #ffc4c4;
     width: 100%;
     font-family: 'PyeongChang';
     padding: 10px 20px;
@@ -171,11 +171,11 @@
     margin-bottom: 10px;
 }
 .quiz__view {
-    border-bottom: 6px ridge #cacaca;
+    border-bottom: 6px ridge #ffc4c4;
     overflow: hidden;
 }
 .quiz__desc {
-    border-top: 6px ridge #cacaca;
+    border-top: 6px ridge #ffc4c4;
     padding: 20px;
     font-family: 'PyeongChang';
     background-color: #f5f5f5;
@@ -187,7 +187,7 @@
 }
 .quiz__choice {
     padding: 20px;
-    border-bottom: 6px ridge #cacaca;
+    border-bottom: 6px ridge #fff1bf;
     font-family: 'PyeongChang';
 }
 .quiz__choice label {
@@ -250,7 +250,7 @@
     height: 50px;
     line-height: 50px;
     border-radius: 10px;
-    font-family: 'suncheon';
+    font-family: 'DungGeunMo';
     color: #000;
 }
 .quiz__info::after {
@@ -265,7 +265,7 @@
 }
 .quiz__wrap__cbt {
     padding: 0 20px;
-    font-family: 'SCoreDream';
+    font-family: 'PyeongChang';
 }
 .cbt__conts {
     width: calc(100% - 300px);
@@ -273,8 +273,8 @@
 }
 .cbt__header {
     width: calc(100% - 300px);
-    background-color: #FFEBF4;
-    border: 5px ridge #FFEBF4;
+    background-color: #fffbac;
+    border: 5px ridge #fff649;
     margin-bottom: 20px;
     padding: 20px;
     display: flex;
@@ -284,6 +284,8 @@
 .cbt__time {
     position: relative;
     padding-left: 40px !important;
+    margin-bottom: 5px;
+    float: right;
 }
 .cbt__time::before {
     content: '';
@@ -297,6 +299,7 @@
 .cbt__submit {
     position: relative;
     padding-left: 40px !important;
+    float: right;
 }
 .cbt__submit::before {
     content: '';
@@ -310,10 +313,10 @@
 .cbt__header > div {
 }
 .cbt__header > div > div {
-    background-color: rgb(255, 124, 174);
+    background-color: rgb(255, 205, 124);
     display: inline-block;
     margin-left: 5px;
-    color: #ffffff;
+    color: #000000;
     padding: 3px 20px;
     border-radius: 20px;
 }
@@ -324,7 +327,7 @@
 }
 .cbt__quiz .cbt {
     width: 49%;
-    border: 5px ridge #ffafd3;
+    border: 5px ridge #feffaf;
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -335,11 +338,39 @@
     width: 280px;
     height: 800px;
     background-color: #fff;
-    border: 5px ridge #ffafd3;
+    border: 5px ridge #fcffaf;
+}
+.cbt__quiz .cbt.good {
+    position: relative;
+}
+.cbt__quiz .cbt.good::after {
+    content: '';
+    background-image: url(../img/correct.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.cbt__quiz .cbt.bad {
+    position: relative;
+}
+.cbt__quiz .cbt.bad::after {
+    content: '';
+    background-image: url(../img/bad.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top:0;
 }
 .cbt__info {
-    background-color: #FFEBF4;
-    border-bottom: 5px ridge #ffafd3;
+    background-color: #fcffaf;
+    border-bottom: 5px ridge #fcffaf;
     padding: 20px;
     text-align: center;
 }
@@ -371,7 +402,7 @@
     display: inline-block;
     text-align: center;
     margin-bottom: 1px;
-    background: #FFEBF4;
+    background: #fcdfb5;
     font-family: 'Helvetica Neue';
     margin-right: 10px;
     font-weight: bold;
@@ -408,6 +439,101 @@
     transform: translateY(-0.25em);
     width: 20px;
     color: #333031;
+}
+.cbt__question {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.cbt__question__img {
+    max-width: 400px;
+}
+.cbt__question__desc {
+    border: 3px solid #ffebbc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.cbt__selects {
+    margin-bottom: 15px;
+}
+.cbt__selects label{
+    display: flex;
+}
+.cbt__selects span {
+    font-size: 1rem;
+    padding: 10px 10px 10px 30px;
+    color: #444;
+    position: relative;
+}
+.cbt__selects span::before {
+    content:'1';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #444;
+    border-radius: 50%;
+    text-align: center;
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    line-height: 1.3;
+    font-size: 0.3em;
+    transition: all 0.25s;
+}
+.cbt__selects label:nth-of-type(1) span::before {
+    content: '1';
+} 
+.cbt__selects label:nth-of-type(2) span::before {
+    content: '2';
+} 
+.cbt__selects label:nth-of-type(3) span::before {
+    content: '3';
+} 
+.cbt__selects label:nth-of-type(4) span::before {
+    content: '4';
+} 
+.cbt__selects input{
+    position: absolute;
+    left: -9999px;
+}
+.cbt__selects input:checked + label span::before {
+    color: #fff;
+    box-shadow:inset 0 0 0 10px #000;
+    border-color: #000;
+}
+.cbt__desc {
+    background-color: #efffc5b2;
+    padding: 10px 20px 10px 40px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 40px;
+}
+.cbt__desc::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59' /%3E%3C/svg%3E%0A");
+}
+.cbt__keyword{
+    background-color: #e5ff9cb1;
+    padding: 10px 20px 10px 40px;
+    position: relative;
+    display: inline-block;
+    border-radius: 40px;
+
+}
+.cbt__keyword::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18' /%3E%3C/svg%3E%0A");
 }
 /* dog__wrap */
 .dog .tail, 
@@ -780,46 +906,75 @@
     animation: movetail 0.1s linear infinite alternate forwards;
 }
 .dislike {
-  background: #e3e3f5;
+background: #e3e3f5;
 }
 .dislike .ears::before {
-  transform: rotate(-50deg) translate(-7px, 2px);
+transform: rotate(-50deg) translate(-7px, 2px);
 }
 .dislike .ears::after {
-  transform: rotate(50deg) translate(7px, 2px);
+transform: rotate(50deg) translate(7px, 2px);
 }
 .dislike .face::before {
-  margin-top: 28px;
+margin-top: 28px;
 }
 .dislike .face::after {
-  height: 55px;
+height: 55px;
 }
 .dislike .eyes {
-  top: 38%;
+top: 38%;
 }
 .dislike .eyes::before,
 .dislike .eyes::after {
-  width: 18px;
-  height: 5px;
-  margin: 0px 14.5%;
-  transform: rotate(-37.5deg);
-  border-radius: 20px;
+width: 18px;
+height: 5px;
+margin: 0px 14.5%;
+transform: rotate(-37.5deg);
+border-radius: 20px;
 }
 .dislike .eyes::after {
-  transform: rotate(37.5deg);
+transform: rotate(37.5deg);
 }
 .dislike .teardrop {
-    animation: cry 0.1s ease-in 0.25s forwards;
+animation: cry 0.1s ease-in 0.25s forwards;
 }
 .dislike .nose {
-  top: 44%;
+top: 44%;
 }
 .dislike .mouth {
-  top: 42%;
+top: 42%;
 }
 .dislike .chin {
-  top: 52%;
+top: 52%;
 }
 .dislike .tail {
-  transform: rotate(0);
+transform: rotate(0);
+}
+
+/* 미디어 쿼리 */
+@media (min-width: 1400px) {
+    .cbt__quiz .cbt {
+        width: 32.3333%;
+    }
+}
+@media (max-width: 960px){
+    .cbt__quiz .cbt {
+        width: 100%
+    }
+}
+@media (max-width: 800px){
+    .cbt__aside {
+        position: relative;
+        display: none;
+    }
+    .cbt__header {
+        width: 100%;
+        flex-direction: column;
+    }
+    .cbt__header h2 {
+        margin-bottom: 10px;
+    }
+    .cbt__conts {
+        width: 100%;
+    }
+
 }
