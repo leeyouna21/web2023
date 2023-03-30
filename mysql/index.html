@@ -296,6 +296,20 @@ INSERT INTO members(youEmail, youName, youPass, youBirth, youAge, regTime) VALUE
 INSERT INTO members(youEmail, youName, youPass, youBirth, youAge, regTime) VALUES("aimee00418@gmail.com","권현정","1234","19830211","39","03140316");  
 </code></pre>
 
+<div class="bs-callout bs-callout-info"> <code>INSERT</code> <code>INTO</code> 테이블명(필드명) <code>VALUES</code></div>
+<pre><code class="language-js">
+INSERT INTO reviews(memberID, youText, regTime) VALUES("4","나이스한 정보","1233");
+INSERT INTO reviews(memberID, youText, regTime) VALUES("14","베리 나이스한 정보","1243");
+INSERT INTO reviews(memberID, youText, regTime) VALUES("23","굿굿 나이스한 정보","1423");
+INSERT INTO reviews(memberID, youText, regTime) VALUES("12","굿잡 나이스한 정보","1523");
+INSERT INTO reviews(memberID, youText, regTime) VALUES("11","우왕 나이스한 정보","1263");
+INSERT INTO reviews(memberID, youText, regTime) VALUES("10","오예 나이스한 정보","1273");
+INSERT INTO reviews(memberID, youText, regTime) VALUES("9","개꿀팁 나이스한 정보","1823");
+INSERT INTO reviews(memberID, youText, regTime) VALUES("3","개이득 나이스한 정보","1923");
+INSERT INTO reviews(memberID, youText, regTime) VALUES("1","오히려좋아 나이스한 정보","1213");
+INSERT INTO reviews(memberID, youText, regTime) VALUES("2","베리나이스 나이스한 정보","1223");
+</code></pre>
+
                     <h4 id="intro6-2" class="page-header">데이터 불러오기</h4>
                     <div class="bs-callout bs-callout-info"><code>SELECT</code> 필드명 <code>FROM</code> 테이블명 <code>WHERE</code> 조건</div>
                     
@@ -312,22 +326,18 @@ INSERT INTO members(youEmail, youName, youPass, youBirth, youAge, regTime) VALUE
 
                     <h4>youAge가 30~40번만 필요한 경우 불러오기</h4>
 <pre><code class="language-js">SELECT * FROM member WHERE youAge BETWEEN 30 AND 40; 
-    mysql> SELECT * FROM member WHERE youAge BETWEEN 30 AND 40;
 </code></pre>
 
                     <h4>youAge가 30~40번이 아닌 경우 불러오기</h4>
 <pre><code class="language-js">SELECT * FROM member WHERE youAge NOT BETWEEN 30 AND 40;
-    mysql> SELECT * FROM member WHERE youAge NOT BETWEEN 30 AND 40;
 </code></pre>
 
                     <h4>memberID가 1,5,10, 15만 불러오기</h4>
 <pre><code class="language-js">SELECT * FROM member WHERE memberID IN(1,5,10,15);
-    mysql> SELECT * FROM member WHERE memberID IN(1,5,10,15);
 </code></pre>
 
                     <h4>youName중 "연" 텍스트가 포함 된 이름 불러오기</h4>
 <pre><code class="language-js">SELECT * FROM member WHERE youName LIKE '%연%';
-mysql> SELECT * FROM member WHERE youName LIKE '%연';
 </code></pre>
 
 
