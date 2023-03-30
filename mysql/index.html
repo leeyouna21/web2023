@@ -223,6 +223,15 @@ Database changed
 ) charset=utf8;
 </code></pre>
 
+<pre><code class="language-js">create table reviews(
+    reviewID int(10) unsigned auto_increment, 
+    memberID int(10) unsigned,
+    youText tinytext NOT NULL,
+    regTime int(30) NOT NULL,
+    PRIMARY KEY(reviewID)
+) charset=utf8;
+</code></pre>
+
                     <h4 id="intro5-2" class="page-header">테이블 전체보기</h4>
                     <div class="bs-callout bs-callout-info">show tables;</div>
 <pre><code class="language-js">mysql> show tables;

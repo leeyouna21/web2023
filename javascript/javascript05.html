@@ -166,7 +166,7 @@
                 <!-- sample07 -->
 
                 <div id="sample10" class="sample">
-                    <h3>07 : match() </h3>
+                    <h3>09 : match() </h3>
                     <div class="notice">"문자열".match(검색값) <br>"문자열".match(정규식표현)</div>
                         <ul>
                             <li>문자열(정규식)을 검색하고, 문자값(배열)을 반환합니다.</li>
@@ -219,7 +219,118 @@
                     </div>
                 </div>
                 <!-- sample18 -->
+
+                <div id="sample19" class="sample">
+                    <h3>19 : slice() </h3>
+                    <div class="notice">"문자열".slice(시작 위치,[끝나는 위치])</div>
+                        <ul>
+                            <li>시작 위치에서 종료 위치값을 추출하여 새로운 배열을 반환해줍니다.</li>
+                        </ul>
+                    <div class="script">                       
+<pre><code class="language-js">"javascript".slice(0); //javascript
+    "javascript".slice(1); //avascript
+    "javascript".slice(2); //vascript
+    "javascript".slice(0, 1); //j
+    "javascript".slice(1, 2); //a
+    "javascript".slice(0, 2); //ja
+    "javascript".slice(0, 3); //jav
+    "javascript".slice(5,10); //cript
+    "javascript".slice(5,-1); //crip
+    "javascript".slice(5,-2); //cri
+    "javascript".slice(-1); //t
+    "javascript".slice(-2); //pt
+    "javascript".slice(-3); //ipt
+    "javascript".slice(-3, -1); //ip
+    "javascript".slice(-3, -2); //i
+</code></pre>
+                    </div>
+                </div>
+                <!-- sample19 -->
+
+                <div id="sample22" class="sample">
+                    <h3>22 : splite() </h3>
+                    <div class="notice">"문자열".slice(구분자, [제한])</div>
+                        <ul>
+                            <li>구분자를 이용하여 여러개의 문자열을 배열로 반환합니다.</li>
+                        </ul>
+                    <div class="script">                       
+<pre><code class="language-js">{
+    "javascript".split("");   // ['j','a','v','a','s','c','r','i','p','t']
+    "java script".split(" ");   // ['java','script']
+    "java scr ipt".split(" ");   // ['java','scr','ipt']
+    "javascript".split("", 1);   // ['j']
+    "javascript".split("", 2);   // ['j','a']
+    "javascript".split("", 3);   // ['j','a','v']
+    "java script".split(" ", 1);   // ['java']
+    "java script".split(" ", 1);   // ['java','script']
+    "javascript".split("j");   // ['', 'avascript']  j는 빈문자열로 j를 제외한 값들이 나옴
+    "javascript".split("a");   // ['j','v','script']  
+    "javascript".split("e");   // ['javascript']  
+
+    "java/scr/ipt".split("/");   // ['java','scr','ipt']  
+    "java&scr!ipt".split("&");   // ['java','scr!ipt']  
+    "java&scr!ipt".split("!");   // ['java&scr','ipt']  
+    "java&scr!ipt".split(/&|\!/);   // ['java','scr','ipt']  //정규식 표현 
+
+    "javascript".split("").join();   // j,a,v,a,s,c,r,i,p,t
+    "javascript".split("").join("*");   // j*a*v*a*s*c*r*i*p*t
+    "javascript".split("").reverse().join();   // t,p,i,r,c,s,a,v,a,j  문자열에서 reverse는 안 되고 배열에서만 돼
+    "javascript".split("").reverse().join("/");   // t/p/i/r/c/s/a/v/a/j 
+}
+</code></pre>
+                    </div>
+                </div>
+                <!-- sample22 -->
+
+                <div id="sample30" class="sample">
+                    <h3>30 : trim() </h3>
+                    <div class="notice">"문자열".trim()</div>
+                        <ul>
+                            <li>문자열의 앞 뒤 공백을 제거하고 새로운 문자열을 반환함</li>
+                        </ul>
+                    <div class="script">                       
+<pre><code class="language-js">{
+    "javascript".trim("");  //javascript
+    "javascript ".trim("");  //javascript
+    " javascript".trim("");  //javascript
+    " javascript ".trim("");  //javascript
+}
+</code></pre>
+                    </div>
+                </div>
+                <!-- sample30 -->
+
+                <div id="sample31" class="sample">
+                    <h3>31 : trimEnd() </h3>
+                    <div class="notice">"문자열".trim()</div>
+                        <ul>
+                            <li>문자열의 뒤 공백을 제거하고 새로운 문자열을 반환함</li>
+                        </ul>
+                    <div class="script">                       
+<pre><code class="language-js">{
+    " java script ".trimEnd("");  //javascript
+}
+</code></pre>
+                    </div>
+                </div>
+                <!-- sample31 -->
+
+                <div id="sample32" class="sample">
+                    <h3>32 : trimStart() </h3>
+                    <div class="notice">"문자열".trim()</div>
+                        <ul>
+                            <li>문자열의 앞 공백을 제거하고 새로운 문자열을 반환함</li>
+                        </ul>
+                    <div class="script">                       
+<pre><code class="language-js">{
+    " java script ".trimStart("");  //javascript
+}
+</code></pre>
+                    </div>
+                </div>
+                <!-- sample32 -->
             </div>
+        </div>
     </main>
     <!-- //main -->
 
@@ -228,27 +339,12 @@
         <a href="mailto:yuna243441@naver.com">yuna243441@naver.com</a>
     </footer>
     <!-- //footer -->
+
     <script src="assets/js/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 
     <script>
-            "javascript reference".lastIndexOf("javascript"); //0
-            "javascript reference".lastIndexOf("javascripts"); //-1
-            "javascript reference".lastIndexOf("j"); //0
-            "javascript reference".lastIndexOf("a"); //3
-            "javascript reference".lastIndexOf("jv"); //-1
-            "javascript reference".lastIndexOf("reference"); //11
-            "javascript reference".lastIndexOf("r"); //15
 
-            
-
-            console.log("reference".IndexOf("e"));
-            console.log("reference".lastIndexOf("e"));
-            console.log("reference".lastIndexOf("e",0));
-            console.log("reference".lastIndexOf("e",1));
-            console.log("reference".lastIndexOf("e",2));
-            console.log("reference".lastIndexOf("e",3));
-            console.log("reference".lastIndexOf("e",4));
     </script>
 </body>
 </html>
