@@ -91,7 +91,7 @@
     }
     .main__menu li strong::before{
         content: "";
-        background-color: #0242f157;
+        background-color: #f5f55f;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -132,7 +132,7 @@
     }
     .main__desc a:hover {
         border-color: #ff8fcc;
-        background-color: #9daee0;
+        background-color: #f5f55f;
     }
     .main__sample {
         padding-top: 40px;
