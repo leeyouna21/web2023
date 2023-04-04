@@ -3,8 +3,8 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #262626;
-    color: #fff;
+    background-color: #f0ffba;
+    color: #000000;
     padding: 10px;
     width: 100%;
     z-index: 1000;
@@ -13,7 +13,7 @@
 }
 #header::before {
     content: '';
-    border: 4px ridge #a3a3a3;
+    border: 4px ridge #e5ff87;
     position: absolute;
     left: 5px;
     top: 5px;
@@ -28,7 +28,7 @@
     position: relative;
 }
 #header h1 a {
-    color: #fff;
+    color: #000000;
 }
 #header h1 em {
     font-size: 0.5em;
@@ -42,15 +42,15 @@
     position: relative;
 }
 #header li a {
-    color: #fff;
+    color: #000000;
     font-family: 'DungGeunMo';
-    border: 1px dashed #fff;
+    border: 1px dashed #000000;
     display: inline-block;
     padding: 5px;
 }
 #header li.active a,
 #header li a:hover {
-    background-color: #fff;
+    background-color: hsl(53, 100%, 68%);
     color: #000;
 }
 
@@ -60,11 +60,11 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #262626;
+    background-color: #f0ffba;
     text-align: center;
 }
 #footer a {
-    color: #fff;
+    color: #000000;
     padding: 20px;
     display: block;
     font-family: 'DungGeunMo';
@@ -73,7 +73,7 @@
 }
 #footer::before {
     content: '';
-    border: 4px ridge #a3a3a3;
+    border: 4px ridge #e5ff87;
     position: absolute;
     left: 5px;
     top: 5px;
@@ -94,12 +94,12 @@
 .quiz__wrap .quiz {
     width: 500px;
     background-color: #fff;
-    border: 8px ridge #cacaca;
+    border: 8px ridge #ffe6a1;
     margin: 10px;
 }
 .quiz__title {
-    background-color: #e3edff;
-    border: 3px ridge #cacaca;
+    background-color: #f4ffa1;
+    border: 3px ridge #ffe6a1;
     border-bottom-width: 6px;
     padding: 5px;
     font-family: 'DungGeunMo';
@@ -113,7 +113,7 @@
     font-family: 'PyeongChang';
     font-weight: 300;
     line-height: 1.4;
-    border-bottom: 6px ridge #cacaca; 
+    border-bottom: 6px ridge #ffe6a1; 
 }
 .quiz__question em {
     color: #ff3c3c
@@ -127,7 +127,7 @@
 }
 .quiz__answer .confirm {
     background-color: #e5ffc4;
-    border: 6px ridge #cacaca;
+    border: 6px ridge #ffe6a1;
     width: 100%;
     font-family: 'PyeongChang';
     padding: 10px 20px;
@@ -141,7 +141,7 @@
 }
 .quiz__answer .next {
     background-color: #ffe1c4;
-    border: 6px ridge #cacaca;
+    border: 6px ridge #ffe6a1;
     width: 100%;
     font-family: 'PyeongChang';
     padding: 10px 20px;
@@ -155,7 +155,7 @@
 }
 .quiz__answer .result {
     background-color: #fff;
-    border: 6px ridge #cacaca;
+    border: 6px ridge #ffe6a1;
     width: 100%;
     font-family: 'PyeongChang';
     padding: 10px 20px;
@@ -163,7 +163,7 @@
 }
 .quiz__answer .input {
     background-color: #fff;
-    border: 6px groove #cacaca;
+    border: 6px groove #ffe6a1;
     width: 100%;
     font-family: 'PyeongChang';
     padding: 10px 20px;
@@ -171,11 +171,11 @@
     margin-bottom: 10px;
 }
 .quiz__view {
-    border-bottom: 6px ridge #cacaca;
+    border-bottom: 6px ridge #ffe6a1;
     overflow: hidden;
 }
 .quiz__desc {
-    border-top: 6px ridge #cacaca;
+    border-top: 6px ridge #ffe6a1;
     padding: 20px;
     font-family: 'PyeongChang';
     background-color: #f5f5f5;
@@ -187,7 +187,7 @@
 }
 .quiz__choice {
     padding: 20px;
-    border-bottom: 6px ridge #cacaca;
+    border-bottom: 6px ridge #ffe6a1;
     font-family: 'PyeongChang';
 }
 .quiz__choice label {
@@ -216,7 +216,7 @@
     border-radius: 50%;
     margin-right: 15px;
     background: #fff;
-    box-shadow: inset 0 0 0 4px #6fa30b;
+    box-shadow: inset 0 0 0 4px #ffea83;
     transition: all 0.2s;
     flex-shrink: 0;
 }
@@ -245,7 +245,7 @@
     position: fixed;
     right: 20px;
     bottom: 170px;
-    background-color: #ff3c3c;
+    background-color: #ff9999;
     text-align: center;
     width: 130px;
     height: 50px;
@@ -260,7 +260,7 @@
     left: 50%;
     margin-left: -10px;
     bottom: -10px;
-    border-top: 10px solid #ff3c3c;
+    border-top: 10px solid #ff9999;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }
@@ -277,10 +277,10 @@
 .cbt__header {
     width: calc(100% - 280px);
     background-color: #fff;
-    border: 8px ridge #cacaca;
+    border: 8px ridge #ffefa9;
     margin-bottom: 20px;
     padding: 10px 20px;
-    background-color: #e3edff;
+    background-color: #ffefa9;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -294,14 +294,14 @@
     background-color: #fff;
 }
 .cbt__info{
-    border: 8px ridge #cacaca;
+    border: 8px ridge #ffefa9;
     margin-bottom: 10px;
 }
 .cbt__time {
     right: 160px;
     top: 80px;
     padding-left: 17px;
-    background: #423cff;
+    background: #ffe5c4;
     padding: 10px 24px 10px 40px;
     border-radius: 40px;
     color: #fff;
