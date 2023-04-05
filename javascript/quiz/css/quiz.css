@@ -373,7 +373,7 @@
 }
 .cbt__quiz .cbt.good::after {
     content: '';
-    background-image: url(../img/O.png);
+    background-image: url(../img/correct.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
@@ -384,7 +384,7 @@
 }
 .cbt__quiz .cbt.bad::after {
     content: '';
-    background-image: url(../img/X.png);
+    background-image: url(../img/bad.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
