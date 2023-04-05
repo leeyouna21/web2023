@@ -14,6 +14,7 @@
     },{
         "subject": "정보처리 기능사",
         "question": "다음 그림의 Gate는 어느 회로인가?",
+        "question_img":"gineungsaJC2006_03_01",
         "incorrect_answers":["exclusive-AND","1exclusive-NOR","exclusive-OR","OR"],
         "correct_answer": "exclusive-OR",
         "desc": "exclusive-OR 게이트 입니다. OR 게이트와 유사합니다. 주의 하세요"
@@ -32,18 +33,21 @@
     },{
         "subject": "정보처리 기능사",
         "question": "그림의 전기회로를 컴퓨터의 논리회로로 치환하면?",
+        "question_img":"gineungsaJC2006_03_02",
         "incorrect_answers": ["AND","OR","NOT","NAND"],
         "correct_answer": "OR",
         "desc": "위 회로는 SW1 또는 SW2가 연결되면 꼬마 전구에 불이 들어오므로 OR 게이트입니다."
     },{
         "subject": "정보처리 기능사",        
         "question": "다음논리회로에서 출력 f의 값은?",
+        "question_img":"gineungsaJC2006_03_03",
         "incorrect_answers":["0","1","1/2","-1"],
         "correct_answer": "1",
         "desc": "이런문제의 가장 기본적인 문제는 출력 F는 단 하나만 나온다는 것입니다. 논리 게이트에서 출력은 오직 0 또는 1입니다. 그렇게 때문에 문제를 전혀 풀지 못하더라도 답이 0, 또는 1임을 알아야 합니다. 계산을 해보면 1 AND 1 = 1 이며 1 AND 0 은 0 입니다. 이 출력을 다시 1 OR 0 해보면 출력은 1이 됩니다."
     },{
         "subject": "정보처리 기능사",
         "question": "다음 진리표와 같이 되는 논리회로는?",
+        "question_img":"gineungsaJC2006_03_04",
         "incorrect_answers": ["AND","OR","NOT","NAND"],
         "correct_answer": "OR",
         "desc": "위 회로는 SW1 또는 SW2가 연결되면 꼬마 전구에 불이 들어오므로 OR 게이트입니다."
