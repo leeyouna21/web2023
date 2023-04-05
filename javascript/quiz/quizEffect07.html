@@ -61,10 +61,11 @@
                         <span class="cbt__time">59분 10초</span>
                     </div>
                     <div>
-                        <div class="cbt__title">수험자 : <em class="cbt__name">이유나</em></div>
+                        <div class="cbt__title">수험자 : <em class="cbt__name"></em></div>
                         <div class="cbt__score">
                             <span>전체 문제수 : <em class="cbt__length">0</em>문항</span>
                             <span>남은 문제수 : <em class="cbt__rest">0</em>문항</span>
+                            <span>점수 : <em class="cbt__end__score">__</em>점</span>
                         </div>
                     </div>
                 </div>
@@ -169,24 +170,32 @@
         const cbtStartBtn = document.querySelector(".cbt__start__btn");
         const cbtStart = document.querySelector(".cbt__start");
         const cbtTime = document.querySelector(".cbt__time");
+        const cbtEndScore = document.querySelector(".cbt__end__score");
+        const youName = document.querySelector(".cbt__view .name");
+        const cbtName =document.querySelector(".cbt__name");
+        
 
         let questionAll = [];                  //모든 퀴즈 정보
         let questionLength = 0;                //전체 문제수
         let questionRest = questionLength;     //남은 문제수
         let questionTime = "";  
-        let questionTimeRemain = "1000";
+        let questionTimeRemain = "3600";
+        let quizScore = 0;
 
         //시작하기
         const startQuiz = () => {
             cbtStart.classList.add("hide"); //모달창 제거
+            cbtName.innerHTML = `${youName.value}`
 
             //시간 설정
             questionTime = setInterval(reduceTime, 1000);
         }
- 
+
         //데이터 가져오기
         const dataQuestion = (value) => {
             fetch(`https://kebab000.github.io/web2023/gineungsaJSON/${value}.json`)
+            // console.log(value);
+            // fetch(`json/gineungsaJC2006_03.json`)
             .then(res => res.json())
             .then(items => {
                 questionAll = items.map((item, index) => {
@@ -306,10 +315,11 @@
                 const userSelector = `input[name=select${number}]:checked`;
                 const userAnswer = (quizSelectsWrap.querySelector(userSelector) || {}).value;
                 const numberAnswer = userAnswer ? userAnswer.slice(-1) : undefined;
-
+                
                 if(numberAnswer == question.answer){
                     console.log("정답입니다.");
                     cbtSelects[number].parentElement.classList.add("good");
+                    quizScore++
                 } else {
                     console.log("오답입니다.")
                     cbtSelects[number].parentElement.classList.add("bad");
@@ -319,6 +329,7 @@
                     label[question.answer-1].classList.add("correct");
                 }
 
+                
                 // 설명 숨기기
                 const quizDesc = document.querySelectorAll(".cbt__desc");
 
@@ -328,6 +339,8 @@
                     quizDesc[number].classList.remove("hide");
                 }
             });
+
+            cbtEndScore.innerHTML = `${Math.ceil((quizScore / (questionLength)) * 100)}`
         }
 
         // 보기 체크
@@ -393,8 +406,11 @@
             } else {
                 let minutes = Math.floor(questionTimeRemain / 60);
                 let seconds = questionTimeRemain % 60;
-
-                return minutes + "분 " + seconds + "초";
+                if(seconds < 10 ){
+                    return minutes + "분 0" + seconds + "초";
+                } else {
+                    return minutes + "분 " + seconds + "초";
+                }
                 //초의 단위가 한자리 수가 되면 앞에 0을 붙여주기
             }
         }

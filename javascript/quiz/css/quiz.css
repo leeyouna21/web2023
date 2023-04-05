@@ -3,8 +3,8 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #262626;
-    color: #fff;
+    background-color: #feffbc;
+    color: #000000;
     padding: 10px;
     width: 100%;
     z-index: 1000;
@@ -13,7 +13,7 @@
 }
 #header::before {
     content: '';
-    border: 4px ridge #a3a3a3;
+    border: 4px ridge #f4ffa2;
     position: absolute;
     left: 5px;
     top: 5px;
@@ -28,7 +28,7 @@
     position: relative;
 }
 #header h1 a {
-    color: #fff;
+    color: #000000;
 }
 #header h1 em {
     font-size: 0.5em;
@@ -42,15 +42,15 @@
     position: relative;
 }
 #header li a {
-    color: #fff;
+    color: #000000;
     font-family: 'DungGeunMo';
-    border: 1px dashed #fff;
+    border: 1px dashed #000000;
     display: inline-block;
     padding: 5px;
 }
 #header li.active a,
 #header li a:hover {
-    background-color: #fff;
+    background-color: #ffeabd;
     color: #000;
 }
 
@@ -64,7 +64,7 @@
     text-align: center;
 }
 #footer a {
-    color: #fff;
+    color: #ffeabd;
     padding: 20px;
     display: block;
     font-family: 'DungGeunMo';
@@ -73,7 +73,7 @@
 }
 #footer::before {
     content: '';
-    border: 4px ridge #a3a3a3;
+    border: 4px ridge #ffeabd;
     position: absolute;
     left: 5px;
     top: 5px;
@@ -99,12 +99,12 @@
 .quiz__wrap .quiz {
     width: 500px;
     background-color: #fff;
-    border: 8px ridge #cacaca;
+    border: 8px ridge #ffeabd;
     margin: 10px;
 }
 .quiz__title {
-    background-color: #e3edff;
-    border: 3px ridge #cacaca;
+    background-color: #ffdbbd;
+    border: 3px ridge #ffeabd;
     border-bottom-width: 6px;
     padding: 5px;
     font-family: 'DungGeunMo';
@@ -118,7 +118,7 @@
     font-family: 'PyeongChang';
     font-weight: 300;
     line-height: 1.4;
-    border-bottom: 6px ridge #cacaca; 
+    border-bottom: 6px ridge #ffeabd; 
 }
 .quiz__question em {
     color: #ff3c3c
@@ -131,8 +131,8 @@
     /* border-bottom: 6px ridge #cacaca; */
 }
 .quiz__answer .confirm {
-    background-color: #e5ffc4;
-    border: 6px ridge #cacaca;
+    background-color: #ffdd92;
+    border: 6px ridge #ffeabd;
     width: 100%;
     font-family: 'PyeongChang';
     padding: 10px 20px;
@@ -146,7 +146,7 @@
 }
 .quiz__answer .next {
     background-color: #ffe1c4;
-    border: 6px ridge #cacaca;
+    border: 6px ridge #ffeabd;
     width: 100%;
     font-family: 'PyeongChang';
     padding: 10px 20px;
@@ -160,7 +160,7 @@
 }
 .quiz__answer .result {
     background-color: #fff;
-    border: 6px ridge #cacaca;
+    border: 6px ridge #ffeabd;
     width: 100%;
     font-family: 'PyeongChang';
     padding: 10px 20px;
@@ -168,7 +168,7 @@
 }
 .quiz__answer .input {
     background-color: #fff;
-    border: 6px groove #cacaca;
+    border: 6px groove #ffeabd;
     width: 100%;
     font-family: 'PyeongChang';
     padding: 10px 20px;
@@ -176,14 +176,14 @@
     margin-bottom: 10px;
 }
 .quiz__view {
-    border-bottom: 6px ridge #cacaca;
+    border-bottom: 6px ridge #ffeabd;
     overflow: hidden;
 }
 .quiz__desc {
-    border-top: 6px ridge #cacaca;
+    border-top: 6px ridge #ffeabd;
     padding: 20px;
     font-family: 'PyeongChang';
-    background-color: #f5f5f5;
+    background-color: #ffeabd;
 }
 .quiz__desc::before {
     content: "🎉 Tip ";
@@ -192,7 +192,7 @@
 }
 .quiz__choice {
     padding: 20px;
-    border-bottom: 6px ridge #cacaca;
+    border-bottom: 6px ridge #ffeabd;
     font-family: 'PyeongChang';
 }
 .quiz__choice label {
@@ -221,15 +221,15 @@
     border-radius: 50%;
     margin-right: 15px;
     background: #fff;
-    box-shadow: inset 0 0 0 4px #6fa30b;
+    box-shadow: inset 0 0 0 4px #ffb5a7;
     transition: all 0.2s;
     flex-shrink: 0;
 }
 .quiz__choice label input:checked + span {
-    background-color: #f5ffe7;
+    background-color: #ffebad;
 }
 .quiz__choice label input:checked + span::before {
-    box-shadow: inset 0 0 0 8px #6fa30b;
+    box-shadow: inset 0 0 0 8px #ffc894;
 }
 .quiz__check {
     position: fixed;
@@ -250,7 +250,7 @@
     position: fixed;
     right: 20px;
     bottom: 170px;
-    background-color: #ff3c3c;
+    background-color: #ffb4b4;
     text-align: center;
     width: 130px;
     height: 50px;
@@ -265,7 +265,7 @@
     left: 50%;
     margin-left: -10px;
     bottom: -10px;
-    border-top: 10px solid #ff3c3c;
+    border-top: 10px solid #ffb4b4;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }
@@ -282,10 +282,10 @@
 .cbt__header {
     width: calc(100% - 280px);
     background-color: #fff;
-    border: 8px ridge #cacaca;
+    border: 8px ridge #fffa93;
     margin-bottom: 20px;
     padding: 10px 20px;
-    background-color: #e3edff;
+    background-color: #fffcc4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -299,19 +299,19 @@
     background-color: #fff;
 }
 .cbt__info {
-    border: 8px ridge #cacaca;
+    border: 8px ridge #ffe59e;
     margin-bottom: 10px;
     height: 240px;
 }
 
 .cbt__time {
     border-radius: 40px;
-    color: #fff;
+    color: #000000;
     cursor: pointer;
     border: 0;
     padding: 10px 20px 10px 30px;
     font-family: 'PyeongChang';
-    background-color: #0d59e8;
+    background-color: #ffc39e;
     display: block;
     width: 100%;
     font-size: 16px;
@@ -324,16 +324,16 @@
     top: 9px;
     width: 22px;
     height: 22px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23fff' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5' /%3E%3C/svg%3E%0A");
 }
 .cbt__submit {
     border-radius: 40px;
-    color: #fff;
+    color: #000000;
     cursor: pointer;
     border: 0;
     padding: 10px 20px 10px 30px;
     font-family: 'PyeongChang';
-    background-color: #ff3c3c;
+    background-color: rgb(250, 157, 157);
     display: block;
     width: 100%;
     margin-bottom: 5px;
@@ -347,11 +347,11 @@
     top: 9px;
     width: 22px;
     height: 22px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23fff' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10' /%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75' /%3E%3C/svg%3E%0A");
 }
 
 .cbt__omr {
-    border: 8px ridge #cacaca;
+    border: 8px ridge #ffe59e;
     overflow-y: auto;
     height: calc(100vh - 350px);
     background-color: #fff;
@@ -364,7 +364,7 @@
 }
 .cbt__quiz .cbt {
     width: 49%;
-    border: 8px ridge #cacaca;
+    border: 8px ridge #ffe59e;
     margin-bottom: 5px;
     padding: 20px;
 }
@@ -394,7 +394,7 @@
     top: 0;
 }
 .cbt__info {
-    background-color: #e3edff;
+    background-color: #fffcc4;
 }
 
 .cbt__info > div:first-child {
@@ -434,14 +434,14 @@
     display: inline-block;
     text-align: center;
     padding: 2px;
-    background-color: #313e55;
-    color: #fff;
+    background-color: #ffd9bc;
+    color: #000000;
     font-family: 'Helvetica Neue';
     margin-right: 10px;
     font-weight: bold;
 }
 .cbt__omr .omr label {
-    box-shadow: 0 0 0 1px #313e55;
+    box-shadow: 0 0 0 1px #fff696;
     cursor: pointer;
     line-height: 0.4;
     text-align: center;
@@ -620,14 +620,14 @@
     border-radius: 200px;
     padding: 15px;
     border: 0;
-    border: 1px solid #e0e0ff;
-    background-color: #f0f0ff;
+    border: 1px solid #ffc1c1;
+    background-color: #ffb1b1;
     font-family: 'PyeongChang';
     font-size: 25px;
     cursor: pointer;
 }
 .cbt__start__btn:hover {
-    background-color: #d2d2ff;
+    background-color: #ff8f8f;
 }
 .cbt__view {
     margin-top: 10px;
@@ -637,7 +637,7 @@
     line-height: 1.8;
 }
 .cbt__view input {
-    border: 1px solid #d2d2ff;
+    border: 1px solid #ff8f8f;
     padding: 2px 10px;
     font-family: 'PyeongChang';
     border-radius: 20px;
@@ -654,7 +654,7 @@
     height: 10px;
     z-index: -1;
     border-radius: 20px;
-    background-color: #e0e0fff0;
+    background-color: #fff5b1;
 }
 
 /* dog__wrap */
