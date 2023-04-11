@@ -106,18 +106,17 @@
     </script>
 
     <!-- GSAP 📌 -->
-    <!-- <script scr="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script>
         setInterval(() => {
-            currentIndex = (currentIndex + 1) % sliderCount;
-            
-            gsap.to(".slider__inner", {
+            currentIndex = (currentIndex+1) % sliderCount;
+            gsap.to(sliderInner, {
                 x : -800 * currentIndex,
                 duration : 1,
-                ease : "elastic.out(1, 0.3)"
+                ease: "elastic.out(1, 0.5)"
             });
-        }, sliderInterval); -->
-    </script>
+        }, sliderInterval);
+    </script> -->
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
