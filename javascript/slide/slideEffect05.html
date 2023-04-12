@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>04. 슬라이드 이펙트</title>
+    <title>05. 슬라이드 이펙트</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slider.css">
@@ -39,7 +39,7 @@
 </head>
 <body class="img04 bg04 font04">
     <header id="header">
-        <h1>Javascript mouseEffect04</h1>
+        <h1>Javascript mouseEffect05</h1>
         <p>슬라이드 이펙트 기본적인 효과입니다.</p>
         <ul>
             <li><a href="slideEffect01.html">1</a></li>
@@ -83,31 +83,55 @@
         let sliderCount = slider.length;             //전체 이미지 갯수
         let sliderHeight = slider[0].offsetHeight;    //이미지 가로 값
         let sliderClone = sliderInner.firstElementChild.cloneNode(true); //첫 번째 이미지 복사 cloneNode(true)를 하먄 1번이 맨 뒤로 들어감
+        let sliderInterval = 3000;
 
         //복사한 첫 번째 이미지 마지막에 붙여넣기
         sliderInner.appendChild(sliderClone);
     </script>
 
     <script>
-        let sliderInterval = 3000;
-        
-        function sliderEffect(){
-            currentIndex++;
+        // 자바스크립트
+        // function sliderEffect(){
+        //     currentIndex++;
 
-            sliderInner.style.transition = "all 0.6s";
-            sliderInner.style.transform = "translateY(-"+ sliderHeight * currentIndex + "px)";
+        //     sliderInner.style.transition = "all 0.6s";
+        //     sliderInner.style.transform = "translateY(-"+ sliderHeight * currentIndex + "px)";
 
-            //마지막 이미지에 위치했을 때 
-            if(currentIndex == sliderCount){
-                setTimeout(() => {
-                    sliderInner.style.transition = "0s";
-                    sliderInner.style.transform = "translateY(0px)";
-                },700);
-                currentIndex = 0;
-            }
-        }
+        //     //마지막 이미지에 위치했을 때 
+        //     if(currentIndex == sliderCount){
+        //         setTimeout(() => {
+        //             sliderInner.style.transition = "0s";
+        //             sliderInner.style.transform = "translateY(0px)";
+        //         },700);
+        //         currentIndex = 0;
+        //     }
+        // }
 
-        setInterval(sliderEffect, sliderInterval);
+        // setInterval(sliderEffect, sliderInterval);
+    </script>
+        <!-- GSAP
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script>
+            setInterval(() => {
+                currentIndex = (currentIndex +1) % sliderCount;
+
+                gsap.to(".slider__inner" , {
+                    y : -450 * currentIndex,
+                    duration : 1,
+                });
+            },sliderInterval);
+        </script> -->
+
+        <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+        setInterval(() => {
+            currentIndex = (currentIndex +  1) % $(".slider").length;
+
+            $(".slider__inner").css("position", "relative");
+            $(".slider__inner").animate({top : -450 * currentIndex}, 600);
+        }, sliderInterval);
     </script>
 </body>
 </html>
