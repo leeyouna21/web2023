@@ -196,6 +196,32 @@
             // for(let i=1; i< 10; i++){
             //     document.querySelector(".info .offset"+i).innerText = document.getElementById("section"+i).offsetTop; 
             // }
+
+            // forEach
+            // document.querySelectorAll(".info span").forEach((span, index) => {
+            //     span.innerText = document.getElementById("section" + (index + 1)).offsetTop;
+            // });
+
+            // 일단 #section$의 offsetTop값을 받아서(document.getElementById("section" + (index + 1)).offsetTop;)
+            // 요소인 span에 띄우게 됩니다.(span.innerText) (== span.innerText = document.getElementById("section" + (index + 1)).offsetTop;)
+            // 이 내용을 반복하는데  for문, forEach, for in, for of을 활용하는데
+            // 이 때 .info span을 반복해서 요소를 span으로 받고 index을 매개로 받아 사용합니다.
+
+            //for in
+            // const arr = document.querySelectorAll(".info ul li")
+            // for(let index in arr){
+            //     const el = arr[index];
+            //     el.querySelector("span").innerText = document.getElementById(`section${parseInt(index)+1}`).offsetTop;
+            // }
+            
+            //for of
+            const arr = document.querySelectorAll(".info ul li");
+            let index = 0;
+            for(const el of arr){
+                el.querySelector("span").innerHTML = document.getElementById(`section${parseInt(index)+1}`).offsetTop;
+                index++;
+            }
+    
         });
     </script>
 </body>

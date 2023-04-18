@@ -1,0 +1,42 @@
+<article id="postArticle" class="content z-index-5" >
+    <blockquote style= "border: 2px solid #fff8d8; background:rgba(252, 254, 199, 0.3); padding: 20px; border-radius: 50px; text-align:center;" >
+        <div>
+            <div class="width-7x height-7x position-relative mt-n5 flex-center rounded-circle bg-danger mb-5" style="filter: drop-shadow(2px 3px 4px #ff585880);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40px", height="30px", fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                </svg>
+            </div>
+            <p id="desc" class="mb-0"><strong>“ 지연되는 프로젝트에 인력을 더 투입하면 오히려 더 늦어진다. ”</strong></p>
+            <div class="d-flex align-items-center">
+                <div>
+                    <h5 id="author" class="mb-0"><span style="color:rgb(0, 0, 0)">-</span> Frederick Philips Brooks</h5>
+                    <small id="author2" class="text-muted ms-3">Mythical Man-Month 저자</small>
+                </div>
+            </div>
+        </div>
+        <svg style="cursor:pointer; margin-top:20px;" class="bq-randomBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="2rem" height="2rem" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+        </svg>
+    </blockquote>
+    <script>
+        (async function () {
+            try {
+                const res = await fetch('https://tistory1.daumcdn.net/tistory/4939852/skin/images/quote.json?_version_=1681457805');
+                const phrase_ = await res.json();
+                const $desc = document.getElementById('desc');
+                const $author = document.getElementById('author');
+                const $author2 = document.getElementById('author2');
+                function ranQuote() {
+                    const ran1 = Math.floor(Math.random() * phrase_.length);
+                    const { description: desc, author, author2 } = phrase_[ran1];
+                    $desc.innerHTML = `“ ${desc} ”`;
+                    $author.innerHTML = `<span style="color:rgb(246,86,96)">-</span> ${author}`;
+                    $author2.innerHTML = author2;
+                }
+                ranQuote();
+                document.querySelector('.bq-randomBtn').addEventListener('click', ranQuote);
+            } catch (err) {
+                console.log(err);
+            }
+        })();
+    </script>
