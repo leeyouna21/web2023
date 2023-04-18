@@ -112,19 +112,27 @@
                 left: e.pageX,
                 top: e.pageY
             });
+
+
             // 마우스 좌표 값
             let mousePageX = e.pageX;
             let mousePageY = e.pageY;
+
+
             // 전체 화면 가로 값
             window.innerWidth //  1920 브라우저 크기
             window.outerWidth // 1920 브라우저 크기(스크롤 바 포함)
             window.screen.width // 1920 화면 크기
+
+
             // 마우스 좌표 값 기준점 가운데로 설정 > (0,0)이 됨
             let centerPageX = window.innerWidth / 2 - mousePageX;
             let centerPageY = window.innerHeight / 2 - mousePageY;
             // 이미지 움직이기
             // const imgMove = document.querySelector(".mouse__img figure img");
             // imgMove.style.transform = "translate("+centerPageX/20+"px, "+centerPageY/20+"px)";
+
+            
             const imgMove = document.querySelector(".mouse__img figure img");
             gsap.to(imgMove, {
                 x: centerPageX / 20,
