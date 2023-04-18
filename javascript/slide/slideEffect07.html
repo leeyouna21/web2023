@@ -149,6 +149,7 @@
 
             //썸네일 활성화(active) 하기
             let thumnailNodes = slider.thumnails.querySelectorAll("img");
+            result.querySelector(".quote").innerHTML = data.quotes[random].quote;
             thumnailNodes[currentIndex].classList.add("active");
 
             //썸네일 이미지 클릭하기 
