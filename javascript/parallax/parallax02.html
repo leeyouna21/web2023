@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>패럴랙스 이펙트 01</title>
+    <title>패럴랙스 이펙트 02</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/parallax.css">
 </head>
-<body class="img02 bg02 font02">
+<body class="img01 bg01 font01">
     <header id="header">
         <h1>Javascript parallaxEffect01</h1>
-        <p>패럴렉스 이펙트 기본적인 효과입니다.</p>
+        <p>패럴렉스 이펙트 : 사이드 메뉴</p>
         <ul>
-            <li class="active"><a href="parallax01.html">1</a></li>
-            <li><a href="parallax02.html">2</a></li>
+            <li><a href="parallax01.html">1</a></li>
+            <li class="active"><a href="parallax02.html">2</a></li>
             <li><a href="parallax03.html">3</a></li>
             <li><a href="parallax04.html">4</a></li>
             <li><a href="parallax05.html">5</a></li>
@@ -25,7 +25,7 @@
     </header>
     <!--header-->
 
-    <nav class="parallax__nav">
+    <nav class="parallax__dot">
         <ul>
             <li class="active"><a href="#section1">메뉴1</a></li>
             <li><a href="#section2">메뉴2</a></li>
@@ -135,19 +135,6 @@
     <!-- main -->
     <aside class="parallax__info">
         <div class="scroll">scrollTop : <span>0</span>px</div>
-        <div class="info">
-            <ul>
-                <li>#section1 offset() :<span class="offset1">0</span>px</li>
-                <li>#section2 offset() :<span class="offset2">0</span>px</li>
-                <li>#section3 offset() :<span class="offset3">0</span>px</li>
-                <li>#section4 offset() :<span class="offset4">0</span>px</li>
-                <li>#section5 offset() :<span class="offset5">0</span>px</li>
-                <li>#section6 offset() :<span class="offset6">0</span>px</li>
-                <li>#section7 offset() :<span class="offset7">0</span>px</li>
-                <li>#section8 offset() :<span class="offset8">0</span>px</li>
-                <li>#section9 offset() :<span class="offset9">0</span>px</li>
-            </ul>
-        </div>
     </aside>
     <!-- parallax__info -->
 
@@ -157,72 +144,43 @@
     <!-- //footer -->
 
     <script>
-        window.addEventListener("scroll", () => {
-            let scrollTop = window.pageYOffset || window.scrollY || document.documentElement.scrollTop;
+        document.querySelectorAll(".parallax__dot li a").forEach(dot => {
+            dot.addEventListener("click", e => {
+                e.preventDefault();
+                document.querySelector(dot.getAttribute("href")).scrollIntoView({behavior: "smooth"});
+            })
+        });
 
-            //스크롤 하면 스크롤 순대로 위 버튼(메뉴)에 불이 들어오게 해주기
-            document.querySelectorAll(".parallax__item").forEach((item, index) => {
+        window.addEventListener("scroll", () => {
+            let scrollTop = window.pageYOffset || window.scrollY;
+
+            document.querySelector(".parallax__info .scroll span").innerText = parseInt(scrollTop);
+
+            document.querySelectorAll(".parallax__item").forEach((item, num) => {
                 if(scrollTop >= item.offsetTop -2){
-                    document.querySelectorAll(".parallax__nav li").forEach((li) => {
+                    document.querySelectorAll(".parallax__dot li").forEach(li => {
                         li.classList.remove("active");
                     });
-                    document.querySelector(".parallax__nav li:nth-child("+(index+1)+")").classList.add("active");
+                    document.querySelector(".parallax__dot li:nth-child("+(num+1)+")").classList.add("active");
                 }
             });
 
-            document.querySelectorAll(".parallax__nav li a").forEach(li => {
-                li.addEventListener("click", (e) => {
-                    e.preventDefault();         //메뉴를 클릭해도 이미지가 움직이지 않음
-                    document.querySelector(li.getAttribute("href")).scrollIntoView({
-                        behavior: "smooth"  //메뉴를 클릭하면 해당하는 이미지로 이동할 수 있음
-                    })
-                })
-            })
+        })
 
-            //위에 값 넣기
-            document.querySelector(".scroll span").innerHTML = parseInt(scrollTop);
 
-            // document.querySelector(".info .offset1").innerText = document.getElementById("section1").offsetTop; 
-            // document.querySelector(".info .offset2").innerText = document.getElementById("section2").offsetTop; 
-            // document.querySelector(".info .offset3").innerText = document.getElementById("section3").offsetTop; 
-            // document.querySelector(".info .offset4").innerText = document.getElementById("section4").offsetTop; 
-            // document.querySelector(".info .offset5").innerText = document.getElementById("section5").offsetTop; 
-            // document.querySelector(".info .offset6").innerText = document.getElementById("section6").offsetTop; 
-            // document.querySelector(".info .offset7").innerText = document.getElementById("section7").offsetTop; 
-            // document.querySelector(".info .offset8").innerText = document.getElementById("section8").offsetTop; 
-            // document.querySelector(".info .offset9").innerText = document.getElementById("section9").offsetTop; 
+        // window.scroll(0, 10000);
+        // window.scroll({left : 100, top: 4000});
+        // window.scroll({left : 100, top: 4000, behavior: "smooth"});
 
-            
-            // for(let i=1; i< 10; i++){
-            //     document.querySelector(".info .offset"+i).innerText = document.getElementById("section"+i).offsetTop; 
-            // }
+        // window.scrollTo(0, 1000);
+        // window.scrollTo({left: 0, top: 1000});
+        // window.scrollTo({left: 0, top: 1000,behavior: "smooth"});
 
-            // forEach
-            // document.querySelectorAll(".info span").forEach((span, index) => {
-            //     span.innerText = document.getElementById("section" + (index + 1)).offsetTop;
-            // });
+        // window.scrollBy(0, 1000);
+        // window.scrollBy({left: 0, Byp: 1000});
+        // window.scrollBy({left: 0, top: 1000,behavior: "smooth"});
 
-            // 일단 #section$의 offsetTop값을 받아서(document.getElementById("section" + (index + 1)).offsetTop;)
-            // 요소인 span에 띄우게 됩니다.(span.innerText) (== span.innerText = document.getElementById("section" + (index + 1)).offsetTop;)
-            // 이 내용을 반복하는데  for문, forEach, for in, for of을 활용하는데
-            // 이 때 .info span을 반복해서 요소를 span으로 받고 index을 매개로 받아 사용합니다.
 
-            //for in
-            // const arr1 = document.querySelectorAll(".info ul li")
-            // for(let index in arr){
-            //     const el = arr[index];
-            //     el.querySelector("span").innerText = document.getElementById(`section${parseInt(index)+1}`).offsetTop;
-            // }
-            
-            //for of
-            const arr = document.querySelectorAll(".info ul li");
-            let index = 0;
-            for(const el of arr){
-                el.querySelector("span").innerHTML = document.getElementById(`section${parseInt(index)+1}`).offsetTop;
-                index++;
-            }
-    
-        });
     </script>
 </body>
 </html>
