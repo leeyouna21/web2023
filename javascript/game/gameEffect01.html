@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bg.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/music.css">
 </head>
 <body>
     <div class="cursor">
@@ -38,6 +39,51 @@
                 <span>Music🎵</span>
             </div>
         </div>
+
+        <!-- 뮤직 플레이어 -->
+        <div class="music__wrap">
+            <div class="music__inner">
+                <div class="music__header">
+                    <span class="left"></span>
+                    <h2>For me Player 🎧</h2>
+                    <span class="right"></span>
+                </div>
+                <div class="music__contents">
+                    <div class="music__view">
+                        <div class="image">
+                            <img src="img/musicView__01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="music__control">
+                        <div class="title">
+                            <h3>Wish You Were Gay</h3>
+                            <p>Billie Eilish</p>
+                        </div>
+                        <div class="progress">
+                            <div class="bar">
+                                <audio src="audio/"></audio>
+                            </div>
+                            <div class="timer">
+                                <span class="current">0:00</span>
+                                <span class="duration">2:50</span>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <span>전체 반복</span>
+                            <span>이전곡 재생</span>
+                            <span>재생</span>
+                            <span>다음곡 재생</span>
+                            <span>재생 목록</span>
+                            <!-- <span>한곡 반복</span>
+                            <span>랜덤 반복</span>
+                            <span>정지 반복</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="music__footer"></div>
+            </div>
+        </div>
+        <!-- 뮤플 끝 -->
     </main>
 
     <footer id="footer">
@@ -47,8 +93,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="js/music.js"></script>
     <script>
-
         $(".icon1").draggable({
             containment: ".icon___box", scroll:false,
             start:function(){
@@ -111,10 +157,12 @@
                     top:e.pageY -10
                 });
             });
-    }
+
+            printTime();
+            printAgent();
+        }
 
         let clock = document.querySelector(".time");
-
         setInterval(function () {
         clock.innerHTML = new Date().toLocaleString();
         }, 1000);
@@ -138,7 +186,9 @@
             }
             }
             os();
-        
+
+
+
     </script>
 </body>
 </html>

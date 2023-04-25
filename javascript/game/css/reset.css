@@ -1,10 +1,10 @@
-@import url('https://webfontworld.github.io/crown/CrownMychew.css');
+@import url('https://webfontworld.github.io/earlyfont/EF_Diary.css');
 
 * {
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family: CrownMychew;
+    font-family: EF_Diary;
 }
 *, *::before, *::after {
     box-sizing: border-box;
