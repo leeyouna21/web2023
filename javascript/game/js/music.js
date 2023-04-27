@@ -6,8 +6,8 @@ const allMusic = [
         audio: "music_audio01"
     },
     {
-        name : "2. 바닷가",
-        artist : "darin",
+        name : "2. wish you are gay",
+        artist : "Billie Eilish",
         img : "music__view002",
         audio: "music_audio02"
     },
@@ -75,7 +75,7 @@ const musicProgressduration = musicWrap.querySelector(".progress .timer .duratio
 
 
 
-let musicIndex = 5;     // 현재 음악 인덱스
+let musicIndex = 2;     // 현재 음악 인덱스
 
 
 // 음악 재생
