@@ -97,7 +97,7 @@
     </main>
 
     <footer id="footer">
-        <div class="info">현재  윈도을 사용하고 있으며, 화면 크기는 1920 X 760 입니다.</div>
+        <div class="info">현재 윈도우를 사용하고 있으며, 화면 크기는 1920 X 760 입니다.</div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -168,8 +168,8 @@
                 });
             });
 
-            printTime();
-            printAgent();
+            // printTime();
+            // printAgent();
         }
 
         let clock = document.querySelector(".time");
@@ -186,13 +186,13 @@
             let info = document.querySelector(".info");
 
             if (os.indexOf("windows") >= 0) {
-                infor.innerHTML = "현재 윈도우를 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
+                info.innerHTML = "현재 윈도우를 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
             } else if (os.indexOf("macintosh") >= 0) {
-                infor.innerHTML = "현재 맥을 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
+                info.innerHTML = "현재 맥을 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
             } else if (os.indexOf("iphone") >= 0) {
-                infor.innerHTML = "현재 아이폰을 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
+                info.innerHTML = "현재 아이폰을 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
             } else if (os.indexOf("android") >= 0) {
-                infor.innerHTML = "현재 안드로이드 폰을 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
+                info.innerHTML = "현재 안드로이드 폰을 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
             }
             }
             os();

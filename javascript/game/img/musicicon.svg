@@ -5,6 +5,9 @@
 <path d="M67 5V19" stroke="#FF7C44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </g>
+<path d="M56 29V43" stroke="#FF7C44" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65 29V43" stroke="#FF7C44" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30 28L46 36L30 44V28Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <g clip-path="url(#clip2_26_1168)">
 <path d="M16.2222 1.61133L19.9999 5.38911L16.2222 9.16688" stroke="#FFA781" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M3 11.0553V9.16645C3 8.16452 3.39801 7.20363 4.10649 6.49516C4.81496 5.78669 5.77585 5.38867 6.77778 5.38867H20" stroke="#FFA781" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
