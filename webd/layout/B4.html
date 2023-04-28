@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 실기 B유옇 4번 레이아웃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 100%;
+            height: 700px;
+        }
+        .container{
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            background-color: #000;
+            
+        }
+        #header{
+            width: 100%;
+            height: 100px;
+            background-color: #ddd;
+        }
+        #header .container {
+            display: flex;
+        }
+        #header h1 {
+            width: 20%;
+            background-color: #c7c7c7;
+        }
+        #header nav{
+            width: 80%;
+            background-color: #ffcece;
+        }
+        #slider{
+            width: 100%;
+            height: 300px;
+        }
+        #content {
+            width: 100%;
+            height: 200px;
+            background-color: #706464;
+        }
+        #content .container{
+            display: flex;
+        }
+        #content .content1{
+            width: 33.3333%;
+            background-color: rgb(255, 182, 182);
+        }
+        #content .content2{
+            width: 33.3333%;
+            background-color: rgb(255, 141, 141);
+        }
+        #content .content3{
+            width: 33.3333%;
+            background-color: rgb(255, 96, 96);
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: #3d3838;
+        }
+        #footer .container {
+            display: flex;
+        }
+        #footer .footer1{
+            width: 80%;
+            background-color: rgb(109, 86, 86);
+        }
+        #footer .footer2-1{
+            width: 100%;
+            background-color: rgb(121, 0, 0);
+            height: 50px;
+        }
+        #footer .footer2-2{
+            width: 100%;
+            background-color: rgb(10, 121, 0);
+            height: 50px;
+        }
+        #footer .footer2{
+            width: 20%;
+            background-color: rgb(82, 36, 36);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container">
+                <h1></h1>
+                <nav></nav>
+            </div>
+        </div> 
+        <div id="slider">
+            <div class="container"></div>
+        </div> 
+        <div id="content">
+            <div class="container">
+                <div class="content1"></div>
+                <div class="content2"></div>
+                <div class="content3"></div>
+            </div>
+        </div> 
+        <div id="footer">
+            <div class="container">
+                <div class="footer1">
+                    <div class="footer2-1"></div>
+                    <div class="footer2-2"></div>
+                </div>
+                <div class="footer2"></div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
