@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 100%;
+            height: 700px;
+            background-color: #ccc;
+        }
+        #header {
+            width: 100%;
+            height: 100px;
+            background-color: #333;
+        }
+        #header .container{
+            width: 1200px;
+            height: 100px;
+            background-color: #fff;
+            margin: 0 auto;
+            display: flex;
+        }
+        #header .container h1 {
+            width: 20%;
+            height: 100px;
+            background-color: #8b6161;
+        }
+        #header .container nav {
+            width: 80%;
+            height: 100px;
+            background-color: #a84040;
+        }
+        #slider {
+            width: 100%;
+            height: 300px;
+            background-color: #444;
+        }
+        #main {
+            width: 100%;
+            height: 200px;
+            background-color: #774444;
+        }
+        #main .container{
+            width: 1200px;
+            height: 200px;
+            background-color: #000;
+            margin: 0 auto;
+            display: flex;
+        }
+        #main .container .m1{
+            width: 33.3333%;
+            height: 200px;
+            background-color: #ffd89e;
+        }
+        #main .container .m2{
+            width: 33.3333%;
+            height: 200px;
+            background-color: #ffb444;
+        }
+        #main .container .m3{
+            width: 33.3333%;
+            height: 200px;
+            background-color: #ff9900;
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: #ac8080;
+        }
+        #footer .container {
+            width: 1200px;
+            height: 100px;
+            background-color: #57c257;
+            margin: 0 auto;
+            display: flex;
+        }
+        #footer .container .f1{
+            width: 20%;
+            height: 100px;
+            background-color: #c1b0ff;
+        }
+        #footer .container .f2{
+            width: 80%;
+            height: 100px;
+            background-color: #008521;
+        }
+        #footer .container .f2 .f1-1{
+            width: 100%;
+            height: 50px;
+            background-color: red;
+        }
+        #footer .container .f2 .f1-2{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(255, 134, 134);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <h1></h1>
+                <nav></nav>
+            </div>
+        </header>
+        <section id="slider"></section>
+        <main id="main">
+            <div class="container">
+                <div class="m1"></div>
+                <div class="m2"></div>
+                <div class="m3"></div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <div class="f1"></div>
+                <div class="f2">
+                    <div class="f1-1"></div>
+                    <div class="f1-2"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

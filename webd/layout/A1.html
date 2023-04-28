@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A1</title>
+    <title>Document</title>
     <style>
         * {
             margin: 0;
@@ -12,63 +12,64 @@
         }
         #wrap {
             width: 1200px;
+            height: 700px;
+            background-color: #ccc;
             margin: 0 auto;
         }
         #header {
+            width: 1200px;
             height: 100px;
-            background-color: #111;
+            background-color: #ddd;
             display: flex;
         }
-        #header h1{
-            width: 20%;
-            height: inherit;
-            background-color: #555;
+        #header h1 {
+            width: 30%;
+            background-color: red;
         }
-        #header h2{
-            width: 80%;
-            height: inherit;
-            background-color: #ff7d7d;
+        #header nav {
+            width: 70%;
+            background-color: rgb(255, 162, 162);
         }
-        #nav {
-            width: 100%;
+        #slider {
+            width: 1200px;
             height: 300px;
-            background-color: #222;
+            background-color: #333;
         }
         #main {
-            width: 100%;
+            width: 1200px;
             height: 200px;
-            background-color: #333;
+            background-color: #555;
             display: flex;
         }
-        .m1 {
-            width: 33.333%;
-            background-color: #ff6161;
+        #main .m1 {
+            width: 33.3333%;
+            background-color: #888585;
         }
-        .m2 {
-            width: 33.333%;
-            background-color: #910000;
+        #main .m2 {
+            width: 33.3333%;
+            background-color: #ff7575;
         }
-        .m3 {
-            width: 33.333%;
-            background-color: #eeff52;
+        #main .m3 {
+            width: 33.3333%;
+            background-color: #610000;
         }
         #footer {
-            width: 100%;
+            width: 1200px;
             height: 100px;
-            background-color: #ffb0b0;
+            background-color: #444;
             display: flex;
         }
         #footer .f1 {
             width: 20%;
-            background-color: #fff;
+            background-color: #85f05a;
         }
         #footer .f2 {
             width: 80%;
-            background-color: #000000;
+            background-color: #258100;
         }
         #footer .f3 {
             width: 20%;
-            background-color: #fff;
+            background-color: #5b6457;
         }
     </style>
 </head>
@@ -76,9 +77,9 @@
     <div id="wrap">
         <header id="header">
             <h1></h1>
-            <h2></h2>
+            <nav></nav>
         </header>
-        <nav id="nav"></nav>
+        <section id="slider"></section>
         <main id="main">
             <div class="m1"></div>
             <div class="m2"></div>
