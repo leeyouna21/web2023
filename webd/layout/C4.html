@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 1000px;
+            height: 650px;
+            background-color: #ccc;
+            display: flex;
+        }
+        #aside {
+            width: 400px;
+            height: 650px;
+            background-color: #ddd;
+        }
+        #aside h1{
+            width: 400px;
+            height: 200px;
+            background-color: #ffda82;
+        }
+        #aside nav{
+            width: 400px;
+            height: 450px;
+            background-color: #a2a2a2;
+        }
+        #main {
+            width: 600px;
+            height: 650px;
+            background-color: #f9c4c4;
+        }
+        #main .nav {
+            width: 600px;
+            height: 350px;
+            background-color: #111;
+        }
+        #main .slice {
+            width: 600px;
+            height: 200px;
+            background-color: #cb8383;
+            display: flex;
+        }
+        #main .slice .s1{
+            width: 200px;
+            height: 200px;
+            background-color: #efff73;
+        }
+        #main .slice .s2{
+            width: 200px;
+            height: 200px;
+            background-color: #899720;
+        }
+        #main .slice .s3{
+            width: 200px;
+            height: 200px;
+            background-color: #efff73;
+        }
+        #main .footer {
+            width: 600px;
+            height: 100px;
+            background-color: #f63d3d;
+            display: flex;
+        }
+        #main .footer .f1{
+            width: 200px;
+            height: 100px;
+            background-color: #b1ffaa;
+        }
+        #main .footer .f2{
+            width: 300px;
+            height: 100px;
+            background-color: #40c434;
+        }
+        #main .footer .f3{
+            width: 200px;
+            height: 100px;
+            background-color: #b1ffaa;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <aside id="aside">
+            <h1></h1>
+            <nav></nav>
+        </aside>
+        <main id="main">
+            <nav class="nav"></nav>
+            <section class="slice">
+                <div class="s1"></div>
+                <div class="s2"></div>
+                <div class="s3"></div>
+            </section>
+            <footer class="footer">
+                <div class="f1"></div>
+                <div class="f2"></div>
+                <div class="f3"></div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
