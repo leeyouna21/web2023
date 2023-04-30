@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 100%;
+            height: 800px;
+            background-color: #ccc;
+            display: flex;
+        }
+        #aside {
+            width: 200px;
+            height: 800px;
+            background-color: #ddd;
+        }
+        #aside h1{
+            width: 200px;
+            height: 300px;
+            background-color: #111;
+        }
+        #aside nav{
+            width: 200px;
+            height: 500px;
+            background-color: #d7b9b9;
+        }
+        #main {
+            width: calc(100% - 200px);
+            height: 800px;
+            background-color: #111;
+        }
+        #main .m1{
+            width: 100%;
+            height: 400px;
+            background-color: #c2ab68;
+        }
+        #main .m2{
+            width: 100%;
+            height: 150px;
+            background-color: #ad5959;
+        }
+        #main .m3{
+            width: 100%;
+            height: 250px;
+            background-color: #6e5d5d;
+        }
+        #footer {
+            width: 100%;
+            height: 120px;
+            display: flex;
+        }
+        #footer .f1{
+            width: 20%;
+            height: 120px;
+            background-color: #8a9d5f;
+        }
+        #footer .f2{
+            width: 50%;
+            height: 120px;
+            background-color: #e1fe9e;
+        }
+        #footer .f2 .ff1{
+            width: 100%;
+            height: 60px;
+            background-color: #00a063;
+        }
+        #footer .f2 .ff2{
+            width: 100%;
+            height: 60px;
+            background-color: #595959;
+        }
+        #footer .f3{
+            width: 30%;
+            height: 120px;
+            background-color: #5c8400;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <aside id="aside">
+            <h1></h1>
+            <nav></nav>
+        </aside>
+        <main id="main">
+            <div class="m1"></div>
+            <div class="m2"></div>
+            <div class="m3"></div>
+        </main>
+        
+    </div>
+    <footer id="footer">
+        <div class="f1"></div>
+        <div class="f2">
+            <div class="ff1"></div>
+            <div class="ff2"></div>
+        </div>
+        <div class="f3"></div>
+    </footer>
+</body>
+</html>
