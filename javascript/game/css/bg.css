@@ -123,7 +123,7 @@ html::before {
     } */
 
     html {
-        background-image: url(https://64.media.tumblr.com/f8d62277b63a59bcbf163067c44ce2e1/7eef7feae8a145f7-c9/s1280x1920/ec53b117a07a49de0524288caf2b8dd34a00695c.gif);
+        background-image: url(../img/background.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
