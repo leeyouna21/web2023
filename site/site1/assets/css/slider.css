@@ -1,12 +1,21 @@
 /* slide__wrap */
 .slider__inner .slider{
-    height: 600px;
+    /* height: 600px; */
     background-image: url(../../img/SLIDER_Type01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     z-index: 1;
+}
+.slider__inner .slider.img1{
+    background-image: url(../../img/SLIDE_Type03.jpg);
+}
+.slider__inner .slider.img2{
+    background-image: url(../../img/SLIDER_Type01.jpg);
+}
+.slider__inner .slider.img3{
+    background-image: url(../../img/sliderType01_03.jpg);
 }
 .slider__inner .slider .slider::after{
     content: '';
@@ -49,15 +58,18 @@
 }
 .slider__info .btn a {
     width: 180px;
+    height: 40px;
     background-color: #fff;
     font-size: 16px;
     display: inline-block;
     text-align: center;
     margin-right: 4px;
+    line-height: 40pxsasa;
 }
 .slider__info .btn a:last-child {
     background-color: #000;
     color:#fff
+
 }
 
 .slider__arrow a{
@@ -113,7 +125,110 @@
     }
     
 
-/* 미디어 쿼리 */
-@media (max-width : 960px) {
+/* swiper */
+.swiper-button-prev,
+.swiper-button-next {
+    width: 30px;
+    height: 56px;
+    background-image: url(../../img/icon_main.svg);
+    background-size: 500px;
+}
+.swiper-button-next {
+    background-position: -50px 0;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 0;
+}
+.swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+    background-image: url(../../img/icon_main.svg);
+    background-size: 500px;
+    background-position: -101px -1px ;
+    opacity: 1;
+    background-color: transparent;
+}
+.swiper-pagination-bullet-active {
+    background-position: -121px -1px ;
+}
+.swiper-pagination {
+    bottom: 20px !important;
+}
+.swiper-button {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    display: flex;
+    z-index: 1000;
+    margin-left: 40px;
+}
+.swiper-button-play{
+    width: 16px;
+    height: 16px;
+    margin-right:10px ;
+    background-image: url(../../img/icon_main.svg);
+    background-size: 500px;
+    background-position: -161px -2px ;
+    cursor: pointer;
+}
+.swiper-button-stop{
+    width: 16px;
+    height: 16px;
+    background-image: url(../../img/icon_main.svg);
+    background-size: 500px;
+    background-position: -184px 0px ;
+    cursor: pointer;
 
+}
+/* 미디어 쿼리 */
+@media (max-width : 1200px) {
+    .slider {
+        text-align: center;
+    }
+    .slider__info .desc {
+        width: 100%;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+}
+@media (max-width : 960px) {
+    .slider__info .title {
+        font-size: 40px;
+    }
+    .slider__info .btn {
+        margin-top: 50px;
+    }
+    .slider__info .slider {
+
+    }
+}
+@media (max-width : 600px) {
+    .slider__info {
+        padding: 50px 0 70px;
+    }
+    .slider__info .title {
+        font-size: 30px;
+    }
+    .slider__info .desc {
+        font-size: 14px;
+    }
+    .slider__info .btn a {
+        width: 120px;
+        font-size: 14px;
+        padding: 6px 0;
+    }
+    .slider__info .btn {
+        margin-top: 30px;
+    }
+    .swiper-pagination {
+        bottom: 10px !important;
+    }
+    .swiper-button {
+        bottom: 14px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
 }
