@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+text-decoration: none;
+color: #333;
+}
+li {
+    list-style: none;
+}
+#wrap {
+    width: 1000px;
+    height: 650px;
+    display: flex;
+}
+.aside {
+    width: 200px;
+    height: 650px;
+}
+.aside  .a1{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+}
+.aside .a1 .logo .text {
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    transform: translate( -50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px 10px;
+}
+.aside  .a2{
+    width: 200px;
+    height: 450px;
+    background-color: #f8d8d8;
+}
+.main {
+    width: 800px;
+    height: 650px;
+    background-color: #DA7D7D;
+}
+.main .m1{
+    width: 800px;
+    height: 350px;
+}
+.sliderWrap {
+    position: relative;
+    height: 350px; /* 이미지 높이에 맞게 조정 */
+    overflow: hidden;
+}
+
+.sliderWrap .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.sliderWrap .slider.active {
+    opacity: 1;
+}
+.main .m2{
+    width: 800px;
+    height: 200px;
+    display: flex;
+}
+.main .m2 .mm1{
+    width: 250px;
+    height: 200px;
+    background-color: #e9bcbc;
+}
+.main .m2 .mm2{
+    width: 250px;
+    height: 200px;
+    background-color: #e9bcbc;
+}
+.main .m2 .mm3{
+    width: 300px;
+    height: 200px;
+    background-color: #e9bcbc;
+}
+.main .m3{
+    width: 800px;
+    height: 100px;
+    display: flex;
+}
+.main .m3 .f1{
+    width: 200px;
+    height: 100px;
+    background-color: #bceead;
+}
+.main .m3 .f2{
+    width: 400px;
+    height: 100px;
+    background-color: #DA7D7D;
+}
+.main .m3 .f3{
+    width: 200px;
+    height: 100px;
+    background-color: #DA7D7D;
+}
+.aside .a2 > ul {
+
+}
+.aside .a2 > ul li {
+    position: relative;
+}
+.aside .a2 > ul li a {
+    display: block;
+    padding: 15px 40px;
+    background-color: #f8f0d8;
+}
+.aside .a2 > ul li a:hover {
+    background-color: #f7de93;
+
+}
+.aside .a2 > ul li ul {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+.aside .a2 > ul li ul > li{}
+.aside .a2 > ul li ul > li > a{
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.aside .a2 > ul li ul > li > a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.main .m2 .mm1 {
+    width: 300px;
+    padding: 25px 20px;
+    background-color: #e9bcbc;
+}
+.main .m2 .mm1 h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.main .m2 .mm1 li{
+    display: flex;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 14px;
+}
+.main .m2 .mm1 li::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    border-radius: 50%;
+}
+.main .m2 .mm1 li a{
+    width: 70%;
+}
+.main .m2 .mm1 li a:hover{
+    text-decoration: underline;
+}
+.main .m2 .mm1 li a span{
+    width: 30%;
+    text-align: right;
+}
+.main .mm2 .gallery {
+    padding: 25px 25px;
+}
+.main .mm2 .gallery h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.main .mm2 .gallery ul{
+    display: flex;
+    padding:0px;
+}
+.main .mm3 .banner {
+    width: 150px;
+    background-image: url(../site3/css/images/Rectangle\ 11023.jpg);
+    text-align: center;
+    position: relative;
+    padding-left: 50px;
+
+}
+.main .mm3 .banner h3{
+    margin-top: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+}
+.main .mm3 .banner a{
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 40px;
+    margin-top: 30px;
+}
+.main .m3 .fi .flogo {}
+.main .m3 .fi .flogo img{}
+.main .m3 .f3 select {
+    margin-top: 34px;
+    margin-left: 30px;
+    padding: 5px;
+    width: 70%;
+    height: 30px;
+}
+.main .f2 h3 {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
+}

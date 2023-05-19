@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디 시험</title>
+    <link rel="stylesheet" href="../site3/css/style.css">
+
+</head>
+<body>
+    <div id="wrap">
+        <div class="aside">
+            <div class="a1">
+                <div class="logo">
+                    <img src="../site3/css/images/Rectangle 11023.jpg" alt="">
+                    <div class="text">
+                        <h2>HipHop Festival</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="a2">
+                <ul>
+                    <li><a href="#">축제소개</a>
+                    <ul class="submenu">
+                        <li><a href="#">페스티벌 소개</a></li>
+                        <li><a href="#">행사장 안내</a></li>
+                        <li><a href="#">조직위원회</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">예약안내</a>
+                        <ul class="submenu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">예약확인 / 취소</a></li>
+                            <li><a href="#">단체예약문의</a></li>
+                        </ul></li>
+                    <li><a href="#">아티스트</a>
+                        <ul class="submenu">
+                            <li><a href="#">창모</a></li>
+                            <li><a href="#">박재범</a></li>
+                            <li><a href="#">제이팍사랑해</a></li>
+                        </ul></li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="submenu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">사진갤러리</a></li>
+                            <li><a href="#">영상갤러리</a></li>
+                    </ul></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="m1">
+                <div class="sliderWrap">
+                    <div class="slider 01">
+                        <img src="../site3/css/images/Rectangle 11018.jpg" alt="">
+                    </div>
+                    <div class="slider 02">
+                        <img src="../site3/css/images/Rectangle 11019.jpg" alt="">
+                    </div>
+                    <div class="slider 03">
+                        <img src="../site3/css/images/Rectangle 11020.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="m2">
+                <div class="mm1">
+                    <h3>축제 공지사항</h3>
+                    <ul>
+                        <li><a href="#">박재범 오는 시간</a><sapn>11:00</sapn></li>
+                        <li><a href="#">박재범 창모 오는 시간</a><sapn>11:10</sapn></li>
+                        <li><a href="#">박재범 쌈디  오는 시간</a><sapn>11:20</sapn></li>
+                        <li><a href="#">박재범 로꼬 오는 시간</a><sapn>11:30</sapn></li>
+                    </ul>
+                </div>
+                <div class="mm2">
+                    <div class="gallery">
+                        <h3>개존잘보이 박재범</h3>
+                        <ul>
+                            <li><a href="#"><img src="../site3/css/images/Rectangle 11021.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="../site3/css/images/Rectangle 11022.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mm3">
+                    <article class="banner">
+                        <h3>박재범 직캠 </h3>
+                        <a href="#">바로가기</a>
+                    </article>
+                </div>
+            </div>
+            <div class="m3">
+                <div class="f1">
+                    <div class="flogo">
+                        <img src="../site3/css/images/Group 517.jpg" alt="">
+                    </div>
+                </div>
+                <div class="f2">
+                    <h3>&copy; copyright2023. madeinyouna Inc All right reserved<br>
+                    경기도 화성시 새솔동 수노을1로 108 저희집 주소입니다.</h3>
+                </div>
+                <div class="f3">
+                    <select name="#" id="#">
+                        <option>패밀리사이트</option>
+                        <option value="1">힙합페스티벌</option>
+                        <option value="2">개꿀잼</option>
+                        <option value="3">어나이스</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+    var sliders = document.querySelectorAll('.sliderWrap .slider');
+    var currentSlide = 0;
+    var interval = setInterval(changeSlide, 3000); // 이미지 변경 간격 (3초)
+
+    function changeSlide() {
+        sliders[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % sliders.length;
+        sliders[currentSlide].classList.add('active');
+    }
+});
+    </script>
+</body>
+</html>
