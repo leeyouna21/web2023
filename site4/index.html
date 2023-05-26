@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>서울 구석구석</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <style>
+            @import url("https://webfontworld.github.io/BMJua/BMJua.css");
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+            li {
+                list-style: none;
+            }
+            #wrap {
+                width: 100%;
+                height: 650px;
+                background-color: #ccc;
+                font-family: BMJua;
+            }
+            .container {
+                width: 100%;
+                height: 650px;
+                background-color: #ccc;
+                display: flex;
+            }
+            .aside {
+                width: 200px;
+                height: 650px;
+                background-color: #f87f7f;
+            }
+            .aside .logo {
+                width: 200px;
+                height: 200px;
+                background-color: #f8f0d8;
+            }
+            .aside .logo h1 {
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 40px;
+                color: #589599;
+            }
+            .aside .menu {
+                width: 200px;
+                height: 450px;
+                background-color: #f8f0d8;
+            }
+            .menu > ul > li > a {
+                display: block;
+                padding: 10px;
+                background-color: #f8f0d8;
+                text-align: center;
+            }
+            .menu > ul > li > a:hover {
+                background-color: #f8f0d8;
+            }
+            .menu > ul > li > ul {
+                display: none;
+                transition: all 0.3s;
+                border: solid 1px #000;
+            }
+            .menu > ul > li > ul > li > a {
+                display: block;
+                padding: 10px;
+                text-align: center;
+                z-index: 1000;
+                background-color: #f8f0d8;
+            }
+            .menu > ul > li > ul > li > a:hover {
+                background-color: #f7dc8b;
+            }
+
+            .main {
+                width: calc(100% - 200px);
+                height: 650px;
+                background-color: #d17a7a;
+            }
+            .main .main1 {
+                width: 100%;
+                height: 400px;
+                background-color: #ddd;
+                display: flex;
+            }
+            .main .main1 .mm1 {
+                width: calc(100% - 200px);
+                height: 400px;
+            }
+            .main .main1 .mm2 {
+                width: 230px;
+                height: 400px;
+                background-color: #164368;
+            }
+            .main .main2 {
+                width: 100%;
+                height: 250px;
+                background-color: #b0cf23;
+                display: flex;
+            }
+            .main .main2 .notice {
+                width: 700px;
+                height: 250px;
+                background-color: #ffecb4;
+            }
+            .main .main2 .notice h3 {
+                font-size: 40px;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .main .main2 .notice li {
+                font-size: 20px;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .main .main2 .gallery {
+                width: 700px;
+                height: 250px;
+                background-color: #ffecb4;
+                padding: -20px 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .main .main2 .gallery h3 {
+                font-size: 30px;
+                text-align: center;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            .main .main2 .gallery img {
+                width: 200px;
+                height: 150px;
+            }
+            .main .main2 .gallery ul {
+                display: flex;
+            }
+            .main .main1 .mm2 h2 {
+                color: #fff;
+                text-align: center;
+                z-index: 1000;
+            }
+            .main .main1 .mm2 img {
+                width: 230px;
+                height: 400px;
+                margin-bottom: 50px;
+            }
+            .footer {
+                width: 100%;
+                height: 100px;
+                background-color: #a18484;
+                display: flex;
+            }
+            .footer .f1 {
+                width: 200px;
+                height: 100px;
+                background-color: #ffda6b;
+            }
+            .footer .f1 h1 {
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 20px;
+                color: #589599;
+            }
+            .footer .f2 {
+                width: calc(100% - 430px);
+                height: 100px;
+                background-color: #ffda6b;
+            }
+            .footer .f2 h3 {
+                text-align: center;
+                padding-top: 20px;
+                color: #3131318e;
+            }
+            .footer .f3 {
+                width: 230px;
+                height: 100px;
+                background-color: #ffda6b;
+            }
+            .footer .f3 select {
+                margin-top: 34px;
+                margin-left: 30px;
+                padding: 5px;
+                width: 70%;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="container">
+                <div class="aside">
+                    <div class="logo">
+                        <h1>
+                            서울<br />
+                            구석구석
+                        </h1>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#">축제소개</a>
+                                <ul class="submenu">
+                                    <li><a href="#">페스티벌 소개</a></li>
+                                    <li><a href="#">행사장 안내</a></li>
+                                    <li><a href="#">조직위원회</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">예약안내</a>
+                                <ul class="submenu">
+                                    <li><a href="#">예약하기</a></li>
+                                    <li><a href="#">예약확인 / 취소</a></li>
+                                    <li><a href="#">단체예약문의</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">아티스트</a>
+                                <ul class="submenu">
+                                    <li><a href="#">창모</a></li>
+                                    <li><a href="#">박재범</a></li>
+                                    <li><a href="#">제이팍사랑해</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">커뮤니티</a>
+                                <ul class="submenu">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">사진갤러리</a></li>
+                                    <li><a href="#">영상갤러리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="main1">
+                        <div class="mm1">
+                            <div class="slider__wrap">
+                                <div class="slider__img">
+                                    <div class="slider__inner">
+                                        <div class="slider s1">
+                                            <img
+                                                src="../site4/images/Rectangle 2472.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="slider s1">
+                                            <img
+                                                src="../site4/images/Rectangle 2473.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="slider s1">
+                                            <img
+                                                src="../site4/images/Rectangle 2474.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mm2">
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="../site4/images/Rectangle 2476.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main2">
+                        <div class="notice">
+                            <h3>공지사항</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">한강 걷기 축제 시간</a
+                                    ><sapn> PM 11:00</sapn>
+                                </li>
+                                <li>
+                                    <a href="#">한강 걷기 축제 오는 방법</a
+                                    ><sapn> PM 11:10</sapn>
+                                </li>
+                                <li>
+                                    <a href="#">한강 걷기 축제 교통 통제 안내</a
+                                    ><sapn> PM 11:20</sapn>
+                                </li>
+                                <li>
+                                    <a href="#">한강 불꽃 시작 시간 안내</a
+                                    ><sapn> PM 11:30</sapn>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gallery">
+                            <h3>이미지로 보는 서울 구석구석</h3>
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="../site4/images/Rectangle 2478.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="../site4/images/Rectangle 2477.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="../site4/images/Rectangle 2476.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="f1">
+                    <h1>
+                        서울<br />
+                        구석구석
+                    </h1>
+                </div>
+                <div class="f2">
+                    <h3>
+                        &copy; copyright2023. madeinyouna Inc All right
+                        reserved<br />
+                        경기도 화성시 새솔동 수노을1로 108 저희집 주소입니다.
+                    </h3>
+                </div>
+                <div class="f3">
+                    <select name="#" id="#">
+                        <option>패밀리사이트</option>
+                        <option value="1">힙합페스티벌</option>
+                        <option value="2">개꿀잼</option>
+                        <option value="3">어나이스</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $(".menu > ul > li").mouseover(function () {
+                    $(this).find("ul.submenu").stop().fadeIn(400);
+                    $(".aside .logo").addClass("on");
+                });
+                $(".menu > ul > li").mouseout(function () {
+                    $(this).find("ul.submenu").stop().fadeOut(100);
+                    $(".aside .logo").removeClass("on");
+                });
+
+                
+            });
+        </script>
+    </body>
+</html>

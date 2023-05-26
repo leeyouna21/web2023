@@ -77,16 +77,24 @@ body {background:#f1f4fb url(../img/body_bg.gif)}
 	display: block;
 	margin: 0 auto;
 	padding-right: 50px;
-	animation: beat 0.7s infinite
-}
-@keyframes beat {
+    animation: heartbeat 1s infinite linear;}
+@keyframes heartbeat {
 	0% {
-	  transform: scale(1)
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(1.05);
 	}
 	50% {
-	  transform: scale(0.5)
+		transform: scale(0.95);
 	}
-  }
+	75% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+	}
 #header h1{
 	color: #fff;
 	margin-bottom: 0px;
@@ -501,5 +509,4 @@ background: url('../img/AjaxLoader.gif') no-repeat center center #aebab6;
 
 	td:nth-of-type(2):before { content: "" ;font-weight: bold;}
     
-   
 }
