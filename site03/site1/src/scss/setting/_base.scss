@@ -1,0 +1,91 @@
+:root {
+    --color_body: #040504;
+    --bg_section : #aa896fcc;
+    --button_1 : #cfa887;
+    --button_2 : #b17f58;
+    --button_3 : #f0ceb3;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+div,
+dl,
+dd,
+dt,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+p,
+table,
+th,
+td,
+input,
+figure,
+figcaption,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body, input, textarea, select, button, table {
+    color: var(--color_body);
+    font-size: 16px;
+    line-height: 1.4em;
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+li,
+ol,
+ul {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+em,
+address {
+    font-style: normal;
+}
+img,
+svg,
+video {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+img,
+fieldset,
+button {
+    border: 0;
+}
