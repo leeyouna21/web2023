@@ -122,8 +122,8 @@ html::before {
         linear-gradient(var(--c5) 60%, var(--c3) 60%, var(--c2) 150%);
     } */
 
-    html {
-        background-image: url(../img/background.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+html {
+    background-image: url(../img/bgc.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

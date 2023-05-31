@@ -1,0 +1,28 @@
+.youtube__wrap {}
+.youtube__inner {
+    h3 {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    p {
+        font-size: 24px;
+        color: #7e7e7e;
+        margin-bottom: 30px;
+    }
+    a {
+        border-radius: 30px;
+    }
+}
+.youtube__item {
+    @include flex-between;
+    margin-top: 70px;
+
+    > div {
+        width: 400px;
+        margin-right: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

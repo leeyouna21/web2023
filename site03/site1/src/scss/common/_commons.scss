@@ -6,10 +6,28 @@
     // background-color: #ffe0e0;
 }
 
-//section
+// section
+.section.center {
+    text-align: center;
+}
 .section {
     padding: 120px 0;
+    > h3 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    > p {
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 60px;
+    }
 }
+
+
+
+
+
 
 
 //bg
@@ -21,18 +39,25 @@
 .bg-ivory {
     background-color: #dfd3c3;
 }
+.bg-white {
+    background-color: #ffeed8;
+}
+.bg-white02 {
+    background-color: #fff4e6;
+
+}
 //button
-// .button-1 {
-//     @include button(#ac927c, #fff)
-// }
+.button-1 {
+    @include button(#ac927c, #fff)
+}
 
-// .button-2 {
-//     @include button(#967b67, #fff)
-// }
+.button-2 {
+    @include button(#967b67, #fff)
+}
 
-// .button-3 {
-//     @include button(#D2A37C, #fff)
-// }
+.button-3 {
+    @include button(#D2A37C, #fff)
+}
 
 
 //블라인드 효과

@@ -1,0 +1,29 @@
+.movies__wrap {}
+.movie__inner {
+    height: 700px;
+    h3 {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    p {
+        font-size: 24px;
+        color: #7e7e7e;
+        margin-bottom: 30px;
+    }
+    a {
+        border-radius: 30px;
+    }
+}
+.movie__item {
+    @include flex-between;
+    margin-top: 70px;
+
+    > div {
+        width: 300px;
+
+        img {
+            width: 100%;
+            padding: 15px;
+        }
+    }
+}

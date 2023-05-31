@@ -1,93 +1,116 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAME EFFECT</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GAME EFFECT</title>
 
-    <link rel="stylesheet" href="css/bg.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/game.css">
-    <link rel="stylesheet" href="css/music.css">
-</head>
-<body>
-    <div class="cursor">
-        <img src="img/game_mouse01.png" alt>
-    </div>
-    <header id="header">
-        <h1>🎮Yuna Game World🎮</h1>
-        <div class="time">2023-04-24 09:37 15s</div>
-    </header >
-
-    <main>
-        <div class="icon___box">
-            <div class="icon1">
-                <img src="img/game_icon01.png" alt="뮤직">
-                <span>Music🎵</span>
-            </div>
-            <div class="icon2">
-                <img src="img/game_icon02.png" alt="뮤직">
-                <span>Music🎵</span>
-            </div>
-            <div class="icon3">
-                <img src="img/game_icon03.png" alt="뮤직">
-                <span>Music🎵</span>
-            </div>
-            <div class="icon4">
-                <img src="img/game_icon04.png" alt="뮤직">
-                <span>Music🎵</span>
-            </div>
+        <link rel="stylesheet" href="css/bg.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/game.css" />
+        <link rel="stylesheet" href="css/music.css" />
+    </head>
+    <body>
+        <div class="cursor">
+            <img src="img/game_mouse01.png" alt />
         </div>
+        <header id="header">
+            <h1>🎮Welcome to the GAMEWORLD🎮</h1>
+            <div class="time">2023-04-24 09:37 15s</div>
+        </header>
 
-        <!-- 뮤직 플레이어 -->
-        <div class="music__wrap">
-            <div class="music__inner">
-                <div class="music__header">
-                    <span class="left"></span>
-                    <h2>For me Player 🎧</h2>
-                    <span class="right"></span>
+        <main>
+            <div class="icon___box">
+                <div class="icon1">
+                    <img src="img/game_icon01.png" alt="뮤직" />
+                    <span>Music</span>
                 </div>
-                <div class="music__contents">
-                    <div class="music__view">
-                        <div class="image">
-                            <img src="img/musicView__01.png" alt="">
-                        </div>
+                <div class="icon2">
+                    <img src="img/game_icon02.png" alt="뮤직" />
+                    <span>Music</span>
+                </div>
+                <div class="icon3">
+                    <img src="img/game_icon03.png" alt="뮤직" />
+                    <span>Music</span>
+                </div>
+                <div class="icon4">
+                    <img src="img/game_icon04.png" alt="뮤직" />
+                    <span>Music</span>
+                </div>
+            </div>
+
+            <!-- 뮤직 플레이어 -->
+            <div class="music__wrap">
+                <div class="music__inner">
+                    <div class="music__header">
+                        <span class="left"></span>
+                        <h2>For me Player 🎧</h2>
+                        <span class="right"></span>
                     </div>
-                    <div class="music__control">
-                        <div class="title">
-                            <h3>Wish You Were Gay</h3>
-                            <p>Billie Eilish</p>
-                        </div>
-                        <div class="progress">
-                            <div class="bar">
-                                <audio id="main-audio" src="audio/music_audio01.mp3"></audio>
-                            </div>
-                            <div class="timer">
-                                <span class="current">0:00</span>
-                                <span class="duration">2:50</span>
+                    <div class="music__contents">
+                        <div class="music__view">
+                            <div class="image">
+                                <img src="img/musicView__01.png" alt="" />
                             </div>
                         </div>
-                        <div class="control">
-                            <span>
-                                <i class="repeat" id="control-repeat" title="전체 반복"></i>
-                                <!-- <i class="repeat_one" id="control-repeat" title="한곡 반복"></i>
+                        <div class="music__control">
+                            <div class="title">
+                                <h3>Wish You Were Gay</h3>
+                                <p>Billie Eilish</p>
+                            </div>
+                            <div class="progress">
+                                <div class="bar">
+                                    <audio
+                                        id="main-audio"
+                                        src="audio/music_audio01.mp3"
+                                    ></audio>
+                                </div>
+                                <div class="timer">
+                                    <span class="current">0:00</span>
+                                    <span class="duration">2:50</span>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <span>
+                                    <i
+                                        class="repeat"
+                                        id="control-repeat"
+                                        title="전체 반복"
+                                    ></i>
+                                    <!-- <i class="repeat_one" id="control-repeat" title="한곡 반복"></i>
                                 <i class="shuffle" id="control-repeat" title="랜덤 반복"></i> -->
-                            </span>
-                            <span>
-                                <i class="prev" id="control-prev" title="이전곡 재생"></i>
-                            </span>
-                            <span>
-                                <i class="play" id="control-play" title="재생"></i>
-                            </span>
-                            <span>
-                                <i class="next" id="control-next" title="다음곡 재생"></i>
-                            </span>
-                            <span>
-                                <i class="list" id="control-list" title="재생목록"></i>
-                            </span>
+                                </span>
+                                <span>
+                                    <i
+                                        class="prev"
+                                        id="control-prev"
+                                        title="이전곡 재생"
+                                    ></i>
+                                </span>
+                                <span>
+                                    <i
+                                        class="play"
+                                        id="control-play"
+                                        title="재생"
+                                    ></i>
+                                </span>
+                                <span>
+                                    <i
+                                        class="next"
+                                        id="control-next"
+                                        title="다음곡 재생"
+                                    ></i>
+                                </span>
+                                <span>
+                                    <i
+                                        class="list"
+                                        id="control-list"
+                                        title="재생목록"
+                                    ></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
                         <div class="music__list">
                             <h3>다음 항목<a href="#" class="close"></a></h3>
                             <ul>
@@ -108,112 +131,154 @@
                                 </li> -->
                             </ul>
                         </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- 뮤플 끝 -->
-    </main>
+            <!-- 뮤플 끝 -->
+        </main>
 
-    <footer id="footer">
-        <div class="info">현재 윈도우를 사용하고 있으며, 화면 크기는 1920 X 760 입니다.</div>
-    </footer>
+        <footer id="footer">
+            <div class="info">
+                현재 윈도우를 사용하고 있으며, 화면 크기는 1920 X 760 입니다.
+            </div>
+        </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="js/music.js"></script>
-    <script>
-        $(".icon1").draggable({
-            containment: ".icon___box", scroll:false,
-            start:function(){
-                $(".cursor img").attr("src", "img/game_mouse01.png")
-            }, drag:function(){
-                $(".info").html("현재 <em style='color:red'>빨간색</em> 폴더를 드래그 하고 있습니다.");
-                $("#header").addClass("red");
-            }, stop : function(){
-                setTimeout(os,3000);
-                setTimeout(classRemove, 3000);
-            }
-        });
-
-        $(".icon2").draggable({
-                containment: ".icon___box", scroll:false,
-
-            start:function(){
-                $(".cursor img").attr("src", "img/game_mouse02.png")
-            },drag:function(){
-                $(".info").html("현재 <em style='color:blue'>파란색</em> 폴더를 드래그 하고 있습니다.");
-                $("#header").addClass("blue");
-            }, stop : function(){
-                setTimeout(os,3000);
-                setTimeout(classRemove, 3000);
-            }
-        });
-
-        $(".icon3").draggable({
-                containment: ".icon___box", scroll:false,
-
-            start:function(){
-                $(".cursor img").attr("src", "img/game_mouse03.png")
-            },drag:function(){
-                $(".info").html("현재 <em style='color:green'>초록색</em> 폴더를 드래그 하고 있습니다.");
-                $("#header").addClass("green");
-            }, stop : function(){
-                setTimeout(os,3000);
-                setTimeout(classRemove, 3000);
-            }
-        });
-
-        $(".icon4").draggable({
-                containment: ".icon___box", scroll:false,
-
-            start:function(){
-                $(".cursor img").attr("src", "img/game_mouse04.png")
-            },drag:function(){
-                $(".info").html("현재 <em style='color:yellow'>노란색</em> 폴더를 드래그 하고 있습니다.");
-                $("#header").addClass("yellow");
-            }, stop : function(){
-                setTimeout(os,3000);
-                setTimeout(classRemove, 3000);
-            }
-        });
-
-        window.onload = function(){
-            window.addEventListener("mousemove",e => {
-                gsap.to(".cursor", {duration: 0, 
-                    left:e.pageX -5,
-                    top:e.pageY -10
-                });
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="js/music.js"></script>
+        <script>
+            $(".icon1").draggable({
+                containment: ".icon___box",
+                scroll: false,
+                start: function () {
+                    $(".cursor img").attr("src", "img/game_mouse01.png");
+                },
+                drag: function () {
+                    $(".info").html(
+                        "현재 <em style='color:red'>빨간색</em> 폴더를 드래그 하고 있습니다."
+                    );
+                    $("#header").addClass("red");
+                },
+                stop: function () {
+                    setTimeout(os, 3000);
+                    setTimeout(classRemove, 3000);
+                },
             });
 
-            // printTime();
-            // printAgent();
-        }
+            $(".icon2").draggable({
+                containment: ".icon___box",
+                scroll: false,
 
-        let clock = document.querySelector(".time");
-        setInterval(function () {
-        clock.innerHTML = new Date().toLocaleString();
-        }, 1000);
+                start: function () {
+                    $(".cursor img").attr("src", "img/game_mouse02.png");
+                },
+                drag: function () {
+                    $(".info").html(
+                        "현재 <em style='color:blue'>파란색</em> 폴더를 드래그 하고 있습니다."
+                    );
+                    $("#header").addClass("blue");
+                },
+                stop: function () {
+                    setTimeout(os, 3000);
+                    setTimeout(classRemove, 3000);
+                },
+            });
 
+            $(".icon3").draggable({
+                containment: ".icon___box",
+                scroll: false,
+
+                start: function () {
+                    $(".cursor img").attr("src", "img/game_mouse03.png");
+                },
+                drag: function () {
+                    $(".info").html(
+                        "현재 <em style='color:green'>초록색</em> 폴더를 드래그 하고 있습니다."
+                    );
+                    $("#header").addClass("green");
+                },
+                stop: function () {
+                    setTimeout(os, 3000);
+                    setTimeout(classRemove, 3000);
+                },
+            });
+
+            $(".icon4").draggable({
+                containment: ".icon___box",
+                scroll: false,
+
+                start: function () {
+                    $(".cursor img").attr("src", "img/game_mouse04.png");
+                },
+                drag: function () {
+                    $(".info").html(
+                        "현재 <em style='color:yellow'>노란색</em> 폴더를 드래그 하고 있습니다."
+                    );
+                    $("#header").addClass("yellow");
+                },
+                stop: function () {
+                    setTimeout(os, 3000);
+                    setTimeout(classRemove, 3000);
+                },
+            });
+
+            window.onload = function () {
+                window.addEventListener("mousemove", (e) => {
+                    gsap.to(".cursor", {
+                        duration: 0,
+                        left: e.pageX - 5,
+                        top: e.pageY - 10,
+                    });
+                });
+
+                // printTime();
+                // printAgent();
+            };
+
+            let clock = document.querySelector(".time");
+            setInterval(function () {
+                clock.innerHTML = new Date().toLocaleString();
+            }, 1000);
 
             //운영체제 정보 알아내기
             const os = () => {
-            let os = navigator.userAgent.toLowerCase();
-            let sw = screen.width;
-            let sh = screen.height;
-            let info = document.querySelector(".info");
+                let os = navigator.userAgent.toLowerCase();
+                let sw = screen.width;
+                let sh = screen.height;
+                let info = document.querySelector(".info");
 
-            if (os.indexOf("windows") >= 0) {
-                info.innerHTML = "현재 윈도우를 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
-            } else if (os.indexOf("macintosh") >= 0) {
-                info.innerHTML = "현재 맥을 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
-            } else if (os.indexOf("iphone") >= 0) {
-                info.innerHTML = "현재 아이폰을 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
-            } else if (os.indexOf("android") >= 0) {
-                info.innerHTML = "현재 안드로이드 폰을 사용하고 있으며, 화면 크기는 " + sw + "x" + sh + " 입니다."
-            }
-            }
+                if (os.indexOf("windows") >= 0) {
+                    info.innerHTML =
+                        "현재 윈도우를 사용하고 있으며, 화면 크기는 " +
+                        sw +
+                        "x" +
+                        sh +
+                        " 입니다.";
+                } else if (os.indexOf("macintosh") >= 0) {
+                    info.innerHTML =
+                        "현재 맥을 사용하고 있으며, 화면 크기는 " +
+                        sw +
+                        "x" +
+                        sh +
+                        " 입니다.";
+                } else if (os.indexOf("iphone") >= 0) {
+                    info.innerHTML =
+                        "현재 아이폰을 사용하고 있으며, 화면 크기는 " +
+                        sw +
+                        "x" +
+                        sh +
+                        " 입니다.";
+                } else if (os.indexOf("android") >= 0) {
+                    info.innerHTML =
+                        "현재 안드로이드 폰을 사용하고 있으며, 화면 크기는 " +
+                        sw +
+                        "x" +
+                        sh +
+                        " 입니다.";
+                }
+            };
             os();
-    </script>
-</body>
+        </script>
+    </body>
 </html>

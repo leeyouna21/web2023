@@ -1,0 +1,33 @@
+.unsplash__wrap {
+    overflow: hidden;
+}
+.unsplash__inner {
+    height: 600px;
+    h3 {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    p {
+        font-size: 24px;
+        color: #7e7e7e;
+        margin-bottom: 30px;
+    }
+    a {
+        border-radius: 30px;
+    }
+}
+.unsplah__item {
+    @include flex-between;
+    margin-top: 70px;
+    position: absolute;
+
+    > div {
+        width: 300px;
+
+        img {
+            width: 100%;
+            padding: 15px;
+        }
+    }
+}
+

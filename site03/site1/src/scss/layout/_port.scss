@@ -1,0 +1,72 @@
+.port__wrap {
+
+}
+.port__inner {
+    .port__btn {
+    
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    padding: 15px;
+                    margin: 0 20px;
+                    background-color: #daba91;
+                    border-radius: 30px;
+                    margin-bottom: 20px;
+                    a {
+                        padding: 10px 15px;
+                        font-size: 15px;
+                        color: #fff;
+                        
+                    }
+                    &:hover {
+                        background-color: #cea46d;
+                    }
+                }
+            }
+    }
+    .port__cont {
+        @include flex-between;
+        flex-wrap: wrap;
+        .port{
+            width: 32.2222%;
+
+            .port__header {
+                img {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+            .port__body {
+                display: flex;
+                align-items: center;
+        
+                span {
+                    margin-top: 10px;
+                    margin-bottom: 80px;
+                }
+        
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    margin-top: -50px;
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                }
+        
+                p {
+                    font-size: 16px;
+                    color: #7a7a7a;
+                    position: relative;
+                    left: 20px;
+                    top: 0;
+                }
+            }
+        }
+        
+    }
+}
+
