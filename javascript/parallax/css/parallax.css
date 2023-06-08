@@ -111,7 +111,7 @@ main {
     padding-bottom: 56.25%;
     /* background-color: #000; */
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     overflow: hidden;
 }
 .parallax__item__img {
@@ -124,8 +124,12 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    filter: saturate(50%);
-    transition: filter 1s;
+    filter: saturate(0%);
+    transition: all 1s;
+}
+.parallax__item__img:hover {
+    filter: saturate(100%);
+    transform: scale(1.025);
 }
 .parallax__item.parallax__item:nth-child(1) .parallax__item__img {
     background-image: url(../img/slideEffect02.jpg);
@@ -160,6 +164,8 @@ main {
     margin-top: -5vw;
     margin-left: -4vw;
     word-break: keep-all;
+    position: relative;
+    z-index: 1000;
 }
 .parallax__item:nth-child(even) .parallax__item__desc {
     margin-left: auto;
