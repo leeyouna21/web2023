@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>웹표준 사이트 2</title>
         <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/swiper.css" />
         <style>
             /* 기본 셋팅 */
             @import url("https://webfontworld.github.io/NanumSquare/NanumSquare.css"); /* 여백 초기화 */
@@ -53,7 +54,7 @@
             /* 링크 초기화 */
             a {
                 text-decoration: none;
-                color: #000;
+                color: #9aa0a9;
             }
 
             /* 목록 초기화 */
@@ -113,8 +114,9 @@
             }
             #wrap {
                 width: 100%;
-                height: 1000vh;
+                /* height: 1000vh; */
                 margin: 0 auto;
+                box-sizing: border-box;
             }
             /* 헤더 */
             #header {
@@ -357,7 +359,7 @@
                 padding-top: 30px;
             }
             .recommend h1 {
-                padding-top: 40px;
+                padding-top: 30px;
                 padding-left: 10px;
                 font-size: 25px;
                 font-weight: bold;
@@ -371,19 +373,22 @@
             .recommend .r1 {
                 background-color: #f4f2ff;
                 width: 1200px;
-                height: 200px;
+                height: 300px;
                 border-radius: 20px;
                 margin-top: 30px;
+                align-items: flex-start;
             }
             .recommend .r1 p {
                 font-size: 15px;
                 text-align: center;
-                padding-top: 50px;
+                padding-top: 30px;
                 color: #535968;
+                font-weight: bold;
             }
             .recommend .r1 h1 {
                 font-size: 30px;
                 text-align: center;
+                font-weight: bold;
             }
             .recommend .r1 .bg {
                 width: 500px;
@@ -439,7 +444,9 @@
                 color: #b7b7b7;
                 text-decoration: underline;
             }
-
+            .body .body__inner > div:hover {
+                box-shadow: 2px 2px 5px 5px rgba(193, 193, 193, 0.6);
+            }
             /* Q&A */
             .Qmain {
                 width: 1200px;
@@ -512,8 +519,215 @@
                 color: #b7b7b7;
                 text-decoration: underline;
             }
-            #footer {
+            .review {
+                width: 1200px;
+                height: 1300px;
+                margin: 0 auto;
             }
+            .review__inner {
+                display: flex;
+                justify-content: space-between;
+            }
+            .review .r1 h1 {
+                font-size: 20px;
+                font-weight: bold;
+                color: #848484;
+                text-align: center;
+                padding-top: 150px;
+            }
+            .review .r1 h2 {
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 10px;
+            }
+            .review .r2 {
+                width: 500px;
+                height: 700px;
+                background-color: #fff;
+                border-radius: 30px;
+                padding-left: 50px;
+                padding-top: 50px;
+                margin-top: 50px;
+                box-shadow: 0 1px 15px rgba(116, 116, 116, 0.226);
+            }
+            .review .r2 .m1 {
+                display: flex;
+            }
+            .review .r2 .m1 img {
+                width: 200px;
+            }
+            .review .r2 .m1 h1 {
+                padding: 20px;
+                font-size: 20px;
+                color: #848484;
+                padding-left: 150px;
+            }
+            .review .r2 .m2 {
+                display: flex;
+            }
+            .review .r2 .m2 img {
+                width: 100px;
+            }
+            .review .r2 .m2 h2 {
+                font-size: 25px;
+                font-weight: bold;
+                padding-top: 20px;
+                padding-left: 20px;
+            }
+            .review .r2 .m3 h2 {
+                font-size: 30px;
+                font-weight: bold;
+                padding-top: 20px;
+            }
+            .review .r2 .m3 p {
+                font-size: 20px;
+                font-weight: bold;
+                padding-top: 20px;
+                line-height: 1.5;
+                letter-spacing: 1px;
+                padding-right: 40px;
+            }
+            .review .e2 {
+                width: 500px;
+                height: 500px;
+                background-color: #ffc8c8;
+            }
+            .review .dot-button-container {
+                display: flex;
+                justify-content: center; /* 가운데 정렬 */
+                padding-top: 50px;
+            }
+
+            .dot-button {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #9aa0a9;
+                margin-right: 10px; /* 각 버튼 사이의 간격을 조정 */
+                margin-top: 40px;
+            }
+
+            .review .dot-button::before {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #6c2ff2;
+            }
+            .dot-button.active {
+                background-color: #6c2ff2;
+            }
+            .start {
+                width: 100%;
+                height: 300px;
+                background-color: #f8f8fa;
+            }
+            .start h2 {
+                font-size: 30px;
+                text-align: center;
+                padding-top: 80px;
+                font-weight: bold;
+                color: #787e8b;
+            }
+            .start p {
+                font-size: 30px;
+                text-align: center;
+                padding-top: 30px;
+                font-weight: bold;
+                line-height: 1.5;
+                color: #000;
+            }
+            .sli {
+                width: 1200px;
+                height: 600px;
+                margin: 0 auto;
+                margin-top: 100px;
+            }
+            .sli img {
+                width: 1200px;
+                height: 500px;
+            }
+            .sli .dot-button-container {
+                display: flex;
+                justify-content: center; /* 가운데 정렬 */
+            }
+
+            .dot-button {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #9aa0a9;
+                margin-right: 10px; /* 각 버튼 사이의 간격을 조정 */
+                margin-top: 30px;
+            }
+
+            .sli.dot-button::before {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #6c2ff2;
+            }
+            .dot-button.active {
+                background-color: #6c2ff2;
+            }
+
+            .believe {
+                width: 100%;
+                height: 600px;
+                background-color: #f8f8fa;
+                margin-top: 50px;
+                margin-bottom: 0;
+            }
+            .believe h1 {
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 50px;
+            }
+            .believe p {
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 20px;
+                color: #787e8b;
+                line-height: 1.5;
+            }
+            .believe img {
+                width: 1500px;
+            }
+
+            #footer {
+                background-color: #2d3142;
+                width: 100%;
+                height: 300px;
+                margin-top: 0;
+            }
+            /* #footer img {
+                width: 200px;
+            }
+            #footer .footer__inner {
+                display: flex;
+                align-items: center;
+            }
+            #footer .footer__inner ul {
+                display: flex;
+                padding: 0;
+            }
+            #footer .footer__inner ul:nth-child(1) li {
+                padding: 0px 30px;
+            }
+            #footer .footer__inner ul:nth-child(1) li a {
+                font-size: 15px;
+                font-weight: 500;
+            } */
         </style>
     </head>
     <body>
@@ -861,8 +1075,150 @@
                         <p>Q & A 더보기</p>
                     </a>
                 </div>
+                <div class="review">
+                    <div class="r1">
+                        <h1>2023년 6월 Best Review</h1>
+                        <h2>
+                            <span style="color: #6c2ff2"> 직접 먹어보신 분</span
+                            >들은 이런 리뷰를 남겨주셨어요
+                        </h2>
+                    </div>
+                    <div class="review__inner">
+                        <div class="r2">
+                            <div class="m1">
+                                <img src="images/review.PNG" alt="" />
+                                <h1>서**.20대 / 여</h1>
+                            </div>
+                            <div class="m2">
+                                <img src="images/review1.PNG" alt="" />
+                                <h2>
+                                    <span style="color: #787e8b">리포데이</span>
+                                    <br />
+                                    올인원 우먼팩
+                                </h2>
+                            </div>
+                            <div class="m3">
+                                <h2>
+                                    <span style="color: #6c2ff2"> GOOD</span>
+                                </h2>
+                                <p>
+                                    진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..
+                                </p>
+                                <h2>
+                                    <span style="color: #6c2ff2"> BAD</span>
+                                    <p>
+                                        진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..
+                                    </p>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="r2">
+                            <div class="m1">
+                                <img src="images/review.PNG" alt="" />
+                                <h1>서**.20대 / 여</h1>
+                            </div>
+                            <div class="m2">
+                                <img src="images/review1.PNG" alt="" />
+                                <h2>
+                                    <span style="color: #787e8b">리포데이</span>
+                                    <br />
+                                    올인원 우먼팩
+                                </h2>
+                            </div>
+                            <div class="m3">
+                                <h2>
+                                    <span style="color: #6c2ff2"> GOOD</span>
+                                </h2>
+                                <p>
+                                    진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..
+                                </p>
+                                <h2>
+                                    <span style="color: #6c2ff2"> BAD</span>
+                                    <p>
+                                        진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..진짜좋아요진짜로..
+                                    </p>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dot-button-container">
+                        <div class="dot-button active"></div>
+                        <div class="dot-button"></div>
+                        <div class="dot-button"></div>
+                    </div>
+                </div>
+                <div class="start">
+                    <h2>건강한 영양제 & 식단 관리를 위한 모든 것</h2>
+                    <p>
+                        <span style="color: #535968">
+                            걱정 없이 , 쉽고 간편하게</span
+                        ><br />
+                        <span style="color: #6c2ff2"> 필라이즈</span>로
+                        시작하세요.
+                    </p>
+                </div>
+                <div class="sli">
+                    <img src="images/sli1.PNG" alt="" />
+                    <div class="dot-button-container">
+                        <div class="dot-button active"></div>
+                        <div class="dot-button"></div>
+                        <div class="dot-button"></div>
+                        <div class="dot-button"></div>
+                        <div class="dot-button"></div>
+                        <div class="dot-button"></div>
+                        <div class="dot-button"></div>
+                        <div class="dot-button"></div>
+                    </div>
+                </div>
+                <div class="believe">
+                    <h1>
+                        필라이즈는 믿을 수 있어요. <br />
+                        -
+                    </h1>
+                    <p>
+                        필라이즈는 국내외 검증된 기관과 <br />신뢰도 높은 연구
+                        결과를 바탕으로 개인 맞춤형 분석 결과를 제공합니다.
+                    </p>
+                    <img src="images/bimg.PNG" alt="" />
+                </div>
+                <footer id="footer">
+                    <div class="footer__inner">
+                        <div class="logo">
+                            <!-- <img src="images/logo.png" alt="" /> -->
+                        </div>
+                        <div class="f2">
+                            <div class="content">
+                                <ul>
+                                    <li><a href="#">채용</a></li>
+                                    <li><a href="#">이용약관</a></li>
+                                    <li><a href="#">개인정보 처리방침</a></li>
+                                </ul>
+                                <ul>
+                                    <li>주식회사 필라이즈 (pillyize lnc.)</li>
+                                    <li>사업자 등록번호 : 000-00-00000</li>
+                                    <li>대표 : 아무개</li>
+                                    <li>대표번호 : 1111-1111</li>
+                                    <li>이메일 : aaa@naver.com</li>
+                                    <li>
+                                        주소 : 00000 서울특별시 강남구 테헤란로
+                                        2길 역삼동 비전타워
+                                    </li>
+                                </ul>
+                                <strong
+                                    >copyright &copy; 2023 onlyforyou Inc All
+                                    right reserved
+                                    <br />
+                                    본 사이트에 게시 된 모든 콘텐츠, 게시물의
+                                    저작권은 주식회서 필라이즈에게 있습니다.
+                                    <br />본 사이트의 모든 콘텐츠 및 게시물에
+                                    대한 무단적인 수집, 전재, 복사, 배포를
+                                    엄격히 금합니다.</strong
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </main>
-            <footer id="footer"></footer>
         </div>
     </body>
 </html>
