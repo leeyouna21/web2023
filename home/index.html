@@ -121,7 +121,7 @@
             /* 헤더 */
             #header {
                 width: 100%;
-                height: 100px;
+                height: 80px;
                 background-color: #fff;
                 position: fixed;
                 top: 0;
@@ -143,10 +143,11 @@
             }
             .container img {
                 padding-bottom: 30px;
-                margin-left: 50px;
+                margin-left: 200px;
+                width: 150px;
             }
             .container ul {
-                margin-right: -300px;
+                margin-right: -400px;
                 padding-bottom: 20px;
                 margin-left: -100px;
             }
@@ -159,6 +160,7 @@
             }
             .container ul li a {
                 font-size: 20px;
+                color: #101219;
             }
             .container .search {
                 display: flex;
@@ -174,6 +176,7 @@
             }
             .container .search input {
                 /* width: 80%; */
+                width: 300px;
                 height: 50px;
                 background-color: rgba(231, 231, 231, 0.27);
                 font-size: 14px;
@@ -182,7 +185,7 @@
                 padding: 0 30px;
             }
             .container .ka {
-                margin-right: 100px;
+                margin-right: 250px;
             }
             /* 메인 슬라이더 */
             #main {
@@ -191,31 +194,31 @@
                 background-color: #fff;
             }
             .Mcontainer {
-                width: 1380px;
+                width: 1700px;
                 height: 300px;
                 background-color: #8760f4;
-                border-radius: 50px;
+                border-radius: 30px;
                 margin: 0 auto;
-                margin-top: 150px;
+                margin-top: 130px;
             }
             .Mcontainer h3 {
                 font-size: 30px;
-                font-weight: lighter;
+                font-weight: bold;
                 color: #fff;
-                padding-left: 200px;
+                padding-left: 400px;
                 padding-top: 50px;
             }
             .Mcontainer p {
                 font-size: 40px;
-                font-weight: lighter;
+                font-weight: bold;
                 color: #fff;
-                padding-left: 200px;
+                padding-left: 400px;
                 line-height: 1.5;
             }
             .Mcontainer img {
                 width: 300px;
                 height: 300px;
-                padding-left: 900px;
+                padding-left: 1000px;
                 margin-top: -230px;
             }
             /* 메인 검색 */
@@ -318,6 +321,7 @@
                 align-content: center;
                 height: 60%;
                 margin: 0 auto;
+                padding-top: 30px;
             }
             .content .content__inner > div {
                 width: 18%;
@@ -325,12 +329,12 @@
                 background-color: rgb(255, 255, 255);
                 border-radius: 20px;
                 padding: 50px 0px 50px 0px;
-                box-shadow: 2px 2px 0px rgba(124, 124, 124, 0.4);
+                box-shadow: 2px 2px 3px 3px rgba(193, 193, 193, 0.6);
                 transition: box-shadow 0.3s ease;
                 margin: 10px 10px 10px 10px;
             }
             .content .content__inner > div:hover {
-                box-shadow: 2px 2px 5px 5px rgba(193, 193, 193, 0.6);
+                box-shadow: 3px 3px 5px 5px rgba(193, 193, 193, 0.6);
             }
             .content .content__inner > div p {
                 display: block;
@@ -338,6 +342,7 @@
                 font-weight: 500;
                 padding-bottom: 25px;
                 padding-top: 20px;
+                color: #000;
             }
             .content .plus p {
                 text-align: right;
@@ -593,13 +598,13 @@
                 height: 500px;
                 background-color: #ffc8c8;
             }
-            .review .dot-button-container {
+            .review .dot-button1-container {
                 display: flex;
                 justify-content: center; /* 가운데 정렬 */
                 padding-top: 50px;
             }
 
-            .dot-button {
+            .dot-button1 {
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
@@ -608,7 +613,7 @@
                 margin-top: 40px;
             }
 
-            .review .dot-button::before {
+            .review .dot-button1::before {
                 content: "";
                 position: absolute;
                 top: 3px;
@@ -618,7 +623,7 @@
                 border-radius: 50%;
                 background-color: #6c2ff2;
             }
-            .dot-button.active {
+            .dot-button1.active {
                 background-color: #6c2ff2;
             }
             .start {
@@ -642,42 +647,42 @@
                 color: #000;
             }
             .sli {
-                width: 1200px;
-                height: 600px;
-                margin: 0 auto;
-                margin-top: 100px;
-            }
-            .sli img {
-                width: 1200px;
-                height: 500px;
-            }
-            .sli .dot-button-container {
-                display: flex;
-                justify-content: center; /* 가운데 정렬 */
-            }
+  position: relative;
+}
 
-            .dot-button {
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background-color: #9aa0a9;
-                margin-right: 10px; /* 각 버튼 사이의 간격을 조정 */
-                margin-top: 30px;
-            }
+.sli__container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
 
-            .sli.dot-button::before {
-                content: "";
-                position: absolute;
-                top: 3px;
-                left: 3px;
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background-color: #6c2ff2;
-            }
-            .dot-button.active {
-                background-color: #6c2ff2;
-            }
+.sli__container img {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.dot-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot-button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot-button.active {
+  background-color: black;
+}
+
 
             .believe {
                 width: 100%;
@@ -702,6 +707,7 @@
             }
             .believe img {
                 width: 1500px;
+                padding-left: 200px;
             }
 
             #footer {
@@ -728,6 +734,39 @@
                 font-size: 15px;
                 font-weight: 500;
             } */
+            .footer1 {
+  width: 100%;
+  height: 100px;
+  background-color: #6c2ff2;
+  position: sticky;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer1.show {
+  transform: translateY(0);
+}
+
+.footer1 .content {
+  display: flex;
+  justify-content: center;
+}
+
+.footer1 .content h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.footer1 .content img {
+  width: 120px;
+  height: 100px;
+  padding-left: 30px;
+}
+
+
         </style>
     </head>
     <body>
@@ -739,7 +778,7 @@
                         <form action="#">
                             <input
                                 type="text"
-                                placeholder="💊    |    영양제 검색"
+                                placeholder="💊    |    영양제 검색 🔍"
                                 required
                             />
                             <button type="submit"></button>
@@ -748,12 +787,18 @@
                     <ul>
                         <li><a href="#">제휴문의</a></li>
                         <li><a href="#">리뷰쓰기</a></li>
-                        <li><a href="#">앱 다운로드</a></li>
+                        <li>
+                            <a href="#"
+                                ><span style="color: #6c2ff2"
+                                    >앱 다운로드</span
+                                ></a
+                            >
+                        </li>
                     </ul>
                     <img class="ka" src="images/kakao.png" alt="카카오" />
                 </div>
             </header>
-            <main id="main">
+            <main id="main">    
                 <div class="Mcontainer">
                     <div class="Mslider">
                         <h3>Q & A <br /><br /></h3>
@@ -1141,10 +1186,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dot-button-container">
-                        <div class="dot-button active"></div>
-                        <div class="dot-button"></div>
-                        <div class="dot-button"></div>
+                    <div class="dot-button1-container">
+                        <div class="dot-button1 active"></div>
+                        <div class="dot-button1"></div>
+                        <div class="dot-button1"></div>
                     </div>
                 </div>
                 <div class="start">
@@ -1158,18 +1203,28 @@
                     </p>
                 </div>
                 <div class="sli">
-                    <img src="images/sli1.PNG" alt="" />
-                    <div class="dot-button-container">
-                        <div class="dot-button active"></div>
-                        <div class="dot-button"></div>
-                        <div class="dot-button"></div>
-                        <div class="dot-button"></div>
-                        <div class="dot-button"></div>
-                        <div class="dot-button"></div>
-                        <div class="dot-button"></div>
-                        <div class="dot-button"></div>
+                    <div class="sli__container">
+                      <img src="images/sli1.PNG" alt="" />
+                      <img src="images/sli2.PNG" alt="" />
+                      <img src="images/sli3.PNG" alt="" />
+                      <img src="images/sli4.PNG" alt="" />
+                      <img src="images/sli5.PNG" alt="" />
+                      <img src="images/sli6.PNG" alt="" />
+                      <img src="images/sli7.PNG" alt="" />
+                      <img src="images/sli8.PNG" alt="" />
                     </div>
-                </div>
+                    <div class="dot-button-container">
+                      <div class="dot-button active"></div>
+                      <div class="dot-button"></div>
+                      <div class="dot-button"></div>
+                      <div class="dot-button"></div>
+                      <div class="dot-button"></div>
+                      <div class="dot-button"></div>
+                      <div class="dot-button"></div>
+                      <div class="dot-button"></div>
+                    </div>
+                  </div>
+
                 <div class="believe">
                     <h1>
                         필라이즈는 믿을 수 있어요. <br />
@@ -1218,7 +1273,70 @@
                         </div>
                     </div>
                 </footer>
+                <div class="footer1">
+                    <div class="content">
+                      <h1>필라이즈 앱 다운 받기 ></h1>
+                      <img src="images/qr.PNG" alt="">
+                    </div>
+                  </div>
+                  
             </main>
         </div>
+        <script>
+         // 슬라이더 요소들 선택
+const sliderContainer = document.querySelector('.sli__container');
+const images = Array.from(sliderContainer.getElementsByTagName('img'));
+const dotButtons = document.querySelectorAll('.dot-button');
+
+// 현재 이미지의 인덱스를 저장하는 변수
+let currentIndex = 0;
+
+// 초기 슬라이더 상태 설정
+images[currentIndex].style.display = 'block';
+dotButtons[currentIndex].classList.add('active');
+
+// 이미지 변경 함수
+function changeImage(index) {
+  // 현재 인덱스의 이미지와 닷 버튼 클래스 제거
+  images[currentIndex].style.display = 'none';
+  dotButtons[currentIndex].classList.remove('active');
+
+  // 새로운 인덱스의 이미지와 닷 버튼 클래스 추가
+  images[index].style.display = 'block';
+  dotButtons[index].classList.add('active');
+
+  // 현재 인덱스 업데이트
+  currentIndex = index;
+}
+
+// 닷 버튼 클릭 시 이미지 변경
+dotButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    changeImage(index);
+  });
+});
+
+// 일정 시간마다 이미지 자동 변경
+setInterval(() => {
+  const nextIndex = (currentIndex + 1) % images.length;
+  changeImage(nextIndex);
+}, 3000);
+
+        </script>
+
+        <script>
+            window.addEventListener('scroll', function() {
+  var footer = document.querySelector('.footer1');
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (scrollPosition > 0) {
+    footer.classList.add('show');
+  } else {
+    footer.classList.remove('show');
+  }
+});
+
+        </script>
+        
     </body>
 </html>
