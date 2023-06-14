@@ -1,922 +1,863 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="webstoryboy" />
-        <meta
-            name="description"
-            content="웹 퍼블리셔를 위한 정보 공유 사이트입니다."
-        />
-        <meta
-            name="keywords"
-            content="웹스토리보이, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design"
-        />
-        <title>Youna | Youna</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="webstoryboy" />
+    <meta
+      name="description"
+      content="웹 퍼블리셔를 위한 정보 공유 사이트입니다."
+    />
+    <meta
+      name="keywords"
+      content="웹스토리보이, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design"
+    />
+    <title>Youna | Youna</title>
 
-        <!-- css -->
-        <link href="assets/css/bootstrapTheme.css" rel="stylesheet" />
-        <link href="assets/css/custom.css" rel="stylesheet" />
-        <link href="assets/css/style.css" rel="stylesheet" />
-        <link href="assets/css/isotope.css" rel="stylesheet" />
-        <link href="assets/css/font-awesome.css" rel="stylesheet" />
-        <link rel="stylesheet" href="assets/css/book.css" rel="stylesheet" />
+    <!-- css -->
+    <link href="assets/css/bootstrapTheme.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/isotope.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/book.css" rel="stylesheet" />
 
-        <!-- 파비콘 -->
-        <link rel="shortcut icon" href="assets/ico/favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="57x57"
-            href="assets/ico/apple-icon-57x57.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="60x60"
-            href="assets/ico/apple-icon-60x60.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="72x72"
-            href="assets/ico/apple-icon-72x72.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="76x76"
-            href="assets/ico/apple-icon-76x76.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="114x114"
-            href="assets/ico/apple-icon-114x114.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="120x120"
-            href="assets/ico/apple-icon-120x120.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="144x144"
-            href="assets/ico/apple-icon-144x144.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="152x152"
-            href="assets/ico/apple-icon-152x152.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="assets/ico/apple-icon-180x180.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="192x192"
-            href="assets/ico/android-icon-192x192.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="assets/ico/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="96x96"
-            href="assets/ico/favicon-96x96.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="assets/ico/favicon-16x16.png"
-        />
-        <link rel="manifest" href="assets/ico/manifest.json" />
-        <meta name="msapplication-TileColor" content="#FFFFFF" />
-        <meta
-            name="msapplication-TileImage"
-            content="assets/ico/ms-icon-144x144.png"
-        />
-        <meta name="theme-color" content="#FFFFFF" />
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/ico/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/ico/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/ico/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/ico/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/ico/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/ico/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/ico/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/ico/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/ico/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/ico/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/ico/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/ico/manifest.json" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/ico/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#FFFFFF" />
 
-        <!-- Facebook meta tags -->
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="이유나" />
-        <meta
-            property="og:url"
-            content="http://leeyouna21.github.io/web2023/"
-        />
-        <meta
-            property="og:image"
-            content="http://leeyouna21.github.io/web2023/"
-        />
-        <meta property="og:site_name" content="이유나" />
-        <meta
-            property="og:description"
-            content="웹과 관련된 정보를 제공합니다."
-        />
+    <!-- Facebook meta tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="이유나" />
+    <meta property="og:url" content="http://leeyouna21.github.io/web2023/" />
+    <meta property="og:image" content="http://leeyouna21.github.io/web2023/" />
+    <meta property="og:site_name" content="이유나" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
 
-        <!-- twitter meta tags -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@yuna" />
-        <meta name="twitter:title" content="이유나" />
-        <meta
-            name="twitter:description"
-            content="웹과 관련된 정보를 제공합니다."
-        />
-        <meta
-            property="twitter:image"
-            content="http://dsy1943.dothome.co.kr/assets/ico/icon.jpg"
-        />
+    <!-- twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yuna" />
+    <meta name="twitter:title" content="이유나" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta
+      property="twitter:image"
+      content="http://dsy1943.dothome.co.kr/assets/ico/icon.jpg"
+    />
 
-        <!-- 웹 폰트 -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Nanum+Gothic"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Abel"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Gaegu&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap"
-            rel="stylesheet"
-        />
+    <!-- 웹 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gaegu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.../assets2/js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.../assets2/js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-        <style>
-            #clock {
-                display: block;
-            }
+    <style>
+      #clock {
+        display: block;
+      }
 
-            .link1 {
-                background: #fff;
-                left: 50%;
-                transform: translatex(-50%);
-                color: #000;
-                display: inline-block;
-                border-radius: 5px;
-                font-weight: bold;
-                padding: 10px 30px !important;
-                height: auto !important;
-                box-sizing: border-box;
-                width: auto !important;
-                font-size: 20px !important;
-                margin-top: 36px !important;
-            }
+      .link1 {
+        background: #fff;
+        left: 50%;
+        transform: translatex(-50%);
+        color: #000;
+        display: inline-block;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 10px 30px !important;
+        height: auto !important;
+        box-sizing: border-box;
+        width: auto !important;
+        font-size: 20px !important;
+        margin-top: 36px !important;
+      }
 
-            .link2 {
-                background: #fff;
-                left: 50%;
-                transform: translatex(-50%);
-                color: #000;
-                display: inline-block;
-                border-radius: 5px;
-                font-weight: bold;
-                padding: 10px 30px !important;
-                height: auto !important;
-                box-sizing: border-box;
-                width: auto !important;
-                font-size: 20px !important;
-                margin-top: 86px !important;
-            }
+      .link2 {
+        background: #fff;
+        left: 50%;
+        transform: translatex(-50%);
+        color: #000;
+        display: inline-block;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 10px 30px !important;
+        height: auto !important;
+        box-sizing: border-box;
+        width: auto !important;
+        font-size: 20px !important;
+        margin-top: 86px !important;
+      }
 
-            .disqus {
-                margin-right: 20px;
-                margin-top: 40px;
-            }
-        </style>
-    </head>
+      .disqus {
+        margin-right: 20px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
 
-    <body>
-        <!-- nav -->
-        <div id="top-nav" class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container-fluid">
-                    <button
-                        type="button"
-                        class="btn btn-navbar"
-                        data-toggle="collapse"
-                        data-target=".nav-collapse"
-                    >
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="brand" href="index.html">Youna</a>
-                    <div class="nav-collapse collapse pull-right">
-                        <ul class="nav">
-                            <li>
-                                <a href="https://xoouxa58.tistory.com/">Blog</a>
-                            </li>
-                            <li><a href="https://github.com/">Github</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <body>
+    <!-- nav -->
+    <div id="top-nav" class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button
+            type="button"
+            class="btn btn-navbar"
+            data-toggle="collapse"
+            data-target=".nav-collapse"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">Youna</a>
+          <div class="nav-collapse collapse pull-right">
+            <ul class="nav">
+              <li>
+                <a href="https://xoouxa58.tistory.com/">Blog</a>
+              </li>
+              <li><a href="https://github.com/">Github</a></li>
+            </ul>
+          </div>
         </div>
-        <!-- //nav -->
+      </div>
+    </div>
+    <!-- //nav -->
 
-        <!-- header -->
-        <div id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="span12" style="text-align: center">
-                        <div class="header_tit">
-                            <a href="https://xoouxa58.tistory.com/"
-                                ><img
-                                    src="assets/img/heart-dynamic-color.png"
-                                    alt="main"
-                            /></a>
-                            <h1>Welcome to the developer's world</h1>
-                        </div>
-                        <div class="header_icon">
-                            <ul>
-                                <li>
-                                    <a
-                                        href="https://github.com/leeyouna21"
-                                        target="_blank"
-                                        ><i
-                                            class="fa fa-github"
-                                            aria-hidden="true"
-                                        ></i
-                                        ><span>github</span></a
-                                    >
-                                </li>
-                                <!-- <li><a href="https://xoouxa58.tistory.com/" target="_blank"><i class="fa fa-github"
+    <!-- header -->
+    <div id="header">
+      <div class="container">
+        <div class="row">
+          <div class="span12" style="text-align: center">
+            <div class="header_tit">
+              <a href="https://xoouxa58.tistory.com/"
+                ><img src="assets/img/heart-dynamic-color.png" alt="main"
+              /></a>
+              <h1>Welcome to the developer's world</h1>
+            </div>
+            <div class="header_icon">
+              <ul>
+                <li>
+                  <a href="https://github.com/leeyouna21" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"></i
+                    ><span>github</span></a
+                  >
+                </li>
+                <!-- <li><a href="https://xoouxa58.tistory.com/" target="_blank"><i class="fa fa-github"
               aria-hidden="true"></i><span>tistory</span></a></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+              </ul>
             </div>
+          </div>
         </div>
-        <!-- //header -->
+      </div>
+    </div>
+    <!-- //header -->
 
-        <!-- contents_tit -->
-        <div id="contents_tit">
-            <div class="titt">
-                <p>
-                    <a href="#" class="tit_btn"
-                        >안녕하세요 ! 이유나라고 합니다 ◟(ᵔ ̮ ᵔ)͜💐</a
-                    >
-                </p>
-            </div>
+    <!-- contents_tit -->
+    <div id="contents_tit">
+      <div class="titt">
+        <p>
+          <a href="#" class="tit_btn"
+            >안녕하세요 ! 이유나라고 합니다 ◟(ᵔ ̮ ᵔ)͜💐</a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- //contents_tit -->
+
+    <!-- contents -->
+    <div id="customizing">
+      <div class="container">
+        <div class="row">
+          <div id="options" class="gridly">
+            <ul class="filter option-set" data-filter-group="color">
+              <li>
+                <a
+                  href="#filter-color-any"
+                  data-filter-value=""
+                  class="selected"
+                  >ALL</a
+                >
+              </li>
+              <li class="webstandard">
+                <a href="#filter-color-webstandard" data-filter-value=".class"
+                  >CLASS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#filter-color-any"
+                  data-filter-value=""
+                  class="selected"
+                  >HTML</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#filter-color-any"
+                  data-filter-value=""
+                  class="selected"
+                  >SITE</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#filter-color-any"
+                  data-filter-value=""
+                  class="selected"
+                  >MYSQL</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- //contents_tit -->
 
-        <!-- contents -->
-        <div id="customizing">
-            <div class="container">
-                <div class="row">
-                    <div id="options" class="gridly">
-                        <ul class="filter option-set" data-filter-group="color">
-                            <li>
-                                <a
-                                    href="#filter-color-any"
-                                    data-filter-value=""
-                                    class="selected"
-                                    >ALL</a
-                                >
-                            </li>
-                            <li class="webstandard">
-                                <a
-                                    href="#filter-color-webstandard"
-                                    data-filter-value=".class"
-                                    >CLASS</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="#filter-color-any"
-                                    data-filter-value=""
-                                    class="selected"
-                                    >HTML</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="#filter-color-any"
-                                    data-filter-value=""
-                                    class="selected"
-                                    >SITE</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="#filter-color-any"
-                                    data-filter-value=""
-                                    class="selected"
-                                    >MYSQL</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row" id="middle" style="margin-left: 16px">
-                    <div id="container" class="clearfix">
-                        <!-- box -->
-                        <section class="color-shape class">
-                            <a href="class/index.html" target="_blank">
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">CLASS</span>
+        <div class="row" id="middle" style="margin-left: 16px">
+          <div id="container" class="clearfix">
+            <!-- box -->
+            <section class="color-shape class">
+              <a href="class/index.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">CLASS</span>
                   <span class="overlay-text-thumb-donut">클래스</span>
                   <span class="overlay-text-thumb1-donut">클래스</span>
                   <span class="overlay-text-thumb2-donut">CLASS</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/bubble.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>YUNA</h5>
-                                        <p>저를 소개합니다 !</p>
-                                        <span>About me !</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img src="assets/img/bubble.svg" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>YUNA</h5>
+                    <p>저를 소개합니다 !</p>
+                    <span>About me !</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape JAVASCRIPT">
-                            <a href="javascript/index.html" target="_blank">
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">JAVASCRIPT</span>
+            <!-- box -->
+            <section class="color-shape JAVASCRIPT">
+              <a href="javascript/index.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">JAVASCRIPT</span>
                   <span class="overlay-text-thumb-donut">자바스크립트</span>
                   <span class="overlay-text-thumb1-donut">자바스크립트</span>
                   <span class="overlay-text-thumb2-donut">JAVASCRIPT</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/javascript.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>JAVASCRIPT</h5>
-                                        <p>자바스크립트</p>
-                                        <span>What is JAVASCRIPT ?</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img src="assets/img/javascript.svg" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>JAVASCRIPT</h5>
+                    <p>자바스크립트</p>
+                    <span>What is JAVASCRIPT ?</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape HTML">
-                            <a href="webd/index.html" target="_blank">
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">HTML</span>
+            <!-- box -->
+            <section class="color-shape HTML">
+              <a href="webd/index.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">HTML</span>
                   <span class="overlay-text-thumb-donut">레이아웃 연습</span>
                   <span class="overlay-text-thumb1-donut">레이아웃</span>
                   <span class="overlay-text-thumb2-donut">HTML</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/layout.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>HTML</h5>
-                                        <p>레이아웃</p>
-                                        <span>웹사이트 구조를 파악하자 !</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img src="assets/img/layout.svg" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>HTML</h5>
+                    <p>레이아웃</p>
+                    <span>웹사이트 구조를 파악하자 !</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape SITE">
-                            <a href="site/index.html" target="_blank">
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">SITE</span>
+            <!-- box -->
+            <section class="color-shape SITE">
+              <a href="site/index.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">SITE</span>
                   <span class="overlay-text-thumb-donut">사이트 만들기</span>
                   <span class="overlay-text-thumb1-donut">사이트 만들기</span>
                   <span class="overlay-text-thumb2-donut">SITE</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/site.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>1. SITE</h5>
-                                        <p>나만의 사이트 만들기</p>
-                                        <span
-                                            >피그마를 이용해 사이트 만들기</span
-                                        >
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img src="assets/img/site.svg" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>1. SITE</h5>
+                    <p>나만의 사이트 만들기</p>
+                    <span>피그마를 이용해 사이트 만들기</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape SITE">
-                            <a href="site/site1/index.html" target="_blank">
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">SITE1</span>
+            <!-- box -->
+            <section class="color-shape SITE">
+              <a href="site/site1/index.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">SITE1</span>
                   <span class="overlay-text-thumb-donut">사이트1 만들기</span>
                   <span class="overlay-text-thumb1-donut">사이트1 만들기</span>
                   <span class="overlay-text-thumb2-donut">SITE1</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/site.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>2. SITE</h5>
-                                        <p>코딩으로 사이트 만들기</p>
-                                        <span
-                                            >1을 기반으로 코딩으로 만들기</span
-                                        >
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img src="assets/img/site.svg" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>2. SITE</h5>
+                    <p>코딩으로 사이트 만들기</p>
+                    <span>1을 기반으로 코딩으로 만들기</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape SITE">
-                            <a
-                                href="javascript/parallax/parallaxAA.html"
-                                target="_blank"
-                            >
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">SITE2</span>
+            <!-- box -->
+            <section class="color-shape SITE">
+              <a href="javascript/parallax/parallaxAA.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">SITE2</span>
                   <span class="overlay-text-thumb-donut">역동적인 사이트 만들기</span>
                   <span class="overlay-text-thumb1-donut">역동적인 사이트 만들기</span>
                   <span class="overlay-text-thumb2-donut">SITE2</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/site.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>3. SITE</h5>
-                                        <p>dynamic</p>
-                                        <span
-                                            >스크롤 이펙트 ! 내려서 보세요</span
-                                        >
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img src="assets/img/site.svg" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>3. SITE</h5>
+                    <p>dynamic</p>
+                    <span>스크롤 이펙트 ! 내려서 보세요</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape SITE">
-                            <a
-                                href="http://yuna0508.dothome.co.kr/php/main/main.php"
-                                target="_blank"
-                            >
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">SITE3</span>
+            <!-- box -->
+            <section class="color-shape SITE">
+              <a
+                href="http://yuna0508.dothome.co.kr/php/main/main.php"
+                target="_blank"
+              >
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">SITE3</span>
                   <span class="overlay-text-thumb-donut">php 블로그 사이트</span>
                   <span class="overlay-text-thumb1-donut">php 블로그 사이트</span>
                   <span class="overlay-text-thumb2-donut">SITE3</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/locker-front-color.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>4. SITE</h5>
-                                        <p>php 사이트</p>
-                                        <span>php로 사이트 만들자 !</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img
+                    src="assets/img/locker-front-color.svg"
+                    alt="portfolio"
+                  />
+                  <div class="img-text donutImg">
+                    <h5>4. SITE</h5>
+                    <p>php 사이트</p>
+                    <span>php로 사이트 만들자 !</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape SITE">
-                            <a
-                                href="http://yuna0508.dothome.co.kr/php2/main/main.php"
-                                target="_blank"
-                            >
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">SITE4</span>
+            <!-- box -->
+            <section class="color-shape SITE">
+              <a
+                href="http://yuna0508.dothome.co.kr/php2/main/main.php"
+                target="_blank"
+              >
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">SITE4</span>
                   <span class="overlay-text-thumb-donut">php 블로그 사이트</span>
                   <span class="overlay-text-thumb1-donut">php 블로그 사이트</span>
                   <span class="overlay-text-thumb2-donut">SITE4</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/locker-front-color.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>SITE4</h5>
-                                        <p>php 블로그 사이트</p>
-                                        <span>SITE4</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img
+                    src="assets/img/locker-front-color.svg"
+                    alt="portfolio"
+                  />
+                  <div class="img-text donutImg">
+                    <h5>SITE4</h5>
+                    <p>php 블로그 사이트</p>
+                    <span>SITE4</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape SITE">
-                            <a
-                                href="javascript/parallax/parallaxAA.html"
-                                target="_blank"
-                            >
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">SITE4</span>
+            <!-- box -->
+            <section class="color-shape SITE">
+              <a href="javascript/parallax/parallaxAA.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">SITE4</span>
                   <span class="overlay-text-thumb-donut">php 조별 사이트</span>
                   <span class="overlay-text-thumb1-donut">php 조별 사이트</span>
                   <span class="overlay-text-thumb2-donut">SITE4</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/locker-front-color.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>SITE4</h5>
-                                        <p>php 조별 사이트</p>
-                                        <span>SITE4</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img
+                    src="assets/img/locker-front-color.svg"
+                    alt="portfolio"
+                  />
+                  <div class="img-text donutImg">
+                    <h5>SITE4</h5>
+                    <p>php 조별 사이트</p>
+                    <span>SITE4</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape MYSQL">
-                            <a href="mysql/index.html" target="_blank">
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">MYSQL</span>
+            <!-- box -->
+            <section class="color-shape MYSQL">
+              <a href="mysql/index.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">MYSQL</span>
                   <span class="overlay-text-thumb-donut">MYSQL</span>
                   <span class="overlay-text-thumb1-donut">MYSQL</span>
                   <span class="overlay-text-thumb2-donut">MYSQL</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/mysql.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>MYSQL</h5>
-                                        <p>WHAT is MYSQL ?</p>
-                                        <span>MYSQL에 대해 알아보자 !</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
-                        <!-- box -->
-                        <section class="color-shape game">
-                            <a
-                                href="javascript/game/gameEffect01.html"
-                                target="_blank"
-                            >
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">game</span>
+                  </div>
+                  <img src="assets/img/mysql.svg" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>MYSQL</h5>
+                    <p>WHAT is MYSQL ?</p>
+                    <span>MYSQL에 대해 알아보자 !</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
+            <!-- box -->
+            <section class="color-shape game">
+              <a href="javascript/game/gameEffect01.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">game</span>
                   <span class="overlay-text-thumb-donut">game</span>
                   <span class="overlay-text-thumb1-donut">game</span>
                   <span class="overlay-text-thumb2-donut">game</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/1NiP.gif"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>GAME</h5>
-                                        <p>How to play the game?</p>
-                                        <span
-                                            >뮤직플레이어도 함께 만들어보자
-                                            !</span
-                                        >
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img src="assets/img/1NiP.gif" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>GAME</h5>
+                    <p>How to play the game?</p>
+                    <span>뮤직플레이어도 함께 만들어보자 !</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape MOUSE">
-                            <a
-                                href="javascript/mouseEffect/mouseEffect01.html"
-                                target="_blank"
-                            >
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">MOUSE</span>
+            <!-- box -->
+            <section class="color-shape MOUSE">
+              <a
+                href="javascript/mouseEffect/mouseEffect01.html"
+                target="_blank"
+              >
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">MOUSE</span>
                   <span class="overlay-text-thumb-donut">MOUSE</span>
                   <span class="overlay-text-thumb1-donut">MOUSE</span>
                   <span class="overlay-text-thumb2-donut">MOUSE</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/Computer mouse.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>MOUSE</h5>
-                                        <p>Move your mouse</p>
-                                        <span
-                                            >MOUSE를 이용한 다양한 효과들
-                                            !</span
-                                        >
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img src="assets/img/Computer mouse.svg" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>MOUSE</h5>
+                    <p>Move your mouse</p>
+                    <span>MOUSE를 이용한 다양한 효과들 !</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape parallax">
-                            <a
-                                href="javascript/parallax/parallax01.html"
-                                target="_blank"
-                            >
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">parallax</span>
+            <!-- box -->
+            <section class="color-shape parallax">
+              <a href="javascript/parallax/parallax01.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">parallax</span>
                   <span class="overlay-text-thumb-donut">parallax</span>
                   <span class="overlay-text-thumb1-donut">parallax</span>
                   <span class="overlay-text-thumb2-donut">parallax</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/sphere-front-color.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>parallax</h5>
-                                        <p>Dynamic parallax</p>
-                                        <span>parallax효과를 이용하자 !</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img
+                    src="assets/img/sphere-front-color.svg"
+                    alt="portfolio"
+                  />
+                  <div class="img-text donutImg">
+                    <h5>parallax</h5>
+                    <p>Dynamic parallax</p>
+                    <span>parallax효과를 이용하자 !</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape quiz">
-                            <a
-                                href="javascript/quiz/quizEffect01.html"
-                                target="_blank"
-                            >
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">quiz</span>
+            <!-- box -->
+            <section class="color-shape quiz">
+              <a href="javascript/quiz/quizEffect01.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">quiz</span>
                   <span class="overlay-text-thumb-donut">quiz</span>
                   <span class="overlay-text-thumb1-donut">quiz</span>
                   <span class="overlay-text-thumb2-donut">quiz</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/bulb-front-color.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>quiz</h5>
-                                        <p>Make a quiz !</p>
-                                        <span>Json파일을 이용한 quiz !</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img src="assets/img/bulb-front-color.svg" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>quiz</h5>
+                    <p>Make a quiz !</p>
+                    <span>Json파일을 이용한 quiz !</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape search">
-                            <a
-                                href="javascript/search/searchEffect.html"
-                                target="_blank"
-                            >
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">search</span>
+            <!-- box -->
+            <section class="color-shape search">
+              <a href="javascript/search/searchEffect.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">search</span>
                   <span class="overlay-text-thumb-donut">search</span>
                   <span class="overlay-text-thumb1-donut">search</span>
                   <span class="overlay-text-thumb2-donut">search</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/3d computer.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>search</h5>
-                                        <p>curious?</p>
-                                        <span
-                                            >css에 대해 무엇이든 물어보삼
-                                            !</span
-                                        >
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img src="assets/img/3d computer.svg" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>search</h5>
+                    <p>curious?</p>
+                    <span>css에 대해 무엇이든 물어보삼 !</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape slide">
-                            <a
-                                href="javascript/slide/slideEffect01.html"
-                                target="_blank"
-                            >
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">slide</span>
+            <!-- box -->
+            <section class="color-shape slide">
+              <a href="javascript/slide/slideEffect01.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">slide</span>
                   <span class="overlay-text-thumb-donut">slide</span>
                   <span class="overlay-text-thumb1-donut">slide</span>
                   <span class="overlay-text-thumb2-donut">slide</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/forward-front-color.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>slide</h5>
-                                        <p>Nice slide</p>
-                                        <span
-                                            >slide효과로 이미지 움직이기 !</span
-                                        >
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
+                  </div>
+                  <img
+                    src="assets/img/forward-front-color.svg"
+                    alt="portfolio"
+                  />
+                  <div class="img-text donutImg">
+                    <h5>slide</h5>
+                    <p>Nice slide</p>
+                    <span>slide효과로 이미지 움직이기 !</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
 
-                        <!-- box -->
-                        <section class="color-shape portfolio">
-                            <a
-                                href="javascript/portfolio/portfolioEffect01.html"
-                                target="_blank"
-                            >
-                                <div class="image-wrap">
-                                    <div class="hover-wrap">
-                                        <!-- <span class="overlay-img-donut">portfolio</span>
+            <!-- box -->
+            <section class="color-shape portfolio">
+              <a
+                href="javascript/portfolio/portfolioEffect01.html"
+                target="_blank"
+              >
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">portfolio</span>
                   <span class="overlay-text-thumb-donut">portfolio</span>
                   <span class="overlay-text-thumb1-donut">portfolio</span>
                   <span class="overlay-text-thumb2-donut">portfolio</span> -->
-                                    </div>
-                                    <img
-                                        src="assets/img/girl-front-color.svg"
-                                        alt="portfolio"
-                                    />
-                                    <div class="img-text donutImg">
-                                        <h5>portfolio</h5>
-                                        <p>portfolio</p>
-                                        <span>portfolio</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </section>
-                        <!-- //box -->
-                    </div>
-                    <!-- //container-->
+                  </div>
+                  <img src="assets/img/girl-front-color.svg" alt="portfolio" />
+                  <div class="img-text donutImg">
+                    <h5>portfolio</h5>
+                    <p>portfolio</p>
+                    <span>portfolio</span>
+                  </div>
                 </div>
-                <!-- //row -->
-            </div>
-            <!-- //container-->
-        </div>
-        <!-- //contents -->
+              </a>
+            </section>
+            <!-- //box -->
 
-        <!-- footer -->
-        <div id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="span12">
-                        <h5>
-                            <a
-                                href="https://xoouxa58.tistory.com/"
-                                target="_blank"
-                                >이유나</a
-                            >
-                            <span id="clock"></span>
-                            <span id="infor"></span>
-                        </h5>
-                    </div>
+            <section class="color-shape react">
+              <a href="react/index.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">react</span>
+                  <span class="overlay-text-thumb-donut">react</span>
+                  <span class="overlay-text-thumb1-donut">react</span>
+                  <span class="overlay-text-thumb2-donut">react</span> -->
+                  </div>
+                  <img src="assets/img/chat.png" alt="react" />
+                  <div class="img-text donutImg">
+                    <h5>react</h5>
+                    <p>react</p>
+                    <span>react의 설치 방법 !</span>
+                  </div>
                 </div>
-            </div>
+              </a>
+            </section>
+            <!-- //box -->
+
+            <section class="color-shape webpack">
+              <a href="react/webpack.html" target="_blank">
+                <div class="image-wrap">
+                  <div class="hover-wrap">
+                    <!-- <span class="overlay-img-donut">webpack</span>
+                    <span class="overlay-text-thumb-donut">webpack</span>
+                    <span class="overlay-text-thumb1-donut">webpack</span>
+                    <span class="overlay-text-thumb2-donut">webpack</span> -->
+                  </div>
+                  <img src="assets/img/bell.png" alt="webpack" />
+                  <div class="img-text donutImg">
+                    <h5>webpack</h5>
+                    <p>webpack</p>
+                    <span>webpack 설치 방법 !</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <!-- //box -->
+          </div>
+          <!-- //container-->
         </div>
-        <!-- //footer -->
+        <!-- //row -->
+      </div>
+      <!-- //container-->
+    </div>
+    <!-- //contents -->
 
-        <!-- script -->
-        <script src="assets/js/jquery-1.9.1.min.js"></script>
-        <script src="assets/js/bootstrap-collapse.js"></script>
-        <script src="assets/js/bootstrap-transition.js"></script>
-        <script src="assets/js/jquery.isotope.min.js"></script>
-        <script>
-            //운영체제 정보 알아내기
-            let os = navigator.userAgent.toLowerCase();
-            let sw = screen.width;
-            let sh = screen.height;
-            let infor = document.getElementById("infor");
+    <!-- footer -->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <h5>
+              <a href="https://xoouxa58.tistory.com/" target="_blank">이유나</a>
+              <span id="clock"></span>
+              <span id="infor"></span>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
 
-            if (os.indexOf("windows") >= 0) {
-                infor.innerHTML =
-                    "현재 윈도우를 사용하고 있으며, 화면 크기는 " +
-                    sw +
-                    "x" +
-                    sh +
-                    " 입니다.";
-            } else if (os.indexOf("macintosh") >= 0) {
-                infor.innerHTML =
-                    "현재 맥을 사용하고 있으며, 화면 크기는 " +
-                    sw +
-                    "x" +
-                    sh +
-                    " 입니다.";
-            } else if (os.indexOf("iphone") >= 0) {
-                infor.innerHTML =
-                    "현재 아이폰을 사용하고 있으며, 화면 크기는 " +
-                    sw +
-                    "x" +
-                    sh +
-                    " 입니다.";
-            } else if (os.indexOf("android") >= 0) {
-                infor.innerHTML =
-                    "현재 안드로이드 폰을 사용하고 있으며, 화면 크기는 " +
-                    sw +
-                    "x" +
-                    sh +
-                    " 입니다.";
-            }
+    <!-- script -->
+    <script src="assets/js/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script>
+      //운영체제 정보 알아내기
+      let os = navigator.userAgent.toLowerCase();
+      let sw = screen.width;
+      let sh = screen.height;
+      let infor = document.getElementById("infor");
 
-            //시간 표현
-            let clock = document.getElementById("clock");
+      if (os.indexOf("windows") >= 0) {
+        infor.innerHTML =
+          "현재 윈도우를 사용하고 있으며, 화면 크기는 " +
+          sw +
+          "x" +
+          sh +
+          " 입니다.";
+      } else if (os.indexOf("macintosh") >= 0) {
+        infor.innerHTML =
+          "현재 맥을 사용하고 있으며, 화면 크기는 " +
+          sw +
+          "x" +
+          sh +
+          " 입니다.";
+      } else if (os.indexOf("iphone") >= 0) {
+        infor.innerHTML =
+          "현재 아이폰을 사용하고 있으며, 화면 크기는 " +
+          sw +
+          "x" +
+          sh +
+          " 입니다.";
+      } else if (os.indexOf("android") >= 0) {
+        infor.innerHTML =
+          "현재 안드로이드 폰을 사용하고 있으며, 화면 크기는 " +
+          sw +
+          "x" +
+          sh +
+          " 입니다.";
+      }
 
-            setInterval(function () {
-                clock.innerHTML = new Date().toLocaleTimeString();
-            }, 1000);
+      //시간 표현
+      let clock = document.getElementById("clock");
 
-            $(function () {
-                var $container = $("#container"),
-                    filters = {};
+      setInterval(function () {
+        clock.innerHTML = new Date().toLocaleTimeString();
+      }, 1000);
 
-                $container.isotope({
-                    itemSelector: ".color-shape",
-                    masonry: {
-                        columnWidth: 57,
-                    },
-                });
+      $(function () {
+        var $container = $("#container"),
+          filters = {};
 
-                // filter buttons
-                $(".filter a").click(function () {
-                    var $this = $(this);
-                    // don't proceed if already selected
-                    if ($this.hasClass("selected")) {
-                        return;
-                    }
+        $container.isotope({
+          itemSelector: ".color-shape",
+          masonry: {
+            columnWidth: 57,
+          },
+        });
 
-                    var $optionSet = $this.parents(".option-set");
-                    // change selected class
-                    $optionSet.find(".selected").removeClass("selected");
-                    $this.addClass("selected");
+        // filter buttons
+        $(".filter a").click(function () {
+          var $this = $(this);
+          // don't proceed if already selected
+          if ($this.hasClass("selected")) {
+            return;
+          }
 
-                    // store filter value in object
-                    // i.e. filters.color = 'red'
-                    var group = $optionSet.attr("data-filter-group");
-                    filters[group] = $this.attr("data-filter-value");
-                    // convert object into array
-                    var isoFilters = [];
-                    for (var prop in filters) {
-                        isoFilters.push(filters[prop]);
-                    }
-                    var selector = isoFilters.join("");
-                    $container.isotope({
-                        filter: selector,
-                    });
+          var $optionSet = $this.parents(".option-set");
+          // change selected class
+          $optionSet.find(".selected").removeClass("selected");
+          $this.addClass("selected");
 
-                    return false;
-                });
+          // store filter value in object
+          // i.e. filters.color = 'red'
+          var group = $optionSet.attr("data-filter-group");
+          filters[group] = $this.attr("data-filter-value");
+          // convert object into array
+          var isoFilters = [];
+          for (var prop in filters) {
+            isoFilters.push(filters[prop]);
+          }
+          var selector = isoFilters.join("");
+          $container.isotope({
+            filter: selector,
+          });
 
-                $(".tit_btn").on("click", function (e) {
-                    e.preventDefault();
-                    $(".nav_container").toggleClass("on");
-                });
+          return false;
+        });
 
-                $(".click").click(function () {
-                    $(".view").fadeToggle();
-                });
-            });
-        </script>
+        $(".tit_btn").on("click", function (e) {
+          e.preventDefault();
+          $(".nav_container").toggleClass("on");
+        });
 
-        <script></script>
-    </body>
+        $(".click").click(function () {
+          $(".view").fadeToggle();
+        });
+      });
+    </script>
+
+    <script></script>
+  </body>
 </html>
